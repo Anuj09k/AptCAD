@@ -413,10 +413,8 @@ impl Backend for Headless {
                     aptcad_render::raster::View { center: v.center, scale: f64::from(h) / v.height.max(1e-12), width: w, height: h }
                 };
                 let (w, h) = (view.width, view.height);
-                let png =
-                    aptcad_render::raster::render_png(&list, &view, &aptcad_render::raster::RasterOptions::default()).ok_or("render failed")?;
-                let mut r =
-                    json!({"pngBase64": aptcad_engine::cmd::file::base64_encode(&png), "width": w, "height": h, "truncated": list.truncated});
+                let png = aptcad_render::raster::render_png(&list, &view, &aptcad_render::raster::RasterOptions::default()).ok_or("render failed")?;
+                let mut r = json!({"pngBase64": aptcad_engine::cmd::file::base64_encode(&png), "width": w, "height": h, "truncated": list.truncated});
                 if let Some(path) = str_p("path") {
                     let file = std::path::Path::new(&path);
                     let folder = aptcad_engine::atomic_write::missing_folder(file);

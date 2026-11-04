@@ -533,8 +533,7 @@ impl Session {
     /// line from the base point of the others. `None` when no routine waits for input.
     pub(crate) fn lisp_preview(&self, cursor: aptcad_geom::Vec2) -> Option<Vec<aptcad_doc::EntityKind>> {
         let Need::Get(req) = self.lisp.run.as_ref()?.waiting.as_ref()? else { return None };
-        let line =
-            |a: aptcad_geom::Vec2, b: aptcad_geom::Vec2| aptcad_doc::EntityKind::Line(aptcad_doc::Line { a: a.to3(0.0), b: b.to3(0.0) });
+        let line = |a: aptcad_geom::Vec2, b: aptcad_geom::Vec2| aptcad_doc::EntityKind::Line(aptcad_doc::Line { a: a.to3(0.0), b: b.to3(0.0) });
         let Some(b) = req.first.or(req.base).map(|p| aptcad_geom::Vec2::new(p[0], p[1])) else { return Some(Vec::new()) };
         Some(match req.kind {
             input::GetKind::Corner => {

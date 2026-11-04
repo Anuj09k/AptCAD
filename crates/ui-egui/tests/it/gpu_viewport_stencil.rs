@@ -19,8 +19,7 @@ const STENCIL: wgpu::TextureFormat = wgpu::TextureFormat::Stencil8;
 fn tris(pts: Vec<Vec2>) -> DisplayList {
     let len = pts.len() as u32;
     let bounds = Bounds2::from_points(pts.iter().copied());
-    let prim =
-        DPrim { handle: Handle(1), color: aptcad_color::Rgb(0, 0, 0), aci7: false, lw: 0.0, transparency: 0, kind: Kind::Tris, start: 0, len };
+    let prim = DPrim { handle: Handle(1), color: aptcad_color::Rgb(0, 0, 0), aci7: false, lw: 0.0, transparency: 0, kind: Kind::Tris, start: 0, len };
     DisplayList { prims: vec![prim], tris: pts, bounds, ..Default::default() }
 }
 

@@ -137,9 +137,7 @@ fn edit_style(cmd: &str, st: &mut PlotStyle, v: &Value) -> Result<()> {
     if let Some(c) = opt_str("color")? {
         st.color = match c {
             None => None,
-            Some(h) => {
-                Some(aptcad_color::Rgb::parse_hex(h.trim_start_matches('#')).ok_or_else(|| bad(cmd, "`color` must be \"#rrggbb\" or null"))?)
-            }
+            Some(h) => Some(aptcad_color::Rgb::parse_hex(h.trim_start_matches('#')).ok_or_else(|| bad(cmd, "`color` must be \"#rrggbb\" or null"))?),
         };
     }
     if let Some(lt) = opt_str("linetype")? {

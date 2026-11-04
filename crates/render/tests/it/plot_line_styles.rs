@@ -4,9 +4,7 @@
 use std::sync::Arc;
 
 use aptcad_color::Color;
-use aptcad_doc::{
-    Common, Drawing, EndStyle, EntityKind, FillStyle, JoinStyle, Line, LwPolyline, PlotStyle, PlotStyleTable, Solid, Space, Viewport,
-};
+use aptcad_doc::{Common, Drawing, EndStyle, EntityKind, FillStyle, JoinStyle, Line, LwPolyline, PlotStyle, PlotStyleTable, Solid, Space, Viewport};
 use aptcad_geom::{PolyVertex, Vec2, Vec3};
 use aptcad_render::{DisplayList, Kind, Options, VIEWPORT_CONTENT, build, build_plot, pen};
 

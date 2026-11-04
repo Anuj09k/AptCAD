@@ -312,8 +312,7 @@ mod tests {
             units: 0,
             array: None,
         };
-        blk.entities
-            .push(Entity::new(aptcad_doc::Handle(1_000_000), EntityKind::Circle(aptcad_doc::Circle { center: v3(0.0, 0.0), radius: 1.0 })));
+        blk.entities.push(Entity::new(aptcad_doc::Handle(1_000_000), EntityKind::Circle(aptcad_doc::Circle { center: v3(0.0, 0.0), radius: 1.0 })));
         d.blocks.insert("B".into(), Arc::new(blk));
         d.ensure_layer("OFF");
         if let Some(l) = d.layer_mut("OFF") {
@@ -512,8 +511,7 @@ mod tests {
         // Redefining the block changes insert bounds: the index is rebuilt.
         let before = index(&d, &Space::Model).unwrap();
         let mut blk = (**d.blocks.get("B").unwrap()).clone();
-        blk.entities
-            .push(Entity::new(aptcad_doc::Handle(2_000_000), EntityKind::Circle(aptcad_doc::Circle { center: v3(0.0, 0.0), radius: 50.0 })));
+        blk.entities.push(Entity::new(aptcad_doc::Handle(2_000_000), EntityKind::Circle(aptcad_doc::Circle { center: v3(0.0, 0.0), radius: 50.0 })));
         d.blocks.insert("B".into(), Arc::new(blk));
         assert!(!Arc::ptr_eq(&before, &index(&d, &Space::Model).unwrap()));
     }

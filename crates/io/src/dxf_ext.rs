@@ -365,8 +365,7 @@ pub(crate) fn xdata_str(s: &str) -> &str {
 pub(crate) fn xdata<'a>(tags: &'a [Tag], app: &str) -> &'a [Tag] {
     let Some(start) = tags.iter().position(|t| {
         t.code == 1001
-            && (t.str().trim().eq_ignore_ascii_case(app)
-                || (app.eq_ignore_ascii_case(APP) && t.str().trim().eq_ignore_ascii_case(LEGACY_APP)))
+            && (t.str().trim().eq_ignore_ascii_case(app) || (app.eq_ignore_ascii_case(APP) && t.str().trim().eq_ignore_ascii_case(LEGACY_APP)))
     }) else {
         return &[];
     };

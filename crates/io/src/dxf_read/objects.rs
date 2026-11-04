@@ -83,11 +83,8 @@ impl Objects {
     /// The text of the AptCAD XRECORD stored under `key` in a dictionary (its 1/3 strings).
     pub(super) fn xrecord_text(&self, key: &str) -> Option<String> {
         let legacy = crate::dxf_ext::legacy_key(key);
-        let h = self
-            .names
-            .iter()
-            .find(|(_, n)| n.eq_ignore_ascii_case(key) || legacy.is_some_and(|old| n.eq_ignore_ascii_case(old)))
-            .map(|(h, _)| h)?;
+        let h =
+            self.names.iter().find(|(_, n)| n.eq_ignore_ascii_case(key) || legacy.is_some_and(|old| n.eq_ignore_ascii_case(old))).map(|(h, _)| h)?;
         let tags = self.xrecords.get(h)?;
         let mut text = String::new();
         for t in tags.iter().filter(|t| t.code == 1 || t.code == 3) {

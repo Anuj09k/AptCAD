@@ -22,9 +22,9 @@ mod tables;
 
 use std::collections::{BTreeMap, BTreeSet};
 
-pub use array::*;
 pub use aptcad_color as color;
 pub use aptcad_geom as geom;
+pub use array::*;
 pub use constraint::*;
 pub use entity::*;
 pub use extents::{BlockBoundsCache, MAX_BLOCK_DEPTH, entity_bounds, entity_bounds_cached, extent_bounds, extent_bounds_cached};

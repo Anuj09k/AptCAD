@@ -786,11 +786,8 @@ fn bad_values() {
 /// binary, with a closed stdin.
 #[test]
 fn mcp_headless_with_a_closed_stdin() {
-    let out = std::process::Command::new(env!("CARGO_BIN_EXE_aptcad-cli"))
-        .arg("mcp")
-        .stdin(std::process::Stdio::null())
-        .output()
-        .expect("run aptcad-cli");
+    let out =
+        std::process::Command::new(env!("CARGO_BIN_EXE_aptcad-cli")).arg("mcp").stdin(std::process::Stdio::null()).output().expect("run aptcad-cli");
     assert_eq!(out.status.code(), Some(0));
     assert!(out.stdout.is_empty() && out.stderr.is_empty());
 }

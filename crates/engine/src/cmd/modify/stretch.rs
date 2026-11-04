@@ -181,9 +181,7 @@ impl StretchM {
         };
         let area = match (m.kind, m.pts.first().zip(m.pts.get(1))) {
             (SelectKind::WPolygon | SelectKind::CPolygon, _) => Some(StretchArea::Polygon(m.pts)),
-            (SelectKind::Window | SelectKind::Crossing | SelectKind::Box, Some((a, b))) => {
-                Some(StretchArea::Box(aptcad_geom::Bounds2::new(*a, *b)))
-            }
+            (SelectKind::Window | SelectKind::Crossing | SelectKind::Box, Some((a, b))) => Some(StretchArea::Box(aptcad_geom::Bounds2::new(*a, *b))),
             // A fence marks no area: what it crosses moves whole.
             _ => None,
         };

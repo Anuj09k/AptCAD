@@ -104,9 +104,8 @@ fn geometry_is_compared_by_handle_within_the_tolerance() {
 #[test]
 fn angles_a_whole_turn_apart_are_the_same() {
     let mut a = drawing();
-    let h = a
-        .add(&Space::Model, Common::default(), EntityKind::Arc(aptcad_doc::Arc { center: Vec3::ZERO, radius: 2.0, start: -0.5, end: 1.0 }))
-        .unwrap();
+    let h =
+        a.add(&Space::Model, Common::default(), EntityKind::Arc(aptcad_doc::Arc { center: Vec3::ZERO, radius: 2.0, start: -0.5, end: 1.0 })).unwrap();
     let mut b = a.clone();
     b.modify_entity(h, |e| {
         if let EntityKind::Arc(x) = &mut e.kind {

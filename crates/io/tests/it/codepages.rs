@@ -227,13 +227,8 @@ fn hostile_multibyte_never_panics() {
     let _ = aptcad_io::read_dxf(&cut);
     let all: Vec<u8> = (0..=255u8).collect();
     for cp in ["ANSI_932", "ANSI_936", "ANSI_949", "ANSI_950", "ANSI_1251", "DOS437", "DOS852", "MACINTOSH"] {
-        let d = aptcad_io::read_dxf(&ascii_dxf(
-            "AC1015",
-            cp,
-            b"L",
-            b"B",
-            &all.iter().copied().filter(|&b| b != b'\n' && b != b'\r').collect::<Vec<_>>(),
-        ));
+        let d =
+            aptcad_io::read_dxf(&ascii_dxf("AC1015", cp, b"L", b"B", &all.iter().copied().filter(|&b| b != b'\n' && b != b'\r').collect::<Vec<_>>()));
         assert!(d.is_ok(), "{cp}");
         let mut junk = ascii_dxf("AC1015", cp, b"L", b"B", b"x");
         junk.extend_from_slice(&all);

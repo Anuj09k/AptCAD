@@ -351,9 +351,8 @@ pub fn select_polygon(d: &Drawing, space: &Space, poly: &[Vec2], crossing: bool)
         }
         let polys = hit_polylines(d, e, tol);
         let crosses = polys.iter().any(|pl| {
-            pl.windows(2).any(|w| {
-                w.first().zip(w.get(1)).is_some_and(|(p, q)| edges.iter().any(|f| aptcad_geom::line_line(f, &Line::new(*p, *q)).is_some()))
-            })
+            pl.windows(2)
+                .any(|w| w.first().zip(w.get(1)).is_some_and(|(p, q)| edges.iter().any(|f| aptcad_geom::line_line(f, &Line::new(*p, *q)).is_some())))
         });
         let mut pts = polys.iter().flatten();
         let hit = if crossing {
@@ -511,8 +510,7 @@ mod tests {
     fn dashed_block(length: f64, scale: f64) -> (Drawing, Handle) {
         let mut d = Drawing::new_imperial();
         d.linetypes.extend(aptcad_doc::library::standard_linetypes().into_iter().filter(|l| l.name == "DASHED"));
-        let mut line =
-            Entity::new(Handle(1), EntityKind::Line(aptcad_doc::Line { a: Vec3::new(0.0, 0.0, 0.0), b: Vec3::new(length, length, 0.0) }));
+        let mut line = Entity::new(Handle(1), EntityKind::Line(aptcad_doc::Line { a: Vec3::new(0.0, 0.0, 0.0), b: Vec3::new(length, length, 0.0) }));
         line.common.linetype = "DASHED".into();
         let mut blk = aptcad_doc::Block::new("B");
         blk.entities.push(line);
