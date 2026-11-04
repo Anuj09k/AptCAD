@@ -98,6 +98,17 @@ lto = "thin"
 codegen-units = 16
 debug = 0
 
+# The browser build (apps/aptcad-web, via Trunk's data-cargo-profile). Everyone who opens
+# AptCAD on the web downloads the .wasm first, so it is optimised for size: measured on 0.17.0
+# after wasm-opt -Oz, 19.2 MB (6.4 MB with Brotli) against 29.3 MB (8.3 MB) with the release
+# settings above. opt-level 3 with fat LTO alone only reached 27.2 MB. Desktop builds keep
+# `release` and are unaffected.
+[profile.web-release]
+inherits = "release"
+opt-level = "s"
+lto = "fat"
+codegen-units = 1
+
 # PDF backends for craft-pdf: pinned to the same reviewed craft-libs revision as craft-pdf itself
 # (Cargo ignores dependency-local patches).
 [patch.crates-io]

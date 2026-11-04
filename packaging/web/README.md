@@ -7,7 +7,7 @@ static site in `aptcad-web-<version>/`:
 |---|---|
 | `index.html` | The page. It loads everything through relative URLs. |
 | `aptcad-web-<hash>.js` | wasm-bindgen glue (generated, ES module) |
-| `aptcad-web-<hash>_bg.wasm` | The app, about 13 MB, or 5 MB with compression |
+| `aptcad-web-<hash>_bg.wasm` | The app, about 19 MB: about 6.5 MB with Brotli, 8 MB with gzip |
 | `_headers`, `.htaccess` | Sample header rules for Netlify/Cloudflare Pages and Apache |
 
 There is no server-side code. Upload the folder's contents anywhere that serves static files.
@@ -25,7 +25,7 @@ hash, so they can be cached forever. Only `index.html` needs revalidation.
   any other type, and the app then loads slowly or not at all. Serve `.js` as `text/javascript`.
   Most hosts already do both. For nginx, check that `mime.types` has `application/wasm wasm;`.
 - **Compression:** turn on gzip or Brotli for `.wasm`, `.js` and `.html`. That takes the
-  download from about 13 MB to about 5 MB. You can also precompress (`brotli -k *.wasm`) and let
+  download from about 19 MB to about 6.5 MB (Brotli) or 8 MB (gzip). You can also precompress (`brotli -k *.wasm`) and let
   the server send `Content-Encoding: br`.
 - **Caching:** `Cache-Control: public, max-age=31536000, immutable` on the hashed `.wasm` and
   `.js` files, and `no-cache` on `index.html`.
