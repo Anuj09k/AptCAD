@@ -66,11 +66,11 @@ pub(super) fn viewport_label(p: &egui::Painter, rect: Rect) {
     p.text(at, egui::Align2::LEFT_TOP, crate::tl!("+  |  Top  |  2D Wireframe"), crate::theme::small(), t.canvas_ink);
 }
 
-pub(super) fn draw_viewcube(app: &mut CadApp, ui: &mut egui::Ui, rect: Rect) {
-    let l = crate::viewcube::Layout::new(rect);
+pub(super) fn draw_viewsphere(app: &mut CadApp, ui: &mut egui::Ui, rect: Rect) {
+    let l = crate::viewsphere::Layout::new(rect);
     let (c, ring) = (l.center, l.ring);
     let p = ui.painter_at(rect);
-    crate::viewcube::show(app, ui, &l);
+    crate::viewsphere::show(app, ui, &l);
     // WCS pill: the label and a down chevron, drawn as lines rather than a "⌄" glyph that a UI
     // font may lack (it showed as a box, #1541).
     let pill = Rect::from_center_size(c + vec2(0.0, ring + 26.0), vec2(56.0, 16.0));

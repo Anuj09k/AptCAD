@@ -31,7 +31,7 @@ impl Canvas {
         app.canvas.zoom_pending = false;
         app.ui.show_command_line = false;
         app.ui.show_ucs_icon = false;
-        app.ui.show_viewcube = false;
+        app.ui.show_viewsphere = false;
         app.run("options", json!({"theme": "dark", "systemCursor": false, "PICKBOX": 4, "SELECTIONPREVIEW": 1})).unwrap();
         let mut canvas = Self { app, ctx: Context::default(), previous_theme };
         canvas.paint(pos2(640.0, 400.0));

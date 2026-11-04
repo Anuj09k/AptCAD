@@ -40,7 +40,7 @@ pub const UI_COMMANDS: &[(&str, &str, &[&str], Option<&str>)] = &[
     ("ui.toggle.filetabs", "File Tab", &["Window", "File Tab"], None),
     ("ui.toggle.statusbar", "Status Bar", &["Window", "Status Bar"], None),
     ("ui.toggle.cmdline", "Command Line", &["Window", "Command Line"], Some("Cmd+9")),
-    ("ui.toggle.viewcube", "ViewCube", &["View", "ViewCube", "On"], None),
+    ("ui.toggle.viewsphere", "ViewSphere", &["View", "ViewSphere", "On"], None),
     ("ui.toggle.ucsicon", "UCS Icon", &["View", "UCS Icon", "On"], None),
     ("ui.theme.system", "Use System Setting", &["View", "Interface Theme", "Use System Setting"], None),
     ("ui.theme.light", "Light", &["View", "Interface Theme", "Light"], None),
@@ -236,8 +236,9 @@ fn run_ui_toggle_command(app: &mut CadApp, id: &str, params: &Value) -> Option<R
             toggle(&mut app.ui.system_cursor, params);
             Ok(Value::Null)
         }
-        "ui.toggle.viewcube" => {
-            toggle(&mut app.ui.show_viewcube, params);
+        // `ui.toggle.viewcube`: the id before the rename, for scripts and agents that still send it.
+        "ui.toggle.viewsphere" | "ui.toggle.viewcube" => {
+            toggle(&mut app.ui.show_viewsphere, params);
             Ok(Value::Null)
         }
         "ui.toggle.ucsicon" => {

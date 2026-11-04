@@ -1,5 +1,5 @@
 //! The drawing area: grid, entities, selection highlighting, grips, rubber bands, object-snap
-//! markers, crosshair cursor, ViewCube, UCS icon and mouse handling.
+//! markers, crosshair cursor, ViewSphere, UCS icon and mouse handling.
 
 use aptcad_color::Rgb;
 use aptcad_doc::Handle;
@@ -38,7 +38,7 @@ use pick::{edit_text_at, hatch_at, wheel_zoom_points};
 #[cfg(test)]
 use viewport::viewport_highlight_tolerance;
 use viewport::{VpContent, VpHighlight, draw_vp_content, ensure_vp_content};
-use widgets::{draw_tiles, draw_ucs_icon, draw_viewcube, tile_rects, tile_xf, viewport_label};
+use widgets::{draw_tiles, draw_ucs_icon, draw_viewsphere, tile_rects, tile_xf, viewport_label};
 
 /// World ↔ screen transform for the canvas rect.
 #[derive(Clone, Copy, Debug)]
@@ -481,13 +481,13 @@ fn paint_pointer_overlay(
         draw_snap_marker(painter, xf.to_screen(hit.point), &hit);
     }
     draw_tiles(app, ui, tiles);
-    // UCS icon, ViewCube and viewport label.
+    // UCS icon, ViewSphere and viewport label.
     if app.ui.show_ucs_icon {
         draw_ucs_icon(painter, rect);
-        crate::viewcube::ucs_icon(app, ui, rect);
+        crate::viewsphere::ucs_icon(app, ui, rect);
     }
-    if app.ui.show_viewcube && sheet.is_none() {
-        draw_viewcube(app, ui, rect);
+    if app.ui.show_viewsphere && sheet.is_none() {
+        draw_viewsphere(app, ui, rect);
     }
     viewport_label(painter, rect);
     // Typing and Escape reach the command line even when its overlay is hidden.

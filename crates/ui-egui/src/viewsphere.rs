@@ -1,10 +1,10 @@
-//! The navigation overlays on the drawing area: the ViewCube (Top face, Home, compass ring and
-//! the WCS menu) and the UCS icon.
+//! The navigation overlays on the drawing area: the ViewSphere (the Top sphere, Home, compass
+//! ring and the WCS menu) and the UCS icon.
 //!
 //! Every overlay registers a widget that senses clicks *and* drags, so egui hands the pointer to
-//! the overlay instead of the canvas underneath (a click on the ViewCube must never also pick or
+//! the overlay instead of the canvas underneath (a click on the ViewSphere must never also pick or
 //! start a selection window in the drawing). What the overlays do goes through commands:
-//! `zoom.extents` (Top face, Home), `ui.toggle.viewcube`, `ui.toggle.ucsicon`.
+//! `zoom.extents` (Top sphere, Home), `ui.toggle.viewsphere`, `ui.toggle.ucsicon`.
 //!
 //! AptCAD's model view is a 2D plan view of the World Coordinate System: there is no view
 //! twist, no 3D view direction and no user coordinate system yet, so the compass ring explains
@@ -17,19 +17,20 @@ use crate::CadApp;
 use crate::theme::Tokens;
 
 /// Shown when the compass ring is clicked or dragged.
-pub const NO_TWIST: &str = "ViewCube: rotating the view needs a view twist, which the 2D plan view doesn't support yet.";
+pub const NO_TWIST: &str = "ViewSphere: rotating the view needs a view twist, which the 2D plan view doesn't support yet.";
 
-/// Where the ViewCube's parts are on the canvas.
+/// Where the ViewSphere's parts are on the canvas.
 #[derive(Clone, Copy, Debug)]
 pub struct Layout {
     pub center: Pos2,
     /// Radius of the compass ring's centre line.
     pub ring: f32,
-    pub face: Rect,
+    /// The sphere's bounding square (the sphere is the circle inscribed in it).
+    pub sphere: Rect,
     pub home: Rect,
-    /// The "WCS" coordinate-system menu under the cube.
+    /// The "WCS" coordinate-system menu under the ViewSphere.
     pub pill: Rect,
-    /// Everything that belongs to the cube (the area kept away from the canvas).
+    /// Everything that belongs to the ViewSphere (the area kept away from the canvas).
     pub bounds: Rect,
 }
 
@@ -40,29 +41,29 @@ impl Layout {
         Layout {
             center,
             ring,
-            face: Rect::from_center_size(center, vec2(44.0, 44.0)),
+            sphere: Rect::from_center_size(center, vec2(2.0 * SPHERE_R, 2.0 * SPHERE_R)),
             home: Rect::from_center_size(center + vec2(-ring + 2.0, -ring + 2.0), vec2(20.0, 20.0)),
             pill: Rect::from_center_size(center + vec2(0.0, ring + 26.0), vec2(56.0, 16.0)),
             bounds: Rect::from_center_size(center, vec2(2.0 * (ring + 10.0), 2.0 * (ring + 10.0))),
         }
     }
 
-    /// The part of the cube at `p` (not the pill, which is its own widget).
+    /// The part of the ViewSphere at `p` (not the pill, which is its own widget).
     pub fn part_at(&self, p: Pos2) -> Option<Part> {
         if self.home.contains(p) {
             return Some(Part::Home);
         }
-        if self.face.contains(p) {
-            return Some(Part::Face);
-        }
         let d = p.distance(self.center);
+        if d <= SPHERE_R {
+            return Some(Part::Sphere);
+        }
         ((self.ring - 10.0..=self.ring + 10.0).contains(&d)).then_some(Part::Ring)
     }
 }
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Part {
-    Face,
+    Sphere,
     Home,
     Ring,
 }
@@ -70,17 +71,17 @@ pub enum Part {
 impl Part {
     fn tip(self) -> &'static str {
         match self {
-            Part::Face => "Top: plan view of the drawing (zoom extents)",
+            Part::Sphere => "Top: plan view of the drawing (zoom extents)",
             Part::Home => "Home: zoom to the drawing extents",
             Part::Ring => "Compass: view rotation isn't available in the 2D plan view yet",
         }
     }
 }
 
-/// Paint the ViewCube's ring, compass letters, Top face and Home button, and handle the pointer.
+/// Paint the ViewSphere's ring, compass letters, Top sphere and Home button, and handle the pointer.
 /// The canvas paints the WCS pill itself; this returns the pointer's part for its highlight.
 pub fn show(app: &mut CadApp, ui: &mut egui::Ui, l: &Layout) {
-    let resp = ui.interact(l.bounds, ui.scope_id().with("viewcube"), Sense::click_and_drag());
+    let resp = ui.interact(l.bounds, ui.scope_id().with("viewsphere"), Sense::click_and_drag());
     let part = resp.hover_pos().and_then(|p| l.part_at(p));
     let p = ui.painter_at(l.bounds.union(l.pill));
     let ring_col = if part == Some(Part::Ring) { Color32::from_rgb(0x5c, 0x67, 0x7c) } else { Color32::from_rgb(0x48, 0x50, 0x5c) };
@@ -94,10 +95,8 @@ pub fn show(app: &mut CadApp, ui: &mut egui::Ui, l: &Layout) {
     p.text(c + vec2(0.0, ring + 1.0), egui::Align2::CENTER_CENTER, crate::tl!("S"), f.clone(), lc);
     p.text(c + vec2(ring + 1.0, 0.0), egui::Align2::CENTER_CENTER, crate::tl!("E"), f.clone(), lc);
     p.text(c + vec2(-ring - 1.0, 0.0), egui::Align2::CENTER_CENTER, crate::tl!("W"), f, lc);
-    let face_col = if part == Some(Part::Face) { Color32::from_rgb(0xb8, 0xbc, 0xc2) } else { Color32::from_rgb(0x9a, 0x9e, 0xa4) };
-    p.rect_filled(l.face, 2.0, face_col);
-    p.rect_stroke(l.face, 2.0, Stroke::new(1.0, Color32::from_rgb(0x6c, 0x70, 0x76)), egui::StrokeKind::Inside);
-    p.text(c, egui::Align2::CENTER_CENTER, crate::tl!("TOP"), egui::FontId::proportional(13.0), Color32::from_rgb(0x50, 0x54, 0x5a));
+    paint_sphere(&p, c, part == Some(Part::Sphere));
+    p.text(c + vec2(0.0, 1.0), egui::Align2::CENTER_CENTER, crate::tl!("TOP"), egui::FontId::proportional(12.0), Color32::from_rgb(0x40, 0x44, 0x4a));
     paint_home(&p, l.home, part == Some(Part::Home));
 
     let resp = match part {
@@ -107,7 +106,7 @@ pub fn show(app: &mut CadApp, ui: &mut egui::Ui, l: &Layout) {
     let pressed_on = resp.interact_pointer_pos().and_then(|o| l.part_at(o));
     if resp.clicked() {
         match pressed_on {
-            Some(Part::Face | Part::Home) => {
+            Some(Part::Sphere | Part::Home) => {
                 let _ = app.run("zoom.extents", json!({}));
             }
             Some(Part::Ring) => app.session.echo(NO_TWIST),
@@ -123,8 +122,8 @@ pub fn show(app: &mut CadApp, ui: &mut egui::Ui, l: &Layout) {
             action = Some(("zoom.extents", json!({})));
             ui.close();
         }
-        if ui.button("Hide ViewCube").clicked() {
-            action = Some(("ui.toggle.viewcube", json!({"on": false})));
+        if ui.button("Hide ViewSphere").clicked() {
+            action = Some(("ui.toggle.viewsphere", json!({"on": false})));
             ui.close();
         }
     });
@@ -132,9 +131,33 @@ pub fn show(app: &mut CadApp, ui: &mut egui::Ui, l: &Layout) {
         let _ = app.run(id, params);
     }
     // The WCS pill (painted by the canvas) opens the coordinate-system menu.
-    let pill = ui.interact(l.pill, ui.scope_id().with("viewcube_wcs"), Sense::click_and_drag()).on_hover_cursor(CursorIcon::PointingHand);
+    let pill = ui.interact(l.pill, ui.scope_id().with("viewsphere_wcs"), Sense::click_and_drag()).on_hover_cursor(CursorIcon::PointingHand);
     let pill = pill.on_hover_text("Coordinate system");
     ucs_menu(app, egui::Popup::menu(&pill));
+}
+
+/// Radius of the Top sphere, in points.
+pub const SPHERE_R: f32 = 24.0;
+
+/// The Top sphere, drawn in code: a disc shaded from a darker rim to a light spot up and to the
+/// left (light from the upper left, as for the rest of the interface), with the equator and the
+/// north-south meridian as thin arcs so it reads as a globe seen from above.
+fn paint_sphere(p: &egui::Painter, c: Pos2, hot: bool) {
+    let (rim, core) = if hot { ([0x8e, 0x93, 0x9a], [0xe4, 0xe7, 0xeb]) } else { ([0x74, 0x79, 0x80], [0xc6, 0xca, 0xd0]) };
+    const STEPS: usize = 12;
+    for i in 0..STEPS {
+        let t = i as f32 / (STEPS - 1) as f32;
+        let mix = |a: u8, b: u8| (f32::from(a) + (f32::from(b) - f32::from(a)) * t).round().clamp(0.0, 255.0) as u8;
+        let col = Color32::from_rgb(mix(rim[0], core[0]), mix(rim[1], core[1]), mix(rim[2], core[2]));
+        let r = SPHERE_R * (1.0 - 0.72 * t);
+        // Each lighter disc is smaller and shifted toward the highlight.
+        let shift = vec2(-0.32, -0.32) * (SPHERE_R - r);
+        p.circle_filled(c + shift, r, col);
+    }
+    let line = Stroke::new(1.0, Color32::from_rgba_unmultiplied(0x4a, 0x50, 0x58, 0x70));
+    p.add(egui::Shape::ellipse_stroke(c, vec2(SPHERE_R, SPHERE_R * 0.34), line));
+    p.add(egui::Shape::ellipse_stroke(c, vec2(SPHERE_R * 0.34, SPHERE_R), line));
+    p.circle_stroke(c, SPHERE_R, Stroke::new(1.0, Color32::from_rgb(0x5a, 0x5f, 0x66)));
 }
 
 /// A small house, drawn in code.
@@ -246,24 +269,24 @@ mod tests {
     #[test]
     fn parts_are_found_where_they_are_drawn() {
         let l = Layout::new(Rect::from_min_size(pos2(200.0, 80.0), vec2(1000.0, 800.0)));
-        assert_eq!(l.part_at(l.center), Some(Part::Face));
+        assert_eq!(l.part_at(l.center), Some(Part::Sphere));
         assert_eq!(l.part_at(l.home.center()), Some(Part::Home));
         assert_eq!(l.part_at(l.center + vec2(0.0, -l.ring)), Some(Part::Ring), "N");
         assert_eq!(l.part_at(l.center + vec2(l.ring + 3.0, 0.0)), Some(Part::Ring), "E");
-        assert_eq!(l.part_at(l.center + vec2(30.0, 30.0)), None, "between the face and the ring");
-        assert!(l.bounds.contains_rect(l.home) && l.bounds.contains_rect(l.face));
+        assert_eq!(l.part_at(l.center + vec2(30.0, 30.0)), None, "between the sphere and the ring");
+        assert!(l.bounds.contains_rect(l.home) && l.bounds.contains_rect(l.sphere));
     }
 
     #[test]
-    fn viewcube_clicks_reach_the_cube_not_the_drawing() {
+    fn viewsphere_clicks_reach_the_sphere_not_the_drawing() {
         let (mut app, ctx) = app_and_ctx();
         let l = Layout::new(canvas(&app));
         let fitted = view(&app);
-        // Zoomed in, the Top face fits the drawing again (zoom extents) and nothing is picked.
+        // Zoomed in, the Top sphere fits the drawing again (zoom extents) and nothing is picked.
         let _ = app.run("zoom.in", json!({}));
         assert_ne!(view(&app), fitted);
         click(&mut app, &ctx, l.center, egui::PointerButton::Primary);
-        assert_eq!(view(&app), fitted, "Top face zooms to extents");
+        assert_eq!(view(&app), fitted, "Top sphere zooms to extents");
         assert!(app.session.pending_window.is_none(), "the click didn't start a selection window");
         assert!(app.session.selection().is_empty());
         // Home does the same.
@@ -292,5 +315,22 @@ mod tests {
         click(&mut app, &ctx, l.pill.center(), egui::PointerButton::Primary);
         assert!(menu_shown(&ctx), "WCS menu");
         assert!(app.session.pending_window.is_none());
+    }
+
+    /// Renamed from ViewCube: settings saved before the rename (`showViewcube`) and scripts that
+    /// still send `ui.toggle.viewcube` keep working.
+    #[test]
+    fn settings_and_scripts_from_before_the_rename_still_work() {
+        let ui: crate::UiState = serde_json::from_value(json!({ "showViewcube": false })).unwrap_or_default();
+        assert!(!ui.show_viewsphere, "old setting read");
+        let saved = serde_json::to_value(&ui).unwrap_or_default();
+        assert_eq!(saved.get("showViewsphere"), Some(&json!(false)), "saved under the new name");
+
+        let (mut app, _ctx) = app_and_ctx();
+        assert!(app.ui.show_viewsphere);
+        let _ = app.run("ui.toggle.viewcube", json!({"on": false}));
+        assert!(!app.ui.show_viewsphere, "old command id");
+        let _ = app.run("ui.toggle.viewsphere", json!({"on": true}));
+        assert!(app.ui.show_viewsphere, "new command id");
     }
 }

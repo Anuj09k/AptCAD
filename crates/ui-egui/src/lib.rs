@@ -67,7 +67,7 @@ pub mod shortcut_menus;
 pub mod theme;
 #[cfg(not(target_arch = "wasm32"))]
 pub mod updates_ui;
-pub mod viewcube;
+pub mod viewsphere;
 pub mod vpscale;
 
 pub mod exchange;
@@ -100,7 +100,9 @@ pub struct UiState {
     pub show_file_tabs: bool,
     pub show_status_bar: bool,
     pub show_command_line: bool,
-    pub show_viewcube: bool,
+    /// Saved settings and automation written before the rename still say `showViewcube`.
+    #[serde(alias = "showViewcube")]
+    pub show_viewsphere: bool,
     pub show_ucs_icon: bool,
     pub show_layer_list: bool,
     /// Keep the system cursor visible over the drawing area (a small crosshair at the centre of the
@@ -194,7 +196,7 @@ impl Default for UiState {
             show_file_tabs: true,
             show_status_bar: true,
             show_command_line: true,
-            show_viewcube: true,
+            show_viewsphere: true,
             show_ucs_icon: true,
             show_layer_list: false,
             system_cursor: false,
