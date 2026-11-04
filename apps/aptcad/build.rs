@@ -14,8 +14,8 @@ fn main() {
     }
     res.set("ProductName", "AptCAD")
         .set("FileDescription", "AptCAD computer-aided design")
-        .set("CompanyName", "Learning Machines LLC")
-        .set("LegalCopyright", "Copyright (c) 2026 ArtCraft Team and the AptCAD contributors. MIT OR Apache-2.0.")
+        .set("CompanyName", "Aptimizer")
+        .set("LegalCopyright", "Copyright (c) 2026 Anuj N (Aptimizer). MIT OR Apache-2.0.")
         .set("OriginalFilename", "aptcad.exe")
         .set("InternalName", "aptcad");
     if let Err(e) = res.compile() {

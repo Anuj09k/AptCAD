@@ -55,7 +55,7 @@ if (-not $haveCert -and -not $haveAzure) {
 }
 
 $script:SignTool = Find-SignTool
-$common = @('sign', '/v', '/fd', 'SHA256', '/td', 'SHA256', '/d', 'AptCAD', '/du', 'https://github.com/storytold/aptcad')
+$common = @('sign', '/v', '/fd', 'SHA256', '/td', 'SHA256', '/d', 'AptCAD', '/du', 'https://github.com/Anuj09k/AptCAD')
 $tmp = Join-Path ([IO.Path]::GetTempPath()) "aptcad-sign-$PID"
 New-Item -ItemType Directory -Force -Path $tmp | Out-Null
 

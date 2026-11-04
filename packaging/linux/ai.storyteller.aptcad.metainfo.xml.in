@@ -7,8 +7,8 @@
   <project_license>MIT OR Apache-2.0</project_license>
   <name>AptCAD</name>
   <summary>Draft, dimension and plot 2D drawings</summary>
-  <developer id="ai.storyteller">
-    <name>Learning Machines LLC</name>
+  <developer id="io.github.anuj09k">
+    <name>Aptimizer</name>
   </developer>
   <description>
     <p>
@@ -20,10 +20,9 @@
   <launchable type="desktop-id">ai.storyteller.aptcad.desktop</launchable>
   <icon type="stock">ai.storyteller.aptcad</icon>
   <!-- Only url types known to appstream 0.15 (Ubuntu 22.04, where CI validates): no vcs-browser. -->
-  <url type="homepage">https://getartcraft.com/apps/aptcad</url>
-  <url type="bugtracker">https://github.com/storytold/aptcad/issues</url>
-  <url type="help">https://github.com/storytold/aptcad</url>
-  <url type="contact">https://discord.gg/artcraft</url>
+  <url type="homepage">https://github.com/Anuj09k/AptCAD</url>
+  <url type="bugtracker">https://github.com/Anuj09k/AptCAD/issues</url>
+  <url type="help">https://github.com/Anuj09k/AptCAD</url>
   <categories>
     <category>Graphics</category>
     <category>Engineering</category>
@@ -37,7 +36,7 @@
   <screenshots>
     <screenshot type="default">
       <caption>A mechanical part drawing with dimensions, hatching and layers</caption>
-      <image>https://raw.githubusercontent.com/storytold/aptcad/main/docs/images/ui-bracket.png</image>
+      <image>https://raw.githubusercontent.com/Anuj09k/AptCAD/main/docs/images/ui-bracket.png</image>
     </screenshot>
   </screenshots>
   <branding>
