@@ -1,0 +1,56 @@
+{
+  "id": "aptcad",
+  "name": "AptCAD",
+  "upgradeCode": "119D7D76-0167-4A9E-8F37-09DA0235F68E",
+  "sources": [
+    "aptcad.wxs"
+  ],
+  "icon": "assets/app-icon/aptcad.ico",
+  "localization": [],
+  "extensions": [
+    "UI"
+  ],
+  "payloads": [
+    "aptcad-cli.exe",
+    "aptcad.exe"
+  ],
+  "registry": [
+    [
+      "-1",
+      "Software\\Microsoft\\Windows\\CurrentVersion\\App Paths\\aptcad.exe",
+      "",
+      "[#AptCADExe]"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\aptcad.exe\\shell\\open\\command",
+      "",
+      "\"[#AptCADExe]\" \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.dxf\\OpenWithProgids",
+      "AptCAD.Drawing",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.dwg\\OpenWithProgids",
+      "AptCAD.Drawing",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\AptCAD.Drawing\\shell\\open\\command",
+      "",
+      "\"[#AptCADExe]\" \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Learning Machines LLC\\AptCAD",
+      "DesktopShortcut",
+      "1"
+    ]
+  ],
+  "mode": "dualScope"
+}

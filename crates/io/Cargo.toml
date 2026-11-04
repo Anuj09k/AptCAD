@@ -1,0 +1,31 @@
+[package]
+name = "aptcad-io"
+description = "AptCAD file formats: DXF read/write mapping, SVG, PNG and PDF export"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+aptcad-geom = { workspace = true }
+aptcad-color = { workspace = true }
+aptcad-doc = { workspace = true }
+aptcad-dxf = { workspace = true }
+aptcad-dwg = { workspace = true }
+aptcad-render = { workspace = true }
+aptcad-fonts = { workspace = true }
+thiserror = { workspace = true }
+serde_json = { workspace = true }
+serde = { workspace = true }
+miniz_oxide = "0.9"
+craft-pdf = { workspace = true, features = ["write"] }
+quick-xml = { workspace = true }
+
+[dev-dependencies]
+# Reads AptCAD's DWG output as written (tests only; the same version as aptcad-dwg's).
+acadrust = "0.6.6"
+tiny-skia = { workspace = true }
+# Reads plotted PDFs back.
+craft-pdf = { workspace = true, features = ["read"] }

@@ -1,0 +1,34 @@
+[package]
+name = "aptcad-cli"
+description = "AptCAD command-line tool: info, convert, run scripts, export, commands, MCP server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[lib]
+name = "aptcad_cli"
+path = "src/lib.rs"
+
+[[bin]]
+name = "aptcad-cli"
+path = "src/main.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+aptcad-engine = { workspace = true }
+aptcad-io = { workspace = true }
+aptcad-mcp = { workspace = true }
+aptcad-render = { workspace = true }
+clap = { workspace = true }
+same-file = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+# Shell completions and man pages (examples/man-and-completions.rs, for the Linux packages); not
+# in the binary.
+clap_complete = { workspace = true }
+clap_mangen = { workspace = true }

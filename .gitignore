@@ -1,0 +1,11 @@
+*~
+/target
+/plan/
+/plans/
+/dist/
+/log/
+/temp/
+.DS_Store
+*.swp
+/apps/aptcad-web/dist/
+/.claude/worktrees/
