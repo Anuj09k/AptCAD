@@ -10,6 +10,7 @@
 //! |---|---|
 //! | `theme` | `"system"`, `"light"` or `"dark"` |
 //! | `animations` | `"system"`, `"on"` or `"off"`: dialog and menu fades and smoothed scrolling |
+//! | `keymap` | `"aptimizer"` (MV, OF, DE, XP and JO as in the building mode) or `"classic"` (the aliases alone) |
 //! | `interfaceLanguage` | `"auto"`, `"en"`, `"uk"`, `"pt-BR"`, `"de"`, `"es"`, `"cs"`, `"ru"`, `"fr"`, `"zh"`, `"it"`, `"ko"`, `"sv"`, `"ar"`, `"hu"`, `"tr"`, `"bs"`, `"vi"` or `"el"` |
 //! | `saveFormat` | `"dxf"` or `"dwg"`: the format Save As suggests for new drawings |
 //! | `saveVersion` | `"2000"` … `"2018"`: the version drawings with no file yet are saved in |
@@ -137,6 +138,7 @@ pub fn route(app: &mut CadApp, id: &str, params: &Value) -> Option<Result<Value,
 struct UiChanges {
     theme: Option<ThemePref>,
     animations: Option<AnimationPref>,
+    keymap: Option<crate::keys::Keymap>,
     language: Option<crate::i18n::Preference>,
     save_format: Option<crate::SaveFormat>,
     system_cursor: Option<bool>,
@@ -166,6 +168,7 @@ fn parse_ui(key: &str, v: &Value, c: &mut UiChanges) -> Result<bool, String> {
     match key {
         "theme" => c.theme = Some(ThemePref::parse(text()?).ok_or("theme must be system, light or dark")?),
         "animations" => c.animations = Some(AnimationPref::parse(text()?).ok_or("animations must be system, on or off")?),
+        "keymap" => c.keymap = Some(crate::keys::Keymap::parse(text()?).ok_or("keymap must be aptimizer or classic")?),
         "interfaceLanguage" => {
             c.language = Some(
                 crate::i18n::Preference::parse(text()?).ok_or_else(|| format!("interfaceLanguage must be {}", crate::i18n::Preference::codes()))?,
@@ -220,6 +223,7 @@ fn ui_json(app: &CadApp) -> Map<String, Value> {
     let mut m = Map::new();
     m.insert("theme".into(), json!(app.ui.theme.as_str()));
     m.insert("animations".into(), json!(app.ui.animations.as_str()));
+    m.insert("keymap".into(), json!(app.ui.keymap.as_str()));
     m.insert("interfaceLanguage".into(), json!(app.ui.interface_language.code()));
     m.insert("saveFormat".into(), json!(app.ui.save_format.as_str()));
     m.insert("systemCursor".into(), json!(app.ui.system_cursor));
@@ -267,6 +271,9 @@ fn run_json(app: &mut CadApp, params: &Value) -> Result<Value, String> {
     }
     if let Some(a) = ui.animations {
         app.ui.animations = a;
+    }
+    if let Some(k) = ui.keymap {
+        app.ui.keymap = k;
     }
     if let Some(l) = ui.language {
         app.ui.interface_language = l;
@@ -318,6 +325,7 @@ fn reset_ui(app: &mut CadApp) {
     let d = crate::UiState::default();
     app.ui.theme = d.theme;
     app.ui.animations = d.animations;
+    app.ui.keymap = d.keymap;
     app.ui.save_format = d.save_format;
     app.ui.save_version = d.save_version;
     app.ui.system_cursor = app.system_cursor_default;

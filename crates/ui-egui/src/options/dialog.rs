@@ -537,7 +537,15 @@ fn aci_row(ui: &mut egui::Ui, current: u8, key: &str, changes: &mut Map<String, 
     });
 }
 
-/// Preferences tab: interface language, largest-array limit and time-sensitive right-click; edits accumulate in `changes`.
+/// The keymap's name in the picker.
+fn keymap_label(k: crate::keys::Keymap) -> &'static str {
+    match k {
+        crate::keys::Keymap::Aptimizer => "Aptimizer",
+        crate::keys::Keymap::Classic => crate::tl!("Classic"),
+    }
+}
+
+/// Preferences tab: interface language, command keys, largest-array limit and time-sensitive right-click; edits accumulate in `changes`.
 fn preferences(app: &CadApp, ui: &mut egui::Ui, changes: &mut Map<String, Value>) {
     grid(ui, "options_preferences", |ui| {
         let language_caption = ui.label(crate::tl!("Interface language"));
@@ -553,6 +561,19 @@ fn preferences(app: &CadApp, ui: &mut egui::Ui, changes: &mut Map<String, Value>
         }
         ui.end_row();
 
+        let keys_caption = ui.label(crate::tl!("Command keys"));
+        let mut keymap = app.ui.keymap;
+        let keys_combo = craft_ui::ComboBox::from_id_salt("options_keymap").selected_text(keymap_label(keymap)).show_ui(ui, |ui| {
+            for k in crate::keys::Keymap::ALL {
+                ui.selectable_value(&mut keymap, k, keymap_label(k));
+            }
+        });
+        keys_combo.response.labelled_by(keys_caption.id);
+        if keymap != app.ui.keymap {
+            changes.insert("keymap".into(), json!(keymap.as_str()));
+        }
+        ui.end_row();
+
         let array_caption = ui.label(crate::tl!("Largest array"));
         let mut max = app.session.settings.maxarray;
         if ui
@@ -564,6 +585,7 @@ fn preferences(app: &CadApp, ui: &mut egui::Ui, changes: &mut Map<String, Value>
         }
         ui.end_row();
     });
+    hint(ui, crate::tl!("Aptimizer's command keys add MV Move, OF Offset, DE Erase, XP Explode and JO Join, as in the building mode; Classic keeps the aliases alone."));
     hint(ui, crate::tl!("An array that would create more objects than this is refused."));
     ui.add_space(6.0);
     let mut timed = app.options.time_sensitive_right_click;

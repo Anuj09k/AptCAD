@@ -52,6 +52,7 @@ pub mod gpu;
 pub mod grip_dyn;
 pub mod i18n;
 pub mod icons;
+pub mod keys;
 pub mod layers;
 pub mod managers;
 pub mod menus;
@@ -127,6 +128,9 @@ pub struct UiState {
     /// Animation effects (dialog and menu fades, smoothed scrolling): "system" (follow the OS
     /// setting), "on" or "off".
     pub animations: animation::AnimationPref,
+    /// What two-letter names typed at the command line start: Aptimizer's keys, shared with the
+    /// building mode, or the Classic aliases alone ([`keys`]).
+    pub keymap: keys::Keymap,
     /// The format Save As suggests: "dxf" or "dwg", for new drawings and opened files alike.
     pub save_format: SaveFormat,
     /// The version Save As writes for a drawing that has no file yet ("2000" … "2018"); a
@@ -210,6 +214,7 @@ impl Default for UiState {
             history_lines: 3,
             theme: theme::ThemePref::default(),
             animations: animation::AnimationPref::default(),
+            keymap: keys::Keymap::default(),
             save_format: SaveFormat::default(),
             save_version: SaveVersion::default().year().to_string(),
             recent_files: Vec::new(),
@@ -458,6 +463,7 @@ impl CadApp {
     /// command or system variable) runs `fallback` instead: Enter on a partly typed name accepts
     /// the highlighted AutoComplete suggestion.
     pub fn cmdline_or(&mut self, text: &str, fallback: Option<&str>) -> Option<String> {
+        let mut keyed = None;
         if !self.session.prompting() {
             let first = text.split_whitespace().next().unwrap_or("");
             // `cmd {json}` is a programmatic call: the engine runs it with those parameters.
@@ -465,7 +471,13 @@ impl CadApp {
             if !first.is_empty() && !json_form && menus::run_ui_command(self, &first.to_ascii_lowercase(), &Value::Null).is_some() {
                 return None;
             }
+            // A key of the keymap's (MV, OF…) starts its command, with the rest of the line as typed.
+            if let Some(id) = self.ui.keymap.command(first).filter(|_| !json_form) {
+                let start = text.len() - text.trim_start().len();
+                keyed = text.get(start + first.len()..).map(|rest| format!("{id}{rest}"));
+            }
         }
+        let text = keyed.as_deref().unwrap_or(text);
         let e = match (self.session.cmdline(text), fallback) {
             (Ok(()), _) => return None,
             (Err(aptcad_engine::EngineError::UnknownCommand(_)), Some(f)) => return self.cmdline(f),
@@ -491,6 +503,7 @@ impl CadApp {
         let mut prefs = json!({
             "theme": self.ui.theme.as_str(),
             "animations": self.ui.animations.as_str(),
+            "keymap": self.ui.keymap.as_str(),
             "interfaceLanguage": self.ui.interface_language.code(),
             "saveFormat": self.ui.save_format.as_str(),
             "saveVersion": self.ui.save_version,
@@ -522,6 +535,9 @@ impl CadApp {
         }
         if let Some(a) = v.get("animations").and_then(Value::as_str).and_then(animation::AnimationPref::parse) {
             self.ui.animations = a;
+        }
+        if let Some(k) = v.get("keymap").and_then(Value::as_str).and_then(keys::Keymap::parse) {
+            self.ui.keymap = k;
         }
         if let Some(l) = v.get("interfaceLanguage").and_then(Value::as_str).and_then(i18n::Preference::parse) {
             self.ui.interface_language = l;

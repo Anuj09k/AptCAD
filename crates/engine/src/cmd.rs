@@ -219,6 +219,11 @@ pub fn find_command(id: &str) -> Option<&'static CommandSpec> {
     command_specs().iter().find(|c| c.id == l)
 }
 
+/// The command an alias of the user's own (ALIASEDIT, REINIT) stands for, if `name` (any case) is one.
+pub fn user_alias(name: &str) -> Option<String> {
+    file::user_alias(&name.to_ascii_lowercase())
+}
+
 /// Resolve a typed name or alias (AutoCAD-style short names such as `L`, `C`, `PL`) to an id.
 /// Command names win; the user's aliases (ALIASEDIT, REINIT) come before the built-in ones.
 pub fn resolve_alias(name: &str) -> String {
