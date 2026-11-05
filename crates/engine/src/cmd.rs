@@ -316,6 +316,24 @@ pub(crate) fn targets(s: &Session, p: &Value) -> Result<Vec<Handle>> {
         Some(v) => Ok(vec![handle(v).ok_or_else(|| not_handle("handle", v))?]),
     }
 }
+/// [`targets`] for a command that acts on objects: none at all (no `handle`/`handles` and nothing
+/// selected, or an empty `handles`) is an error, so the command never reports success having done
+/// nothing. `none` names what is missing, e.g. "No objects to array".
+pub(crate) fn required_targets(s: &Session, p: &Value, cmd: &str, none: &str) -> Result<Vec<Handle>> {
+    let hs = targets(s, p)?;
+    if hs.is_empty() {
+        return Err(bad(cmd, format!("{none}: give `handles` or select objects first")));
+    }
+    Ok(hs)
+}
+/// [`required_targets`] for the modify commands (ERASE, MOVE, COPY, ROTATE, SCALE, MIRROR).
+pub(crate) fn selected_targets(s: &Session, p: &Value, cmd: &str) -> Result<Vec<Handle>> {
+    required_targets(s, p, cmd, "Nothing selected")
+}
+/// [`required_targets`] for the array commands.
+pub(crate) fn array_targets(s: &Session, p: &Value, cmd: &str) -> Result<Vec<Handle>> {
+    required_targets(s, p, cmd, "No objects to array")
+}
 pub(crate) fn ok() -> Result<Value> {
     Ok(Value::Null)
 }

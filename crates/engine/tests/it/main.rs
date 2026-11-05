@@ -94,6 +94,7 @@ mod multiline_attributes;
 mod named_viewports;
 mod named_views;
 mod non_finite_edits;
+mod nothing_selected;
 mod offset_closed_spline;
 mod offset_ellipse_side;
 mod offset_move;

@@ -1462,20 +1462,22 @@ fn chamfer_rejects_negative_distances() {
 #[test]
 fn array_counts_reject_invalid_values() {
     let mut s = Session::new();
-    s.execute("line", &json!({"points": [[0, 0], [1, 0]]})).unwrap();
+    let h = s.execute("line", &json!({"points": [[0, 0], [1, 0]]})).unwrap()["handles"][0].clone();
     for bad in [json!(-3), json!(0), json!(2.5)] {
         for key in ["count", "rows", "levels"] {
-            let mut p = json!({"center": [0, 0], "associative": false});
+            let mut p = json!({"handles": [h], "center": [0, 0], "associative": false});
             p[key] = bad.clone();
-            assert!(s.execute("arraypolar", &p).is_err(), "arraypolar {key}={bad}");
+            let e = s.execute("arraypolar", &p).expect_err(&format!("arraypolar {key}={bad}"));
+            assert!(e.to_string().contains(key), "arraypolar {key}={bad}: {e}");
         }
         for key in ["rows", "cols", "levels"] {
-            let mut p = json!({"associative": false});
+            let mut p = json!({"handles": [h], "associative": false});
             p[key] = bad.clone();
-            assert!(s.execute("arrayrect", &p).is_err(), "arrayrect {key}={bad}");
+            let e = s.execute("arrayrect", &p).expect_err(&format!("arrayrect {key}={bad}"));
+            assert!(e.to_string().contains(key), "arrayrect {key}={bad}: {e}");
         }
     }
-    s.execute("arraypolar", &json!({"center": [0, 0], "count": 1, "associative": false})).unwrap();
+    s.execute("arraypolar", &json!({"handles": [h], "center": [0, 0], "count": 1, "associative": false})).unwrap();
 }
 
 #[test]

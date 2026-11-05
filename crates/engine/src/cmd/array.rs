@@ -18,7 +18,7 @@ use serde_json::{Value, json};
 use super::helpers::{line, v3};
 use super::machines::{SelOutcome, SelectPhase, number};
 use super::modify::transform_entities;
-use super::{CommandSpec, bad, bool_or, f64_or, find_command, point_param, point_req, str_param, targets};
+use super::{CommandSpec, array_targets, bad, bool_or, f64_or, find_command, point_param, point_req, str_param};
 
 use crate::{Accept, EngineError, Input, Interactive, Prompt, Result, Session, Step};
 
@@ -342,7 +342,7 @@ fn count_or(cmd: &str, p: &Value, key: &str, default: u64) -> Result<u64> {
 }
 
 fn run_arrayrect(s: &mut Session, p: &Value) -> Result<Value> {
-    let hs = targets(s, p)?;
+    let hs = array_targets(s, p, "arrayrect")?;
     let rows = count_or("arrayrect", p, "rows", 3)?;
     let cols = count_or("arrayrect", p, "cols", 4)?;
     let levels = count_or("arrayrect", p, "levels", 1)?;
@@ -366,7 +366,7 @@ fn run_arrayrect(s: &mut Session, p: &Value) -> Result<Value> {
 }
 
 fn run_arraypolar(s: &mut Session, p: &Value) -> Result<Value> {
-    let hs = targets(s, p)?;
+    let hs = array_targets(s, p, "arraypolar")?;
     let c = point_req("arraypolar", p, "center")?;
     let n = count_or("arraypolar", p, "count", 6)?;
     let rows = count_or("arraypolar", p, "rows", 1)?;

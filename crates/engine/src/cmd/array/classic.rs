@@ -19,7 +19,7 @@ use aptcad_geom::{Mat3, Vec2};
 use serde_json::{Value, json};
 
 use super::super::machines::{SelOutcome, SelectPhase, number};
-use super::super::{bad, bool_or, f64_or, point_param, point_req, str_param, targets};
+use super::super::{array_targets, bad, bool_or, f64_or, point_param, point_req, str_param};
 use super::{KEYWORDS, angle, check_size, copy_all, count, count_or, max_count, other, yes_no};
 use crate::{Accept, Input, Interactive, Prompt, Result, Session, Step};
 
@@ -87,7 +87,7 @@ fn last_point(s: &Session, hs: &[Handle]) -> Option<Vec2> {
 
 /// -ARRAY's JSON form.
 pub(super) fn run_classic(s: &mut Session, p: &Value) -> Result<Value> {
-    let hs = targets(s, p)?;
+    let hs = array_targets(s, p, "-array")?;
     let polar = match str_param(p, "type").map(str::to_ascii_lowercase).as_deref() {
         None | Some("rectangular") => false,
         Some("polar") => true,

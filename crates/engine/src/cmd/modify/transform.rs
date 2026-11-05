@@ -1,6 +1,6 @@
 use aptcad_geom::Vec3;
 
-use super::{Entity, Handle, Mat3, Result, Session, Value, Vec2, bad, bool_or, erase_kept, f64_req, json, point_param, point_req, targets};
+use super::{Entity, Handle, Mat3, Result, Session, Value, Vec2, bad, bool_or, erase_kept, f64_req, json, point_param, point_req, selected_targets};
 
 // ---------------- core operations ----------------
 
@@ -62,7 +62,7 @@ pub(super) fn erase(s: &mut Session, hs: &[Handle]) -> Result<usize> {
 }
 
 pub(super) fn run_erase(s: &mut Session, p: &Value) -> Result<Value> {
-    let hs = targets(s, p)?;
+    let hs = selected_targets(s, p, "erase")?;
     let n = erase(s, &hs)?;
     Ok(json!({ "erased": n }))
 }
@@ -77,14 +77,14 @@ pub(super) fn delta_of(cmd: &str, p: &Value) -> Result<Vec2> {
 }
 
 pub(super) fn run_move(s: &mut Session, p: &Value) -> Result<Value> {
-    let hs = targets(s, p)?;
+    let hs = selected_targets(s, p, "move")?;
     let d = delta_of("move", p)?;
     let moved = transform_entities(s, &hs, &Mat3::translate(d), false)?;
     Ok(json!({ "moved": moved.len() }))
 }
 
 pub(super) fn run_copy(s: &mut Session, p: &Value) -> Result<Value> {
-    let hs = targets(s, p)?;
+    let hs = selected_targets(s, p, "copy")?;
     let d = delta_of("copy", p)?;
     let n = match p.get("count") {
         None => 1,
@@ -98,7 +98,7 @@ pub(super) fn run_copy(s: &mut Session, p: &Value) -> Result<Value> {
 }
 
 pub(super) fn run_rotate(s: &mut Session, p: &Value) -> Result<Value> {
-    let hs = targets(s, p)?;
+    let hs = selected_targets(s, p, "rotate")?;
     let base = point_req("rotate", p, "base")?;
     let a = f64_req("rotate", p, "angle")?.to_radians();
     let r = transform_entities(s, &hs, &Mat3::rotate_about(base, a), bool_or(p, "copy", false))?;
@@ -106,7 +106,7 @@ pub(super) fn run_rotate(s: &mut Session, p: &Value) -> Result<Value> {
 }
 
 pub(super) fn run_scale(s: &mut Session, p: &Value) -> Result<Value> {
-    let hs = targets(s, p)?;
+    let hs = selected_targets(s, p, "scale")?;
     let base = point_req("scale", p, "base")?;
     let f = f64_req("scale", p, "factor")?;
     if f <= 0.0 {
@@ -122,7 +122,7 @@ pub(super) fn run_scale(s: &mut Session, p: &Value) -> Result<Value> {
 }
 
 pub(super) fn run_mirror(s: &mut Session, p: &Value) -> Result<Value> {
-    let hs = targets(s, p)?;
+    let hs = selected_targets(s, p, "mirror")?;
     let a = point_req("mirror", p, "p1")?;
     let b = point_req("mirror", p, "p2")?;
     if a.near(b, aptcad_geom::EPS) {
