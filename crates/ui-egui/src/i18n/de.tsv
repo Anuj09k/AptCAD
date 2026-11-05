@@ -57,7 +57,7 @@
 	Audit	Zeichnung prüfen
 	Auto (system language)	Auto (Systemsprache)
 	Auto Constrain	Automatische Abhängigkeiten
-	AutoConstrain	Automatische Abhängigkeiten
+	Apply Constraints	Automatische Abhängigkeiten
 	Axis, End	Achse, Ende
 	Base	Basis
 	Baseline	Basislinie
@@ -66,7 +66,7 @@
 	Binary assets removed	Binärdateien entfernt
 	Blend	Übergang
 	Block	Block
-	Block Attribute Manager...	Blockattribut-Manager...
+	Attribute Manager...	Blockattribut-Manager...
 	Block Description...	Blockbeschreibung...
 	Block Editor	Blockeditor
 	Block Reference	Blockreferenz
@@ -110,7 +110,7 @@
 	Closed	Geschlossen
 	Coincident	Koinzident
 	Collapse Palettes	Paletten einklappen
-	Collapse Tool Sets	Werkzeuggruppen einklappen
+	Collapse Toolbox	Werkzeuggruppen einklappen
 	Collinear	Kollinear
 	Color	Farbe
 	Color 8	Farbe 8
@@ -188,7 +188,7 @@
 	Distance	Abstand
 	Divide	Teilen
 	Do not plot (click: plot)	Nicht plotten (Klick: plotten)
-	Donut	Ring
+	Ring	Ring
 	Double-click to edit the description	Doppelklicken, um die Beschreibung zu bearbeiten
 	Down	Nach unten
 	Drafting	Zeichnen
@@ -202,15 +202,15 @@
 	Drawing Utilities	Zeichnungsdienstprogramme
 	Drawings (DWG, DXF)	Zeichnungen (DWG, DXF)
 	Dynamic Dimensions	Dynamische Bemaßungen
-	Dynamic Input	Dynamische Eingabe
-	Dynamic Input (F12)	Dynamische Eingabe (F12)
+	Cursor Input	Dynamische Eingabe
+	Cursor Input (F12)	Dynamische Eingabe (F12)
 	E	O
 	Edit	Bearbeiten
 	Edit Text...	Text bearbeiten...
 	Elevation	Höhenlage
 	Ellipse	Ellipse
 	Elliptical Arc	Ellipsenbogen
-	Enable Dynamic Input (F12)	Dynamische Eingabe aktivieren (F12)
+	Enable Cursor Input (F12)	Dynamische Eingabe aktivieren (F12)
 	End Width	Endbreite
 	End X	Ende X
 	End Y	Ende Y
@@ -375,7 +375,7 @@
 	Layer Properties Manager	Layer-Eigenschaften-Manager
 	Layer Properties Manager — current viewport	Layer-Eigenschaften-Manager — aktuelles Ansichtsfenster
 	Layer State	Layerstatus
-	Layer States Manager...	Layerstatus-Manager...
+	Layer States...	Layerstatus-Manager...
 	Layer Tools	Layer-Werkzeuge
 	Layer contains objects (double-click to make current)	Layer enthält Objekte (doppelklicken, um ihn zum aktuellen zu machen)
 	Layer is empty (double-click to make current)	Layer ist leer (doppelklicken, um ihn zum aktuellen zu machen)
@@ -447,8 +447,8 @@
 	Multileader Style...	Multiführungslinienstil...
 	Multileader style	Multiführungslinienstil
 	Multiline	Multilinie
-	Multiline Text	Mehrzeiliger Text
-	Multiline Text...	Mehrzeiliger Text...
+	Paragraph Text	Mehrzeiliger Text
+	Paragraph Text...	Mehrzeiliger Text...
 	Multiple	Verschiedene
 	Multiple Point	Mehrere Punkte
 	My	Meine
@@ -485,8 +485,8 @@
 	Object Snap	Objektfang
 	Object Snap (F3)	Objektfang (F3)
 	Object Snap On (F3)	Objektfang ein (F3)
-	Object Snap Tracking	Objektfangspur
-	Object Snap Tracking (F11)	Objektfangspur (F11)
+	Snap Tracking	Objektfangspur
+	Snap Tracking (F11)	Objektfangspur (F11)
 	Object type:	Objekttyp:
 	Off	Aus
 	Offset	Versatz
@@ -511,7 +511,7 @@
 	Polar (distance < angle)	Polar (Abstand < Winkel)
 	PRs	PRs
 	Page Setup Manager	Seiteneinrichtungs-Manager
-	Page Setup Manager...	Seiteneinrichtungs-Manager...
+	Page Setups...	Seiteneinrichtungs-Manager...
 	Pan	Schwenken
 	Pan Down	Nach unten schwenken
 	Pan Left	Nach links schwenken
@@ -529,15 +529,15 @@
 	Perpendicular	Senkrecht
 	Plot	Plotten
 	Plot (click: do not plot)	Plotten (Klick: nicht plotten)
-	Plot Preview	Plotvorschau
+	Print Preview	Plotvorschau
 	Plot Window	Plotfenster
 	Plot style	Plotstil
 	Plot style attached to	Plotstil zugeordnet zu
 	Plot style table	Plotstiltabelle
-	Plot Style...	Plotstil...
+	Print Style...	Plotstil...
 	Plot Style Manager	Plotstil-Manager
-	Plot Style Manager...	Plotstil-Manager...
-	Plot Styles...	Plotstile...
+	Print Style Manager...	Plotstil-Manager...
+	Print Styles...	Plotstile...
 	New CTB	Neue CTB
 	New STB	Neue STB
 	New style	Neuer Stil
@@ -563,9 +563,9 @@
 	Point Filters	Punktfilter
 	Point Style...	Punktstil...
 	Polar Array	Polare Reihe
-	Polar Tracking	Polarspur
-	Polar Tracking (F10)	Polarspur (F10)
-	Polar Tracking On (F10)	Polarspur ein (F10)
+	Angle Tracking	Polarspur
+	Angle Tracking (F10)	Polarspur (F10)
+	Angle Tracking On (F10)	Polarspur ein (F10)
 	Polar: {distance} < {angle}°	Polar: {distance} < {angle}°
 	Polygon	Polygon
 	Polygonal	Polygonal
@@ -588,11 +588,11 @@
 	Query Entities	Objekte abfragen
 	Quick	Schnell
 	Quick Dimension	Schnellbemaßung
-	Quick Properties	Schnelleigenschaften
-	Quick Select	Schnellauswahl
-	Quick Select Properties	Schnellauswahl-Eigenschaften
-	Quick Select...	Schnellauswahl...
-	QuickCalc	QuickCalc
+	Quick Info	Schnelleigenschaften
+	Select by Property	Schnellauswahl
+	Select by Property Fields	Schnellauswahl-Eigenschaften
+	Select by Property...	Schnellauswahl...
+	Calculator	Rechner
 	Quit AptCAD	AptCAD beenden
 	Radius	Radius
 	Raster Image	Rasterbild
@@ -610,8 +610,8 @@
 	Redo	Wiederholen
 	Redo (⇧⌘Z)	Wiederholen (⇧⌘Z)
 	Redraw	Neu zeichnen
-	Regen	Regenerieren
-	Regen All	Alle regenerieren
+	Refresh	Regenerieren
+	Refresh All	Alle regenerieren
 	Region	Region
 	Region/Mass Properties	Regions-/Masseneigenschaften
 	Relative	Relativ
@@ -680,7 +680,7 @@
 	Edit Reference In-Place	Referenz an Ort und Stelle bearbeiten
 	Save Reference Edits	Referenzänderungen speichern
 	Working Set	Arbeitssatz
-	Xref and Block In-place Editing	Xref- und Block-Bearbeitung am Ort
+	Edit in Place	Am Ort bearbeiten
 	Select an open curve.	Wählen Sie eine offene Kurve.
 	Select an open line, arc, polyline, ellipse arc or spline.	Wählen Sie eine offene Linie, einen Bogen, eine Polylinie, einen Ellipsenbogen oder einen Spline.
 	Select arc or circle	Wählen Sie einen Bogen oder Kreis
@@ -922,7 +922,7 @@
 	Time	Zeit
 	To get started, create or open a drawing.	Erstellen oder öffnen Sie eine Zeichnung, um zu beginnen.
 	Tool Bar	Werkzeugleiste
-	Tool Sets	Werkzeuggruppen
+	Toolbox	Werkzeuggruppen
 	Tools	Werkzeuge
 	Torus	Torus
 	Trace	Spur
@@ -931,7 +931,7 @@
 	True Color	True Color
 	Turn All Layers On	Alle Layer einschalten
 	Turn Off Layer	Layer ausschalten
-	Turn Quick Properties off (QPMODE)	Schnelleigenschaften ausschalten (QPMODE)
+	Turn Quick Info off (QPMODE)	Schnelleigenschaften ausschalten (QPMODE)
 	Type	Typ
 	Type a command	Befehl eingeben
 	Type text; Enter starts a new paragraph	Text eingeben; Eingabetaste beginnt einen neuen Absatz

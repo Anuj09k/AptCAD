@@ -9,7 +9,7 @@ use egui_kittest::Harness;
 use egui_kittest::kittest::Queryable;
 
 /// An item only the View menu shows.
-const IN_VIEW: &str = "Regen All";
+const IN_VIEW: &str = "Refresh All";
 /// An item only the Edit menu shows.
 const IN_EDIT: &str = "Paste to Original Coordinates";
 /// An item only View ▸ Zoom shows.

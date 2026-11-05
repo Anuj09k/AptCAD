@@ -35,7 +35,7 @@ pub fn restore(ui: &mut UiState, saved: &str) -> Result<(), String> {
     let workspace: docking::Workspace =
         serde_json::from_value(value.get("docking").cloned().ok_or("missing panel layout")?).map_err(|error| error.to_string())?;
     docking::validate(&workspace)?;
-    let tools = value.get("showToolsets").and_then(Value::as_bool).ok_or("invalid Tool Sets visibility")?;
+    let tools = value.get("showToolsets").and_then(Value::as_bool).ok_or("invalid Toolbox visibility")?;
     let palettes = value.get("showPalettes").and_then(Value::as_bool).ok_or("invalid palette visibility")?;
     ui.docking = workspace;
     ui.show_toolsets = tools;

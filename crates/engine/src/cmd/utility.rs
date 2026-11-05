@@ -10,7 +10,7 @@ use crate::{Accept, Input, Interactive, Prompt, Result, Session, Step};
 
 pub fn specs() -> Vec<CommandSpec> {
     vec![
-        CommandSpec::new("cal", "QuickCalc", run_cal)
+        CommandSpec::new("cal", "Calculator", run_cal)
             .menu(&["Tools", "Inquiry", "Quick"])
             .alias(&["quickcalc", "qc"])
             .params(
@@ -22,7 +22,7 @@ pub fn specs() -> Vec<CommandSpec> {
             .noundo()
             .transparent()
             .interactive(|_| Ok(Box::new(CalM))),
-        CommandSpec::new("quickcalc.pick", "QuickCalc Pick", run_quickcalc_pick)
+        CommandSpec::new("quickcalc.pick", "Calculator Pick", run_quickcalc_pick)
             .params("{mode: point|distance|angle|intersection, points: [[x,y],...]} → {value} | {point}")
             .noundo()
             .interactive(|_| Ok(Box::<PickM>::default())),
@@ -58,7 +58,7 @@ mod calc;
 
 /// What QuickCalc's "get from the drawing" picks put on the command line before the value (the
 /// palette reads it back from there).
-const PICKED: &str = "QuickCalc: ";
+const PICKED: &str = "Calculator: ";
 
 /// Evaluate an arithmetic expression to a number (degrees for trig, `^` power, functions, pi).
 /// Expressions with points are evaluated by [`calc::eval_val`].
@@ -136,7 +136,7 @@ impl PickM {
     fn finish(&self, s: &mut Session, mode: calc::Pick) -> Result<Step> {
         match mode.value(&self.pts) {
             Ok(v) => s.echo(format!("{PICKED}{}", v.text())),
-            Err(m) => s.echo(format!("QuickCalc: {m}")),
+            Err(m) => s.echo(format!("Calculator: {m}")),
         }
         Ok(Step::Done)
     }

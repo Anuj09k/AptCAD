@@ -82,7 +82,7 @@
 	Audit	Kiểm tra lỗi
 	Auto (system language)	Tự động (ngôn ngữ hệ thống)
 	Auto Constrain	Ràng buộc tự động
-	AutoConstrain	AutoConstrain
+	Apply Constraints	Suy ra ràng buộc
 	Axis, End	Trục, Điểm cuối
 	Base	Gốc
 	Baseline	Đường cơ sở
@@ -92,7 +92,7 @@
 	Bind...	Gắn kết...
 	Blend	Pha trộn
 	Block	Block
-	Block Attribute Manager...	Trình quản lý attribute của block...
+	Attribute Manager...	Trình quản lý attribute của block...
 	Block Description...	Mô tả block...
 	Block Editor	Trình sửa block
 	Block Reference	Tham chiếu block
@@ -145,7 +145,7 @@
 	Close Comparison	Đóng so sánh
 	Export Comparison	Xuất so sánh
 	Coincident	Trùng khớp
-	Collapse Tool Sets	Thu gọn bộ công cụ
+	Collapse Toolbox	Thu gọn bộ công cụ
 	Collinear	Cùng đường thẳng
 	Color	Màu
 	Color 8	Màu 8
@@ -193,7 +193,7 @@
 	Cyan	Lục lam
 	Cylinder	Hình trụ
 	DWG	DWG
-	DWG Reference...	Tham chiếu DWG...
+	Attach Drawing...	Tham chiếu DWG...
 	DXF	DXF
 	Dark	Tối
 	Data Extraction...	Trích xuất dữ liệu...
@@ -240,7 +240,7 @@
 	Distance	Khoảng cách
 	Divide	Chia
 	Do not plot (click: plot)	Không in (nhấp để in)
-	Donut	Vành tròn
+	Ring	Vành tròn
 	Double-click to edit the description	Nhấp đúp để sửa mô tả
 	Down	Xuống
 	Drafting	Vẽ kỹ thuật
@@ -256,8 +256,8 @@
 	Drawings (DWG, DXF)	Bản vẽ (DWG, DXF)
 	Dynamic	Động
 	Dynamic Dimensions	Kích thước động
-	Dynamic Input	Dynamic input
-	Dynamic Input (F12)	Dynamic input (F12)
+	Cursor Input	Dynamic input
+	Cursor Input (F12)	Dynamic input (F12)
 	E	E
 	Edit	Sửa
 	Edit Attributes...	Sửa attribute...
@@ -266,7 +266,7 @@
 	Elevation	Cao độ
 	Ellipse	Elip
 	Elliptical Arc	Cung elip
-	Enable Dynamic Input (F12)	Bật dynamic input (F12)
+	Enable Cursor Input (F12)	Bật dynamic input (F12)
 	End Object Isolation	Kết thúc cô lập đối tượng
 	End Width	Bề rộng cuối
 	End X	Điểm cuối X
@@ -411,7 +411,7 @@
 	Increment angle	Góc tăng dần
 	Index Color	Màu chỉ số
 	Index color: {index}	Màu chỉ số: {index}
-	Infer Constraints	Suy luận ràng buộc
+	Infer Constraints	Suy ra ràng buộc
 	Inquiry	Truy vấn
 	Insert	Chèn
 	Insert Block	Chèn block
@@ -452,7 +452,7 @@
 	Layer Properties Manager	Quản lý layer
 	Layer Properties Manager — current viewport	Quản lý layer — khung nhìn hiện hành
 	Layer State	Trạng thái layer
-	Layer States Manager...	Trình quản lý trạng thái layer...
+	Layer States...	Trình quản lý trạng thái layer...
 	Layer Tools	Công cụ layer
 	Layer contains objects (double-click to make current)	Layer có chứa đối tượng (nhấp đúp để đặt làm hiện hành)
 	Layer is empty (double-click to make current)	Layer trống (nhấp đúp để đặt làm hiện hành)
@@ -528,8 +528,8 @@
 	Multileader Style...	Kiểu multileader...
 	Multileader style	Kiểu multileader
 	Multiline	Multiline
-	Multiline Text	Chữ nhiều dòng
-	Multiline Text...	Chữ nhiều dòng...
+	Paragraph Text	Chữ nhiều dòng
+	Paragraph Text...	Chữ nhiều dòng...
 	Multiple	Nhiều
 	Multiple Insert	Chèn nhiều
 	Multiple Point	Nhiều điểm
@@ -571,9 +571,9 @@
 	Object Snap	Bắt điểm
 	Object Snap (F3)	Bắt điểm (F3)
 	Object Snap On (F3)	Bật bắt điểm (F3)
-	Object Snap Tracking	Dò theo điểm bắt
-	Object Snap Tracking (F11)	Dò theo điểm bắt (F11)
-	Object Snap Tracking Settings	Cài đặt dò theo điểm bắt
+	Snap Tracking	Dò theo điểm bắt
+	Snap Tracking (F11)	Dò theo điểm bắt (F11)
+	Snap Tracking Settings	Cài đặt dò theo điểm bắt
 	Object type:	Loại đối tượng:
 	Oblique	Nghiêng
 	Off	Tắt
@@ -586,7 +586,7 @@
 	Open (⌘O)	Mở (⌘O)
 	Open Sample Drawing	Mở bản vẽ mẫu
 	Open sample drawing	Mở bản vẽ mẫu
-	Open Xref	Mở xref
+	Open Reference	Mở xref
 	Open...	Mở...
 	Operator:	Toán tử:
 	Orbit	Xoay quanh
@@ -603,7 +603,7 @@
 	Polar (distance < angle)	Cực (khoảng cách < góc)
 	PRs	PR
 	Page Setup Manager	Trình quản lý thiết lập trang
-	Page Setup Manager...	Trình quản lý thiết lập trang...
+	Page Setups...	Trình quản lý thiết lập trang...
 	Pan	Pan
 	Pan Down	Pan xuống
 	Pan Left	Pan sang trái
@@ -622,17 +622,17 @@
 	Perpendicular	Vuông góc
 	Plot	In
 	Plot (click: do not plot)	In (nhấp để không in)
-	Plot Preview	Xem trước bản in
+	Print Preview	Xem trước bản in
 	Plot Window	Cửa sổ in
 	Plot style	Kiểu in
 	Plot style attached to	Kiểu in được gắn vào
 	Plot style table	Bảng nét in
-	Plot Style...	Kiểu in...
+	Print Style...	Kiểu in...
 	Plot Style Manager	Trình quản lý kiểu in
-	Plot Style Manager...	Trình quản lý kiểu in...
-	Plot Styles...	Kiểu in...
+	Print Style Manager...	Trình quản lý kiểu in...
+	Print Styles...	Kiểu in...
 	Plotter Manager	Trình quản lý máy in
-	Plotter Manager...	Trình quản lý máy in...
+	Printer Manager...	Trình quản lý máy in...
 	New CTB	CTB mới
 	New STB	STB mới
 	New style	Kiểu mới
@@ -661,9 +661,9 @@
 	Point Filters	Bộ lọc điểm
 	Point Style...	Kiểu điểm...
 	Polar Array	Mảng tròn
-	Polar Tracking	Dò theo góc
-	Polar Tracking (F10)	Dò theo góc (F10)
-	Polar Tracking On (F10)	Bật dò theo góc (F10)
+	Angle Tracking	Dò theo góc
+	Angle Tracking (F10)	Dò theo góc (F10)
+	Angle Tracking On (F10)	Bật dò theo góc (F10)
 	Polar angle measurement	Đo góc cực
 	Polar distance	Khoảng cách cực
 	Polar: {distance} < {angle}°	Cực: {distance} < {angle}°
@@ -692,12 +692,12 @@
 	Query Entities	Truy vấn đối tượng
 	Quick	Nhanh
 	Quick Dimension	Kích thước nhanh
-	Quick Properties	Thuộc tính nhanh
-	Quick Select	Chọn nhanh
-	Quick Select Properties	Thuộc tính chọn nhanh
-	Quick Select...	Chọn nhanh...
-	QuickCalc	QuickCalc
-	QuickCalc Pick	Chọn QuickCalc
+	Quick Info	Thuộc tính nhanh
+	Select by Property	Chọn nhanh
+	Select by Property Fields	Thuộc tính chọn nhanh
+	Select by Property...	Chọn nhanh...
+	Calculator	Máy tính
+	Calculator Pick	Chọn từ máy tính
 	Quit AptCAD	Thoát AptCAD
 	Radius	Bán kính
 	Raster Image	Ảnh raster
@@ -719,8 +719,8 @@
 	Redo	Làm lại
 	Redo (⇧⌘Z)	Làm lại (⇧⌘Z)
 	Redraw	Vẽ lại
-	Regen	Tái tạo hình
-	Regen All	Tái tạo hình toàn bộ
+	Refresh	Tái tạo hình
+	Refresh All	Tái tạo hình toàn bộ
 	Region	Miền
 	Region/Mass Properties	Thuộc tính miền/khối
 	Reinitialize	Khởi tạo lại
@@ -805,7 +805,7 @@
 	Edit Reference In-Place	Chỉnh sửa tham chiếu tại chỗ
 	Save Reference Edits	Lưu chỉnh sửa tham chiếu
 	Working Set	Working Set
-	Xref and Block In-place Editing	Chỉnh sửa Xref và Block tại chỗ
+	Edit in Place	Chỉnh sửa tại chỗ
 	Select nested objects to copy	Chọn đối tượng lồng nhau để sao chép
 	Select object	Chọn đối tượng
 	Select object to dimension	Chọn đối tượng để ghi kích thước
@@ -957,8 +957,8 @@
 	Select objects first, then choose a command	Chọn đối tượng trước, rồi chọn lệnh
 	Selection	Lựa chọn
 	Settings...	Cài đặt...
-	Show Quick Properties for selected objects	Hiển thị thuộc tính nhanh cho đối tượng đã chọn
-	Snap, grid, polar tracking and Dynamic Input:	Snap, lưới, dò theo góc và Dynamic input:
+	Show Quick Info for selected objects	Hiển thị thuộc tính nhanh cho đối tượng đã chọn
+	Snap, grid, angle tracking and Cursor Input:	Snap, lưới, dò theo góc và Dynamic input:
 	The aperture is how near the cursor must come to a point for an object snap to find it.	Khẩu độ là khoảng cách con trỏ cần tiến gần đến một điểm để bắt điểm đối tượng tìm thấy điểm đó.
 	User Preferences	Tùy chọn người dùng
 	objects	đối tượng
@@ -1080,7 +1080,7 @@
 	Time	Thời gian
 	To get started, create or open a drawing.	Để bắt đầu, hãy tạo hoặc mở một bản vẽ.
 	Tool Bar	Thanh công cụ
-	Tool Sets	Bộ công cụ
+	Toolbox	Bộ công cụ
 	Tools	Công cụ
 	Torus	Xuyến
 	Trace	Nét rộng
@@ -1092,7 +1092,7 @@
 	Turn All Layers On	Bật tất cả layer
 	Turn Off Layer	Tắt layer
 	Turn On Layer	Bật layer
-	Turn Quick Properties off (QPMODE)	Tắt thuộc tính nhanh (QPMODE)
+	Turn Quick Info off (QPMODE)	Tắt thuộc tính nhanh (QPMODE)
 	Type	Loại
 	Type a command	Nhập lệnh
 	Type text; Enter starts a new paragraph	Nhập chữ; Enter để bắt đầu đoạn mới
@@ -1194,7 +1194,7 @@
 	Show Annotative Objects	Hiển thị đối tượng chú thích
 	Current Scale Only	Chỉ tỉ lệ hiện hành
 	All Scales	Tất cả tỉ lệ
-	Drawing Recovery Manager...	Trình quản lý khôi phục bản vẽ...
+	Recover Drawings...	Trình quản lý khôi phục bản vẽ...
 	Tolerance...	Dung sai...
 	Add Vertex	Thêm đỉnh
 	Remove Vertex	Xóa đỉnh
@@ -1248,7 +1248,7 @@ menu	Modify	Hiệu chỉnh
 	Run Script...	Chạy script...
 	SVG drawings (SVG, SVGZ)	Bản vẽ SVG (SVG, SVGZ)
 	Show and hide the tools of this category	Hiện và ẩn các công cụ trong danh mục này
-	Show in Tool Sets	Hiển thị trong bộ công cụ
+	Show in Toolbox	Hiển thị trong bộ công cụ
 	Time-sensitive right-click: a quick click is Enter, holding opens the menu	Nhấp phải theo thời gian: nhấp nhanh là Enter, giữ lâu để mở menu
 	Turned off, a right-click while a command runs always opens the shortcut menu.	Khi tắt, nhấp phải trong lúc lệnh đang chạy luôn mở menu ngữ cảnh.
 	Zoom sensitivity	Độ nhạy thu phóng
@@ -1337,14 +1337,14 @@ menu	Modify	Hiệu chỉnh
 	When a command is active	Khi có lệnh đang hoạt động
 	When no command is active	Khi không có lệnh nào đang hoạt động
 	Window selection color:	Màu vùng chọn cửa sổ:
-	Xrefs	Xref
+	References	Xref
 	Arrow size	Kích thước mũi tên
 	Dim scale overall	Tỉ lệ kích thước tổng thể
 	Precision	Độ chính xác
 	Break-line Symbol	Ký hiệu ngắt đường
-	Convert Text to Mtext	Chuyển chữ một dòng thành chữ nhiều dòng
+	Convert to Paragraph Text	Chuyển chữ một dòng thành chữ nhiều dòng
 	Explode Attributes to Text	Phân rã attribute thành chữ
-	Express Tools	Express Tools
+	More Tools	Thêm công cụ
 	Move/Copy/Rotate	Di chuyển/Sao chép/Xoay
 	Type an alias name.	Nhập tên bí danh.
 	Choose the command the alias starts.	Chọn lệnh mà bí danh sẽ chạy.

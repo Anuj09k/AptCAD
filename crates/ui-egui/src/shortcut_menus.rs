@@ -104,7 +104,7 @@ pub fn layout_tab_entries(app: &CadApp, name: &str) -> Vec<Vec<Entry>> {
         }
     }
     push(&mut groups, new);
-    let out: Vec<Entry> = [("pagesetup", "Page Setup Manager..."), ("plot", "Print...")]
+    let out: Vec<Entry> = [("pagesetup", "Page Setups..."), ("plot", "Print...")]
         .iter()
         .filter(|(id, _)| find_command(id).is_some())
         .map(|(id, label)| layout(id, label))

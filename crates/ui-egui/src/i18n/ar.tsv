@@ -81,7 +81,7 @@
 	Audit	تدقيق
 	Auto (system language)	تلقائي (لغة النظام)
 	Auto Constrain	تقييد تلقائي
-	AutoConstrain	قيد تلقائي
+	Apply Constraints	قيد تلقائي
 	Automatic save every	حفظ تلقائي كل
 	Automatic save file location	موقع ملف الحفظ التلقائي
 	Axis, End	محور، نهاية
@@ -95,7 +95,7 @@
 	Bind...	ربط...
 	Blend	دمج تدريجي
 	Block	كتلة
-	Block Attribute Manager...	مدير سمات الكتلة...
+	Attribute Manager...	مدير سمات الكتلة...
 	Block Description...	وصف الكتلة...
 	Block Editor	محرر الكتل
 	Block Reference	مرجع كتلة
@@ -155,7 +155,7 @@
 	Closed	مغلق
 	Coincident	تطابق
 	Collapse Palettes	طي اللوحات
-	Collapse Tool Sets	طي مجموعات الأدوات
+	Collapse Toolbox	طي مجموعات الأدوات
 	Collinear	استقامة
 	Color	لون
 	Color 8	اللون 8
@@ -209,7 +209,7 @@
 	Cyan	سماوي
 	Cylinder	أسطوانة
 	DWG	DWG
-	DWG Reference...	مرجع DWG...
+	Attach Drawing...	مرجع DWG...
 	DXF	DXF
 	Dark	داكن
 	Data Extraction...	استخراج البيانات...
@@ -261,7 +261,7 @@
 	Distance	المسافة
 	Divide	قسمة
 	Do not plot (click: plot)	بدون طباعة (انقر: طباعة)
-	Donut	حلقة
+	Ring	حلقة
 	Double-click to edit the description	انقر نقراً مزدوجاً لتحرير الوصف
 	Down	أسفل
 	Drafting	الصياغة
@@ -272,7 +272,7 @@
 	Drawing (DWG)	رسم (DWG)
 	Drawing (DXF)	رسم (DXF)
 	Drawing Limits	حدود الرسم
-	Drawing Recovery Manager...	مدير استرداد الرسومات...
+	Recover Drawings...	مدير استرداد الرسومات...
 	Drawing Template (DWT)	قالب رسم (DWT)
 	Drawing Utilities	أدوات مساعدة للرسم
 	Drawing as bytes	الرسم كبايتات
@@ -280,8 +280,8 @@
 	Drawings with no file yet are saved in the default version. 0 minutes turns automatic save off.	تُحفظ الرسومات التي لا ملف لها بعد بالإصدار الافتراضي. 0 دقيقة تُوقف الحفظ التلقائي.
 	Dynamic	ديناميكي
 	Dynamic Dimensions	تأشيرات ديناميكية
-	Dynamic Input	إدخال ديناميكي
-	Dynamic Input (F12)	إدخال ديناميكي (F12)
+	Cursor Input	إدخال ديناميكي
+	Cursor Input (F12)	إدخال ديناميكي (F12)
 	Edit	تحرير
 	Edit Array	تحرير المصفوفة
 	Edit Attributes...	تحرير السمات...
@@ -291,7 +291,7 @@
 	Ellipse	شكل بيضاوي
 	Elliptical Arc	قوس إهليلجي
 	Enable 3D mouse navigation	تمكين التنقل بالفأرة ثلاثية الأبعاد
-	Enable Dynamic Input (F12)	تمكين الإدخال الديناميكي (F12)
+	Enable Cursor Input (F12)	تمكين الإدخال الديناميكي (F12)
 	End Object Isolation	إنهاء عزل الكائنات
 	End Width	العرض النهائي
 	End X	النهاية X
@@ -491,7 +491,7 @@
 	Layer Properties Manager	مدير خصائص الطبقات
 	Layer Properties Manager — current viewport	مدير خصائص الطبقات — إطار العرض الحالي
 	Layer State	حالة الطبقة
-	Layer States Manager...	مدير حالات الطبقات...
+	Layer States...	مدير حالات الطبقات...
 	Layer Tools	أدوات الطبقات
 	Layer contains objects (double-click to make current)	تحتوي الطبقة على كائنات (انقر نقراً مزدوجاً لجعلها الحالية)
 	Layer is empty (double-click to make current)	الطبقة فارغة (انقر نقراً مزدوجاً لجعلها الحالية)
@@ -576,8 +576,8 @@
 	Multileader style	نمط خط الإشارة المتعدد
 	Multiline	متعدد الأسطر
 	Multiline Style...	نمط الخط المتعدد...
-	Multiline Text	نص متعدد الأسطر
-	Multiline Text...	نص متعدد الأسطر...
+	Paragraph Text	نص متعدد الأسطر
+	Paragraph Text...	نص متعدد الأسطر...
 	Multiline...	خط متعدد...
 	Multiple	متعدد
 	Multiple Point	نقاط متعددة
@@ -627,9 +627,9 @@
 	Object Snap	التقاط الكائن
 	Object Snap (F3)	الالتقاط بالكائن (F3)
 	Object Snap On (F3)	تشغيل الالتقاط بالكائن (F3)
-	Object Snap Tracking	تعقب الالتقاط بالكائن
-	Object Snap Tracking (F11)	تعقب الالتقاط بالكائن (F11)
-	Object Snap Tracking Settings	إعدادات تعقب الالتقاط بالكائن
+	Snap Tracking	تعقب الالتقاط بالكائن
+	Snap Tracking (F11)	تعقب الالتقاط بالكائن (F11)
+	Snap Tracking Settings	إعدادات تعقب الالتقاط بالكائن
 	Object snap aperture	فتحة الالتقاط بالكائن
 	Object snap marker size	حجم علامة الالتقاط بالكائن
 	Object type:	نوع الكائن:
@@ -644,7 +644,7 @@
 	Open	فتح
 	Open (⌘O)	فتح (⌘O)
 	Open Sample Drawing	فتح رسم نموذجي
-	Open Xref	فتح مرجعاً خارجياً
+	Open Reference	فتح مرجعاً خارجياً
 	Open a drawing first.	افتح رسماً أولاً.
 	Open and Save	فتح وحفظ
 	Open sample drawing	فتح رسم نموذجي
@@ -665,7 +665,7 @@
 	PAPER	ورقة
 	PRs	طلبات السحب
 	Page Setup Manager	مدير إعداد الصفحة
-	Page Setup Manager...	مدير إعداد الصفحة...
+	Page Setups...	مدير إعداد الصفحة...
 	Pan	إزاحة
 	Pan Down	إزاحة لأسفل
 	Pan Left	إزاحة لليسار
@@ -687,27 +687,27 @@
 	Pickbox size	حجم صندوق الاختيار
 	Plot	طباعة
 	Plot (click: do not plot)	طباعة (انقر: بدون طباعة)
-	Plot Preview	معاينة الطباعة
+	Print Preview	معاينة الطباعة
 	Plot Style Manager	مدير أنماط الطباعة
-	Plot Style Manager...	مدير أنماط الطباعة...
-	Plot Style...	نمط الطباعة...
-	Plot Styles...	أنماط الطباعة...
+	Print Style Manager...	مدير أنماط الطباعة...
+	Print Style...	نمط الطباعة...
+	Print Styles...	أنماط الطباعة...
 	Plot Window	نافذة الطباعة
 	Plot style	نمط الطباعة
 	Plot style attached to	نمط الطباعة المرفق بـ
 	Plot style table	جدول أنماط الطباعة
 	Plot table type	نوع جدول الطباعة
 	Plotter Manager	مدير الطابعات
-	Plotter Manager...	مدير الطابعات...
+	Printer Manager...	مدير الطابعات...
 	Plus/minus	زائد/ناقص
 	Point	تأشير
 	Point Filters	مرشحات النقطة
 	Point Style...	نمط النقطة...
 	Polar (distance < angle)	قطبي (المسافة < الزاوية)
 	Polar Array	صفيفة قطبية
-	Polar Tracking	تعقب قطبي
-	Polar Tracking (F10)	التعقب القطبي (F10)
-	Polar Tracking On (F10)	تشغيل التعقب القطبي (F10)
+	Angle Tracking	تعقب قطبي
+	Angle Tracking (F10)	التعقب القطبي (F10)
+	Angle Tracking On (F10)	تشغيل التعقب القطبي (F10)
 	Polar angle measurement	قياس الزاوية القطبية
 	Polar distance	المسافة القطبية
 	Polar: {distance} < {angle}°	قطبي: {distance} < {angle}°
@@ -737,12 +737,12 @@
 	Query Entities	الاستعلام عن الكيانات
 	Quick	سريع
 	Quick Dimension	تأشير سريع
-	Quick Properties	خصائص سريعة
-	Quick Select	تحديد سريع
-	Quick Select Properties	خصائص التحديد السريع
-	Quick Select...	تحديد سريع...
-	QuickCalc	الحاسبة السريعة
-	QuickCalc Pick	اختيار الحاسبة السريعة
+	Quick Info	خصائص سريعة
+	Select by Property	تحديد سريع
+	Select by Property Fields	خصائص التحديد السريع
+	Select by Property...	تحديد سريع...
+	Calculator	الحاسبة السريعة
+	Calculator Pick	اختيار الحاسبة السريعة
 	Quit AptCAD	إنهاء AptCAD
 	Radius	نصف القطر
 	Raster Image	صورة نقطية
@@ -767,8 +767,8 @@
 	Reference Manager	مدير المراجع
 	Reference Name	اسم المرجع
 	References: {n}	المراجع: {n}
-	Regen	تجديد
-	Regen All	تجديد الكل
+	Refresh	تجديد
+	Refresh All	تجديد الكل
 	Region	منطقة
 	Region/Mass Properties	خصائص النطاق/الكتلة
 	Reinitialize	إعادة تهيئة
@@ -915,11 +915,11 @@
 	Show All Dynamic Dimensions	إظهار كل التأشيرات الديناميكية
 	Show Annotative Objects	إظهار كائنات التوضيح
 	Show Layer List	إظهار قائمة الطبقات
-	Show Quick Properties for selected objects	إظهار الخصائص السريعة للكائنات المحددة
+	Show Quick Info for selected objects	إظهار الخصائص السريعة للكائنات المحددة
 	Show System Cursor	إظهار مؤشر النظام
 	Show and hide the tools of this category	إظهار أدوات هذه الفئة وإخفاؤها
 	Show command prompting near the crosshairs	إظهار مطالبات الأوامر قرب المؤشر المتصالب
-	Show in Tool Sets	إظهار في مجموعات الأدوات
+	Show in Toolbox	إظهار في مجموعات الأدوات
 	Show/Hide Lineweight	إظهار/إخفاء سماكة الخط
 	Show/Hide Transparency	إظهار/إخفاء الشفافية
 	Single Line Text	نص أحادي السطر
@@ -934,7 +934,7 @@
 	Snap X spacing	تباعد الالتقاط X
 	Snap and Grid	الالتقاط والشبكة
 	Snap type	نوع الالتقاط
-	Snap, grid, polar tracking and Dynamic Input:	الالتقاط والشبكة والتعقب القطبي والإدخال الديناميكي:
+	Snap, grid, angle tracking and Cursor Input:	الالتقاط والشبكة والتعقب القطبي والإدخال الديناميكي:
 	Solid	متصل
 	Solid Editing	تحرير مجسمات
 	Sort	فرز
@@ -1123,7 +1123,7 @@
 	Toggle PICKADD (on: picks add to the selection)	تبديل PICKADD (تشغيل: تُضاف الاختيارات إلى التحديد)
 	Tolerance...	تفاوت...
 	Tool Bar	شريط الأدوات
-	Tool Sets	مجموعات الأدوات
+	Toolbox	مجموعات الأدوات
 	Tools	أدوات
 	Torus	حلقي
 	Trace	تتبع
@@ -1135,7 +1135,7 @@
 	Turn All Layers On	تشغيل كل الطبقات
 	Turn Off Layer	إيقاف طبقة
 	Turn On Layer	تشغيل طبقة
-	Turn Quick Properties off (QPMODE)	إيقاف الخصائص السريعة (QPMODE)
+	Turn Quick Info off (QPMODE)	إيقاف الخصائص السريعة (QPMODE)
 	Turned off, a right-click while a command runs always opens the shortcut menu.	عند إيقافه، يفتح النقر الأيمن أثناء تشغيل أمر القائمة المختصرة دائماً.
 	Type	النوع
 	Type a command	اكتب أمراً
@@ -1266,7 +1266,7 @@ menu	View	عرض
 	Color 1	اللون 1
 	Color 2	اللون 2
 	Command	الأمر
-	Convert Text to Mtext	تحويل النص إلى نص متعدد الأسطر
+	Convert to Paragraph Text	تحويل النص إلى نص متعدد الأسطر
 	Create backup copy with each save	إنشاء نسخة احتياطية عند كل حفظ
 	Create separate hatches	إنشاء تهشيرات منفصلة
 	Crossing selection color:	لون تحديد التقاطع:
@@ -1287,7 +1287,7 @@ menu	View	عرض
 	Evaluate LISP	تقييم LISP
 	Exclude:	استثناء:
 	Explode Attributes to Text	تفجير السمات إلى نص
-	Express Tools	أدوات Express
+	More Tools	أدوات إضافية
 	Font	الخط
 	Grips	المقابض
 	Groups	المجموعات
@@ -1359,8 +1359,8 @@ menu	View	عرض
 	When no command is active	عندما لا يكون أي أمر نشطاً
 	Window selection color:	لون تحديد النافذة:
 	Working Set	مجموعة العمل
-	Xref and Block In-place Editing	تحرير المراجع الخارجية والكتل في مكانها
-	Xrefs	المراجع الخارجية
+	Edit in Place	تحرير المراجع الخارجية والكتل في مكانها
+	References	المراجع الخارجية
 	built-in	مدمج
 	overrides built-in	يتجاوز المدمج
 	{alias} is already defined; select it and use Edit.	{alias} معرَّف مسبقاً؛ حدده واستخدم «تحرير».

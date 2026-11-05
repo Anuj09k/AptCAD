@@ -13,8 +13,8 @@ use crate::cmd::{CommandSpec, bad, bool_or, str_param};
 use crate::{Accept, EngineError, Input, Interactive, Prompt, Result, Session, Step};
 
 pub(super) fn battman_spec() -> CommandSpec {
-    CommandSpec::new("battman", "Block Attribute Manager...", run)
-        .menu(&["Modify", "Object", "Attribute", "Block Attribute Manager..."])
+    CommandSpec::new("battman", "Attribute Manager...", run)
+        .menu(&["Modify", "Object", "Attribute", "Attribute Manager..."])
         .params(
             "{name, action?: \"list\" (default) | \"edit\" | \"remove\" | \"up\" | \"down\" | \"order\" | \"sync\", tag? (the definition to edit, remove or move; any case), newTag?, prompt?, default?, invisible?, constant?, height?, layer?, order?: [every tag, in the new order], sync?: bool (default true: existing references follow, as with ATTSYNC)} → {block, attributes: [{tag, prompt, default, invisible, constant, height, layer}], references, synced?}",
         )

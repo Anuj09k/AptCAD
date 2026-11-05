@@ -81,7 +81,7 @@
 	Audit	검사
 	Auto (system language)	자동(시스템 언어)
 	Auto Constrain	자동 구속
-	AutoConstrain	자동 구속
+	Apply Constraints	자동 구속
 	Axis, End	축, 끝점
 	Base	기준
 	Baseline	기준선
@@ -91,7 +91,7 @@
 	Bind...	결합...
 	Blend	곡선 연결
 	Block	블록
-	Block Attribute Manager...	블록 속성 관리자...
+	Attribute Manager...	블록 속성 관리자...
 	Block Description...	블록 설명...
 	Block Editor	블록 편집기
 	Block Reference	블록 참조
@@ -145,7 +145,7 @@
 	Export Comparison	비교 내보내기
 	Coincident	일치
 	Collapse Palettes	팔레트 접기
-	Collapse Tool Sets	도구 세트 접기
+	Collapse Toolbox	도구 세트 접기
 	Collinear	동일 선상
 	Color	색상
 	Color 8	색상 8
@@ -193,7 +193,7 @@
 	Cyan	청록색
 	Cylinder	원기둥
 	DWG	DWG
-	DWG Reference...	DWG 참조...
+	Attach Drawing...	DWG 참조...
 	DXF	DXF
 	Dark	어둡게
 	Data Extraction...	데이터 추출...
@@ -240,7 +240,7 @@
 	Distance	거리
 	Divide	등분할
 	Do not plot (click: plot)	플롯 안 함(클릭: 플롯)
-	Donut	도넛
+	Ring	도넛
 	Double-click to edit the description	두 번 클릭하여 설명 편집
 	Down	아래로
 	Drafting	제도
@@ -257,8 +257,8 @@
 	SVG drawings (SVG, SVGZ)	SVG 도면(SVG, SVGZ)
 	Dynamic	동적
 	Dynamic Dimensions	동적 치수
-	Dynamic Input	동적 입력
-	Dynamic Input (F12)	동적 입력(F12)
+	Cursor Input	동적 입력
+	Cursor Input (F12)	동적 입력(F12)
 	E	동
 	Edit	편집
 	Edit Attributes...	속성 편집...
@@ -267,7 +267,7 @@
 	Elevation	고도
 	Ellipse	타원
 	Elliptical Arc	타원 호
-	Enable Dynamic Input (F12)	동적 입력 사용(F12)
+	Enable Cursor Input (F12)	동적 입력 사용(F12)
 	End Object Isolation	객체 분리 종료
 	End Width	끝 폭
 	End X	끝점 X
@@ -453,7 +453,7 @@
 	Layer Properties Manager	도면층 특성 관리자
 	Layer Properties Manager — current viewport	도면층 특성 관리자 — 현재 뷰포트
 	Layer State	도면층 상태
-	Layer States Manager...	도면층 상태 관리자...
+	Layer States...	도면층 상태 관리자...
 	Layer Tools	도면층 도구
 	Layer contains objects (double-click to make current)	객체가 있는 도면층(두 번 클릭: 현재 도면층으로 설정)
 	Layer is empty (double-click to make current)	비어 있는 도면층(두 번 클릭: 현재 도면층으로 설정)
@@ -529,8 +529,8 @@
 	Multileader Style...	다중 지시선 스타일...
 	Multileader style	다중 지시선 스타일
 	Multiline	다중선
-	Multiline Text	여러 줄 문자
-	Multiline Text...	여러 줄 문자...
+	Paragraph Text	여러 줄 문자
+	Paragraph Text...	여러 줄 문자...
 	Multiple	다중
 	Multiple Point	여러 점
 	My	내 특성
@@ -571,9 +571,9 @@
 	Object Snap	객체 스냅
 	Object Snap (F3)	객체 스냅(F3)
 	Object Snap On (F3)	객체 스냅 켜기(F3)
-	Object Snap Tracking	객체 스냅 추적
-	Object Snap Tracking (F11)	객체 스냅 추적(F11)
-	Object Snap Tracking Settings	객체 스냅 추적 설정
+	Snap Tracking	객체 스냅 추적
+	Snap Tracking (F11)	객체 스냅 추적(F11)
+	Snap Tracking Settings	객체 스냅 추적 설정
 	Object type:	객체 유형:
 	Oblique	기울이기
 	Off	끄기
@@ -586,7 +586,7 @@
 	Open (⌘O)	열기(⌘O)
 	Open Sample Drawing	예제 도면 열기
 	Open sample drawing	예제 도면 열기
-	Open Xref	외부 참조 열기
+	Open Reference	외부 참조 열기
 	Open...	열기...
 	Operator:	연산자:
 	Orbit	궤도 회전
@@ -603,7 +603,7 @@
 	Polar (distance < angle)	극좌표(거리 < 각도)
 	PRs	PR
 	Page Setup Manager	페이지 설정 관리자
-	Page Setup Manager...	페이지 설정 관리자...
+	Page Setups...	페이지 설정 관리자...
 	Pan	초점 이동
 	Pan Down	아래로 초점 이동
 	Pan Left	왼쪽으로 초점 이동
@@ -622,17 +622,17 @@
 	Perpendicular	수직
 	Plot	플롯
 	Plot (click: do not plot)	플롯(클릭: 플롯 안 함)
-	Plot Preview	플롯 미리보기
+	Print Preview	플롯 미리보기
 	Plot Window	플롯 창
 	Plot style	플롯 스타일
 	Plot style attached to	플롯 스타일 적용 대상
 	Plot style table	플롯 스타일 테이블
-	Plot Style...	플롯 스타일...
+	Print Style...	플롯 스타일...
 	Plot Style Manager	플롯 스타일 관리자
-	Plot Style Manager...	플롯 스타일 관리자...
-	Plot Styles...	플롯 스타일...
+	Print Style Manager...	플롯 스타일 관리자...
+	Print Styles...	플롯 스타일...
 	Plotter Manager	플로터 관리자
-	Plotter Manager...	플로터 관리자...
+	Printer Manager...	플로터 관리자...
 	New CTB	새 CTB
 	New STB	새 STB
 	New style	새 스타일
@@ -661,9 +661,9 @@
 	Point Filters	점 필터
 	Point Style...	점 스타일...
 	Polar Array	원형 배열
-	Polar Tracking	극좌표 추적
-	Polar Tracking (F10)	극좌표 추적(F10)
-	Polar Tracking On (F10)	극좌표 추적 켜기(F10)
+	Angle Tracking	극좌표 추적
+	Angle Tracking (F10)	극좌표 추적(F10)
+	Angle Tracking On (F10)	극좌표 추적 켜기(F10)
 	Polar angle measurement	극좌표 각도 측정
 	Polar distance	극좌표 거리
 	Polar: {distance} < {angle}°	극좌표: {distance} < {angle}°
@@ -692,12 +692,12 @@
 	Query Entities	객체 조회
 	Quick	빠른
 	Quick Dimension	빠른 치수
-	Quick Properties	빠른 특성
-	Quick Select	빠른 선택
-	Quick Select Properties	빠른 선택 특성
-	Quick Select...	빠른 선택...
-	QuickCalc	빠른 계산기
-	QuickCalc Pick	빠른 계산기 점 지정
+	Quick Info	빠른 특성
+	Select by Property	빠른 선택
+	Select by Property Fields	빠른 선택 특성
+	Select by Property...	빠른 선택...
+	Calculator	빠른 계산기
+	Calculator Pick	빠른 계산기 점 지정
 	Quit AptCAD	AptCAD 종료
 	Radius	반지름
 	Raster Image	래스터 이미지
@@ -719,8 +719,8 @@
 	Redo	다시 실행
 	Redo (⇧⌘Z)	다시 실행(Shift+⌘Z)
 	Redraw	다시 그리기
-	Regen	재생성
-	Regen All	모두 재생성
+	Refresh	재생성
+	Refresh All	모두 재생성
 	Region	영역
 	Region/Mass Properties	영역/질량 특성
 	Reinitialize	다시 초기화
@@ -844,7 +844,7 @@
 	Show All Constraint Bars	모든 구속조건 막대 표시
 	Show All Dynamic Dimensions	모든 동적 치수 표시
 	Show and hide the tools of this category	이 범주의 도구 표시 및 숨기기
-	Show in Tool Sets	도구 세트에 표시
+	Show in Toolbox	도구 세트에 표시
 	Show command prompting near the crosshairs	십자선 근처에 명령 프롬프트 표시
 	Show Layer List	도면층 목록 표시
 	Show/Hide Lineweight	선가중치 표시/숨기기
@@ -954,8 +954,8 @@
 	Select objects first, then choose a command	객체를 먼저 선택한 다음 명령 선택
 	Selection	선택
 	Settings...	설정...
-	Show Quick Properties for selected objects	선택한 객체의 빠른 특성 표시
-	Snap, grid, polar tracking and Dynamic Input:	스냅, 그리드, 극좌표 추적 및 동적 입력:
+	Show Quick Info for selected objects	선택한 객체의 빠른 특성 표시
+	Snap, grid, angle tracking and Cursor Input:	스냅, 그리드, 극좌표 추적 및 동적 입력:
 	The aperture is how near the cursor must come to a point for an object snap to find it.	포착 범위는 객체 스냅이 점을 찾을 수 있도록 커서가 점에 얼마나 가까이 있어야 하는지를 정합니다.
 	User Preferences	사용자 기본 설정
 	objects	객체
@@ -1077,7 +1077,7 @@
 	Time	시간
 	To get started, create or open a drawing.	시작하려면 도면을 만들거나 여세요.
 	Tool Bar	도구 막대
-	Tool Sets	도구 세트
+	Toolbox	도구 세트
 	Tools	도구
 	Torus	원환체
 	Trace	트레이스
@@ -1089,7 +1089,7 @@
 	Turn All Layers On	모든 도면층 켜기
 	Turn Off Layer	도면층 끄기
 	Turn On Layer	도면층 켜기
-	Turn Quick Properties off (QPMODE)	빠른 특성 끄기(QPMODE)
+	Turn Quick Info off (QPMODE)	빠른 특성 끄기(QPMODE)
 	Type	유형
 	Type a command	명령 입력
 	Type text; Enter starts a new paragraph	문자를 입력하세요. Enter를 누르면 새 단락이 시작됩니다
@@ -1189,7 +1189,7 @@
 	Show Annotative Objects	주석 객체 표시
 	Current Scale Only	현재 축척만
 	All Scales	모든 축척
-	Drawing Recovery Manager...	도면 복구 관리자...
+	Recover Drawings...	도면 복구 관리자...
 	Tolerance...	공차...
 	Add Vertex	정점 추가
 	Remove Vertex	정점 제거

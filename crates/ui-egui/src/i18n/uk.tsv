@@ -83,7 +83,7 @@
 	Audit	Перевірка креслення
 	Auto (system language)	Авто (мова системи)
 	Auto Constrain	Автоматичні обмеження
-	AutoConstrain	Автоматичні обмеження
+	Apply Constraints	Автоматичні обмеження
 	Axis, End	Вісь, кінець
 	Base	База
 	Baseline	Базовий
@@ -93,7 +93,7 @@
 	Bind...	Вбудувати...
 	Blend	Плавне з'єднання
 	Block	Блок
-	Block Attribute Manager...	Диспетчер атрибутів блоків...
+	Attribute Manager...	Диспетчер атрибутів блоків...
 	Block Description...	Опис блока...
 	Block Editor	Редактор блоків
 	Block Reference	Посилання на блок
@@ -148,7 +148,7 @@
 	Export Comparison	Експортувати порівняння
 	Coincident	Збіг
 	Collapse Palettes	Згорнути палітри
-	Collapse Tool Sets	Згорнути набори інструментів
+	Collapse Toolbox	Згорнути набори інструментів
 	Collinear	Колінеарність
 	Color	Колір
 	Color 8	Колір 8
@@ -175,7 +175,7 @@
 	Contributors	Учасники
 	Control Vertices	Керувальні вершини
 	Convert	Перетворити
-	Convert Text to Mtext	Перетворити текст на багаторядковий текст
+	Convert to Paragraph Text	Перетворити текст на багаторядковий текст
 	Copy	Копіювати
 	Copy Full File Path	Копіювати повний шлях до файлу
 	Copy History	Копіювати історію
@@ -197,7 +197,7 @@
 	Cyan	Блакитний
 	Cylinder	Циліндр
 	DWG	DWG
-	DWG Reference...	Посилання на DWG...
+	Attach Drawing...	Посилання на DWG...
 	DXF	DXF
 	Dark	Темна
 	Data Extraction...	Вилучення даних...
@@ -244,7 +244,7 @@
 	Distance	Відстань
 	Divide	Поділити
 	Do not plot (click: plot)	Не друкувати (натисніть для друку)
-	Donut	Кільце
+	Ring	Кільце
 	Double-click to edit the description	Двічі клацніть, щоб редагувати опис
 	Down	Униз
 	Drafting	Креслення
@@ -262,8 +262,8 @@
 	SVG drawings (SVG, SVGZ)	Креслення SVG (SVG, SVGZ)
 	Dynamic	Динамічно
 	Dynamic Dimensions	Динамічні розміри
-	Dynamic Input	Динамічне введення
-	Dynamic Input (F12)	Динамічне введення (F12)
+	Cursor Input	Динамічне введення
+	Cursor Input (F12)	Динамічне введення (F12)
 	E	Сх
 	Edit	Редагування
 	Edit Attributes...	Редагувати атрибути...
@@ -272,7 +272,7 @@
 	Elevation	Відмітка
 	Ellipse	Еліпс
 	Elliptical Arc	Еліптична дуга
-	Enable Dynamic Input (F12)	Увімкнути динамічне введення (F12)
+	Enable Cursor Input (F12)	Увімкнути динамічне введення (F12)
 	End Object Isolation	Завершити ізоляцію об'єктів
 	End Width	Кінцева ширина
 	End X	Кінець X
@@ -334,7 +334,7 @@
 	Export	Експортувати
 	Export Table	Експортувати таблицю
 	Export to PDF...	Експортувати в PDF...
-	Express Tools	Інструменти Express
+	More Tools	Додаткові інструменти
 	Expression	Вираз
 	Extend	Подовжити
 	Extension	Продовження
@@ -465,7 +465,7 @@
 	Layer Properties Manager	Диспетчер властивостей шарів
 	Layer Properties Manager — current viewport	Диспетчер властивостей шарів — поточний видовий екран
 	Layer State	Стан шарів
-	Layer States Manager...	Диспетчер станів шарів...
+	Layer States...	Диспетчер станів шарів...
 	Layer Tools	Інструменти шарів
 	Layer contains objects (double-click to make current)	Шар містить об'єкти (двічі клацніть, щоб зробити поточним)
 	Layer is empty (double-click to make current)	Шар порожній (двічі клацніть, щоб зробити поточним)
@@ -543,8 +543,8 @@
 	Multileader Style...	Стиль мультивиносок...
 	Multileader style	Стиль мультивиносок
 	Multiline	Мультилінія
-	Multiline Text	Багаторядковий текст
-	Multiline Text...	Багаторядковий текст...
+	Paragraph Text	Багаторядковий текст
+	Paragraph Text...	Багаторядковий текст...
 	Multiple	Різні типи
 	Multiple Point	Кілька точок
 	My	Мої
@@ -584,9 +584,9 @@
 	Object Snap	Об'єктна прив'язка
 	Object Snap (F3)	Об'єктна прив'язка (F3)
 	Object Snap On (F3)	Увімкнути об'єктну прив'язку (F3)
-	Object Snap Tracking	Відстеження об'єктної прив'язки
-	Object Snap Tracking (F11)	Відстеження об'єктної прив'язки (F11)
-	Object Snap Tracking Settings	Параметри відстеження об'єктної прив'язки
+	Snap Tracking	Відстеження об'єктної прив'язки
+	Snap Tracking (F11)	Відстеження об'єктної прив'язки (F11)
+	Snap Tracking Settings	Параметри відстеження об'єктної прив'язки
 	Object type:	Тип об'єкта:
 	Oblique	Похилий
 	Off	Вимкнено
@@ -599,7 +599,7 @@
 	Open (⌘O)	Відкрити (⌘O)
 	Open Sample Drawing	Відкрити зразок креслення
 	Open sample drawing	Відкрити зразок креслення
-	Open Xref	Відкрити зовнішнє посилання
+	Open Reference	Відкрити зовнішнє посилання
 	Open...	Відкрити...
 	Open Recent	Відкрити нещодавні
 	Clear Recent Files	Очистити список нещодавніх файлів
@@ -618,7 +618,7 @@
 	Polar (distance < angle)	Полярні (відстань < кут)
 	PRs	PR
 	Page Setup Manager	Диспетчер параметрів аркушів
-	Page Setup Manager...	Диспетчер параметрів аркушів...
+	Page Setups...	Диспетчер параметрів аркушів...
 	Pan	Панорамування
 	Pan Down	Панорамувати вниз
 	Pan Left	Панорамувати ліворуч
@@ -637,17 +637,17 @@
 	Perpendicular	Перпендикулярність
 	Plot	Друк креслення
 	Plot (click: do not plot)	Друкувати (натисніть, щоб вимкнути друк)
-	Plot Preview	Попередній перегляд друку
+	Print Preview	Попередній перегляд друку
 	Plot Window	Вікно друку
 	Plot style	Стиль друку
 	Plot style attached to	Стиль друку застосовано до
 	Plot style table	Таблиця стилів друку
-	Plot Style...	Стиль друку...
+	Print Style...	Стиль друку...
 	Plot Style Manager	Диспетчер стилів друку
-	Plot Style Manager...	Диспетчер стилів друку...
-	Plot Styles...	Стилі друку...
+	Print Style Manager...	Диспетчер стилів друку...
+	Print Styles...	Стилі друку...
 	Plotter Manager	Диспетчер плотерів
-	Plotter Manager...	Диспетчер плотерів...
+	Printer Manager...	Диспетчер плотерів...
 	New CTB	Нова CTB
 	New STB	Нова STB
 	New style	Новий стиль
@@ -676,9 +676,9 @@
 	Point Filters	Фільтри точок
 	Point Style...	Стиль точок...
 	Polar Array	Круговий масив
-	Polar Tracking	Полярне відстеження
-	Polar Tracking (F10)	Полярне відстеження (F10)
-	Polar Tracking On (F10)	Увімкнути полярне відстеження (F10)
+	Angle Tracking	Полярне відстеження
+	Angle Tracking (F10)	Полярне відстеження (F10)
+	Angle Tracking On (F10)	Увімкнути полярне відстеження (F10)
 	Polar angle measurement	Вимірювання полярного кута
 	Polar distance	Полярна відстань
 	Polar: {distance} < {angle}°	Полярне: {distance} < {angle}°
@@ -707,12 +707,12 @@
 	Query Entities	Запит об'єктів
 	Quick	Швидкий
 	Quick Dimension	Швидкий розмір
-	Quick Properties	Швидкі властивості
-	Quick Select	Швидкий вибір
-	Quick Select Properties	Властивості швидкого вибору
-	Quick Select...	Швидкий вибір...
-	QuickCalc	Калькулятор
-	QuickCalc Pick	Вибір для калькулятора
+	Quick Info	Швидкі властивості
+	Select by Property	Швидкий вибір
+	Select by Property Fields	Властивості швидкого вибору
+	Select by Property...	Швидкий вибір...
+	Calculator	Калькулятор
+	Calculator Pick	Вибір для калькулятора
 	Quit AptCAD	Вийти з AptCAD
 	Radius	Радіус
 	Raster Image	Растрове зображення
@@ -734,8 +734,8 @@
 	Redo	Повторити
 	Redo (⇧⌘Z)	Повторити (⇧⌘Z)
 	Redraw	Перемалювати
-	Regen	Регенерувати
-	Regen All	Регенерувати все
+	Refresh	Регенерувати
+	Refresh All	Регенерувати все
 	Region	Область
 	Region/Mass Properties	Властивості області/маси
 	Reinitialize	Переініціалізувати
@@ -833,7 +833,7 @@
 	Edit Reference In-Place	Редагувати посилання на місці
 	Save Reference Edits	Зберегти зміни посилання
 	Working Set	Робочий набір
-	Xref and Block In-place Editing	Редагування xref і блоків на місці
+	Edit in Place	Редагування xref і блоків на місці
 	Select one polyline (Multiple is available through the JSON form).	Виберіть одну полілінію (Multiple доступно через JSON).
 	Select path curve	Виберіть криву траєкторії
 	Select point or object	Виберіть точку або об'єкт
@@ -864,7 +864,7 @@
 	Show All Constraint Bars	Показати всі панелі обмежень
 	Show All Dynamic Dimensions	Показати всі динамічні розміри
 	Show and hide the tools of this category	Показати й сховати інструменти цієї категорії
-	Show in Tool Sets	Показувати в наборах інструментів
+	Show in Toolbox	Показувати в наборах інструментів
 	Show command prompting near the crosshairs	Показувати запити команд біля перехрестя
 	Show Layer List	Показати список шарів
 	Show/Hide Lineweight	Показати/приховати товщину ліній
@@ -996,9 +996,9 @@
 	Selection modes	Режими вибору
 	Selection preview	Попередній перегляд вибору
 	Settings...	Налаштування...
-	Show Quick Properties for selected objects	Показувати швидкі властивості вибраних об'єктів
+	Show Quick Info for selected objects	Показувати швидкі властивості вибраних об'єктів
 	Show grips	Показувати ручки
-	Snap, grid, polar tracking and Dynamic Input:	Крок, сітка, полярне відстеження та динамічне введення:
+	Snap, grid, angle tracking and Cursor Input:	Крок, сітка, полярне відстеження та динамічне введення:
 	Tables	Таблиці
 	The aperture is how near the cursor must come to a point for an object snap to find it.	Апертура — це наскільки близько курсор має підійти до точки, щоб об'єктна прив'язка її знайшла.
 	User Preferences	Налаштування користувача
@@ -1007,7 +1007,7 @@
 	When a command is active	Коли команда активна
 	When no command is active	Коли жодна команда не активна
 	Window selection color:	Колір вибору рамкою:
-	Xrefs	Зовнішні посилання
+	References	Зовнішні посилання
 	objects	об'єктів
 	Specify inside diameter of donut	Укажіть внутрішній діаметр кільця
 	Specify leader arrowhead location	Укажіть розташування стрілки виноски
@@ -1127,7 +1127,7 @@
 	Time	Час
 	To get started, create or open a drawing.	Щоб почати, створіть або відкрийте креслення.
 	Tool Bar	Панель інструментів
-	Tool Sets	Набори інструментів
+	Toolbox	Набори інструментів
 	Tools	Інструменти
 	Torus	Тор
 	Trace	Смуга
@@ -1139,7 +1139,7 @@
 	Turn All Layers On	Увімкнути всі шари
 	Turn Off Layer	Вимкнути шар
 	Turn On Layer	Увімкнути шар
-	Turn Quick Properties off (QPMODE)	Вимкнути швидкі властивості (QPMODE)
+	Turn Quick Info off (QPMODE)	Вимкнути швидкі властивості (QPMODE)
 	Type	Тип
 	Type a command	Введіть команду
 	Type text; Enter starts a new paragraph	Введіть текст; Enter починає новий абзац
@@ -1242,7 +1242,7 @@
 	Show Annotative Objects	Показувати анотативні об'єкти
 	Current Scale Only	Лише поточний масштаб
 	All Scales	Усі масштаби
-	Drawing Recovery Manager...	Диспетчер відновлення креслень...
+	Recover Drawings...	Диспетчер відновлення креслень...
 	Tolerance...	Допуск...
 	Add Vertex	Додати вершину
 	Remove Vertex	Видалити вершину

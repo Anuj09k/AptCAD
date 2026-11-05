@@ -83,7 +83,7 @@
 	Audit	Revizija
 	Auto (system language)	Automatski (jezik sistema)
 	Auto Constrain	Automatska ograničenja
-	AutoConstrain	Automatska ograničenja
+	Apply Constraints	Automatska ograničenja
 	Axis, End	Osa, kraj
 	Base	Baza
 	Baseline	Osnovna linija
@@ -93,7 +93,7 @@
 	Bind...	Veži...
 	Blend	Prelaz
 	Block	Blok
-	Block Attribute Manager...	Upravitelj atributa blokova...
+	Attribute Manager...	Upravitelj atributa blokova...
 	Block Description...	Opis bloka...
 	Block Editor	Uređivač blokova
 	Block Reference	Referenca bloka
@@ -146,7 +146,7 @@
 	Close Comparison	Zatvori poređenje
 	Export Comparison	Izvezi poređenje
 	Coincident	Podudarno
-	Collapse Tool Sets	Skupi skupove alata
+	Collapse Toolbox	Skupi skupove alata
 	Collinear	Kolinearno
 	Color	Boja
 	Color 8	Boja 8
@@ -194,7 +194,7 @@
 	Cyan	Cijan
 	Cylinder	Valjak
 	DWG	DWG
-	DWG Reference...	DWG referenca...
+	Attach Drawing...	DWG referenca...
 	DXF	DXF
 	Dark	Tamno
 	Data Extraction...	Izdvajanje podataka...
@@ -241,7 +241,7 @@
 	Distance	Udaljenost
 	Divide	Podijeli
 	Do not plot (click: plot)	Ne iscrtavaj (klik: iscrtaj)
-	Donut	Prsten
+	Ring	Prsten
 	Double-click to edit the description	Dvostruki klik za uređivanje opisa
 	Down	Dolje
 	Drafting	Crtanje
@@ -257,8 +257,8 @@
 	Drawings (DWG, DXF)	Crteži (DWG, DXF)
 	Dynamic	Dinamično
 	Dynamic Dimensions	Dinamičke kote
-	Dynamic Input	Dinamički unos
-	Dynamic Input (F12)	Dinamički unos (F12)
+	Cursor Input	Dinamički unos
+	Cursor Input (F12)	Dinamički unos (F12)
 	E	E
 	Edit	Uredi
 	Edit Attributes...	Uredi atribute...
@@ -267,7 +267,7 @@
 	Elevation	Elevacija
 	Ellipse	Elipsa
 	Elliptical Arc	Eliptični luk
-	Enable Dynamic Input (F12)	Omogući dinamički unos (F12)
+	Enable Cursor Input (F12)	Omogući dinamički unos (F12)
 	End Object Isolation	Završi izolaciju objekata
 	End Width	Krajnja širina
 	End X	Kraj X
@@ -453,7 +453,7 @@
 	Layer Properties Manager	Upravitelj svojstava slojeva
 	Layer Properties Manager — current viewport	Upravitelj svojstava slojeva — trenutni prozor prikaza
 	Layer State	Stanje slojeva
-	Layer States Manager...	Upravitelj stanja slojeva...
+	Layer States...	Upravitelj stanja slojeva...
 	Layer Tools	Alati za slojeve
 	Layer contains objects (double-click to make current)	Sloj sadrži objekte (dvostruki klik da postane trenutni)
 	Layer is empty (double-click to make current)	Sloj je prazan (dvostruki klik da postane trenutni)
@@ -529,8 +529,8 @@
 	Multileader Style...	Stil višestruke pokazne linije...
 	Multileader style	Stil višestruke pokazne linije
 	Multiline	Višestruka linija
-	Multiline Text	Višeredni tekst
-	Multiline Text...	Višeredni tekst...
+	Paragraph Text	Višeredni tekst
+	Paragraph Text...	Višeredni tekst...
 	Multiple	Višestruko
 	Multiple Point	Višestruka tačka
 	My	Moje
@@ -571,9 +571,9 @@
 	Object Snap	Hvatanje objekata
 	Object Snap (F3)	Hvatanje objekata (F3)
 	Object Snap On (F3)	Hvatanje objekata uključeno (F3)
-	Object Snap Tracking	Praćenje hvatanja objekata
-	Object Snap Tracking (F11)	Praćenje hvatanja objekata (F11)
-	Object Snap Tracking Settings	Postavke praćenja hvatanja objekata
+	Snap Tracking	Praćenje hvatanja objekata
+	Snap Tracking (F11)	Praćenje hvatanja objekata (F11)
+	Snap Tracking Settings	Postavke praćenja hvatanja objekata
 	Object type:	Vrsta objekta:
 	Oblique	Koso
 	Off	Isključeno
@@ -586,7 +586,7 @@
 	Open (⌘O)	Otvori (⌘O)
 	Open Sample Drawing	Otvori primjer crteža
 	Open sample drawing	Otvori primjer crteža
-	Open Xref	Otvori vanjsku referencu
+	Open Reference	Otvori vanjsku referencu
 	Open...	Otvori...
 	Operator:	Operator:
 	Orbit	Orbita
@@ -603,7 +603,7 @@
 	Polar (distance < angle)	Polarne (udaljenost < ugao)
 	PRs	PR-ovi
 	Page Setup Manager	Upravitelj postavki stranice
-	Page Setup Manager...	Upravitelj postavki stranice...
+	Page Setups...	Upravitelj postavki stranice...
 	Pan	Pomicanje pogleda
 	Pan Down	Pomakni pogled dolje
 	Pan Left	Pomakni pogled lijevo
@@ -622,17 +622,17 @@
 	Perpendicular	Okomito
 	Plot	Iscrtaj
 	Plot (click: do not plot)	Iscrtaj (klik: ne iscrtavaj)
-	Plot Preview	Pregled iscrtavanja
+	Print Preview	Pregled iscrtavanja
 	Plot Window	Prozor iscrtavanja
 	Plot style	Stil iscrtavanja
 	Plot style attached to	Stil iscrtavanja priložen uz
 	Plot style table	Tabela stilova iscrtavanja
-	Plot Style...	Stil iscrtavanja...
+	Print Style...	Stil iscrtavanja...
 	Plot Style Manager	Upravitelj stilova iscrtavanja
-	Plot Style Manager...	Upravitelj stilova iscrtavanja...
-	Plot Styles...	Stilovi iscrtavanja...
+	Print Style Manager...	Upravitelj stilova iscrtavanja...
+	Print Styles...	Stilovi iscrtavanja...
 	Plotter Manager	Upravitelj plotera
-	Plotter Manager...	Upravitelj plotera...
+	Printer Manager...	Upravitelj plotera...
 	New CTB	Novi CTB
 	New STB	Novi STB
 	New style	Novi stil
@@ -661,9 +661,9 @@
 	Point Filters	Filteri tačaka
 	Point Style...	Stil tačke...
 	Polar Array	Polarni niz
-	Polar Tracking	Polarno praćenje
-	Polar Tracking (F10)	Polarno praćenje (F10)
-	Polar Tracking On (F10)	Polarno praćenje uključeno (F10)
+	Angle Tracking	Polarno praćenje
+	Angle Tracking (F10)	Polarno praćenje (F10)
+	Angle Tracking On (F10)	Polarno praćenje uključeno (F10)
 	Polar angle measurement	Mjerenje polarnog ugla
 	Polar distance	Polarna udaljenost
 	Polar: {distance} < {angle}°	Polarno: {distance} < {angle}°
@@ -692,12 +692,12 @@
 	Query Entities	Upit o entitetima
 	Quick	Brzo
 	Quick Dimension	Brza kota
-	Quick Properties	Brza svojstva
-	Quick Select	Brzi odabir
-	Quick Select Properties	Svojstva brzog odabira
-	Quick Select...	Brzi odabir...
-	QuickCalc	Brzi kalkulator
-	QuickCalc Pick	Odabir za brzi kalkulator
+	Quick Info	Brza svojstva
+	Select by Property	Brzi odabir
+	Select by Property Fields	Svojstva brzog odabira
+	Select by Property...	Brzi odabir...
+	Calculator	Brzi kalkulator
+	Calculator Pick	Odabir za brzi kalkulator
 	Quit AptCAD	Zatvori AptCAD
 	Radius	Poluprečnik
 	Raster Image	Rasterska slika
@@ -719,8 +719,8 @@
 	Redo	Ponovi
 	Redo (⇧⌘Z)	Ponovi (⇧⌘Z)
 	Redraw	Ponovo iscrtaj
-	Regen	Regeneriši
-	Regen All	Regeneriši sve
+	Refresh	Regeneriši
+	Refresh All	Regeneriši sve
 	Region	Regija
 	Region/Mass Properties	Svojstva regije/mase
 	Reinitialize	Ponovo inicijaliziraj
@@ -805,7 +805,7 @@
 	Edit Reference In-Place	Uredi referencu na mjestu
 	Save Reference Edits	Sačuvaj izmjene reference
 	Working Set	Radni skup
-	Xref and Block In-place Editing	Uređivanje vanjskih referenci i blokova na mjestu
+	Edit in Place	Uređivanje vanjskih referenci i blokova na mjestu
 	Select nested objects to copy	Odaberite ugniježđene objekte za kopiranje
 	Select object	Odaberite objekat
 	Select object to dimension	Odaberite objekat za kotiranje
@@ -957,8 +957,8 @@
 	Select objects first, then choose a command	Prvo odaberite objekte, zatim naredbu
 	Selection	Odabir
 	Settings...	Postavke...
-	Show Quick Properties for selected objects	Prikaži brza svojstva za odabrane objekte
-	Snap, grid, polar tracking and Dynamic Input:	Hvatanje, mreža, polarno praćenje i dinamički unos:
+	Show Quick Info for selected objects	Prikaži brza svojstva za odabrane objekte
+	Snap, grid, angle tracking and Cursor Input:	Hvatanje, mreža, polarno praćenje i dinamički unos:
 	The aperture is how near the cursor must come to a point for an object snap to find it.	Otvor određuje koliko blizu tački kursor mora doći da bi je hvatanje objekata pronašlo.
 	User Preferences	Korisničke postavke
 	objects	objekti
@@ -1080,7 +1080,7 @@
 	Time	Vrijeme
 	To get started, create or open a drawing.	Za početak kreirajte ili otvorite crtež.
 	Tool Bar	Traka s alatima
-	Tool Sets	Skupovi alata
+	Toolbox	Skupovi alata
 	Tools	Alati
 	Torus	Torus
 	Trace	Trag
@@ -1092,7 +1092,7 @@
 	Turn All Layers On	Uključi sve slojeve
 	Turn Off Layer	Isključi sloj
 	Turn On Layer	Uključi sloj
-	Turn Quick Properties off (QPMODE)	Isključi brza svojstva (QPMODE)
+	Turn Quick Info off (QPMODE)	Isključi brza svojstva (QPMODE)
 	Type	Vrsta
 	Type a command	Upišite naredbu
 	Type text; Enter starts a new paragraph	Upišite tekst; Enter započinje novi pasus
@@ -1194,7 +1194,7 @@
 	Show Annotative Objects	Prikaži objekte napomena
 	Current Scale Only	Samo trenutna skala
 	All Scales	Sve skale
-	Drawing Recovery Manager...	Upravitelj oporavka crteža...
+	Recover Drawings...	Upravitelj oporavka crteža...
 	Tolerance...	Tolerancija...
 	Add Vertex	Dodaj tjeme
 	Remove Vertex	Ukloni tjeme
@@ -1248,7 +1248,7 @@ menu	Modify	Izmijeni
 	Run Script...	Pokreni skriptu...
 	SVG drawings (SVG, SVGZ)	SVG crteži (SVG, SVGZ)
 	Show and hide the tools of this category	Prikaži i sakrij alate ove kategorije
-	Show in Tool Sets	Prikaži u skupovima alata
+	Show in Toolbox	Prikaži u skupovima alata
 	Time-sensitive right-click: a quick click is Enter, holding opens the menu	Desni klik osjetljiv na vrijeme: brzi klik je Enter, držanje otvara meni
 	Turned off, a right-click while a command runs always opens the shortcut menu.	Kad je isključeno, desni klik dok se naredba izvršava uvijek otvara kontekstni meni.
 	Zoom sensitivity	Osjetljivost zumiranja
@@ -1337,14 +1337,14 @@ menu	Modify	Izmijeni
 	When a command is active	Kad je naredba aktivna
 	When no command is active	Kad nijedna naredba nije aktivna
 	Window selection color:	Boja odabira prozorom:
-	Xrefs	Vanjske reference
+	References	Vanjske reference
 	Arrow size	Veličina strelice
 	Dim scale overall	Ukupna skala kote
 	Precision	Preciznost
 	Break-line Symbol	Simbol linije prekida
-	Convert Text to Mtext	Pretvori tekst u višeredni tekst
+	Convert to Paragraph Text	Pretvori tekst u višeredni tekst
 	Explode Attributes to Text	Rastavi atribute u tekst
-	Express Tools	Express alati
+	More Tools	Dodatni alati
 	Move/Copy/Rotate	Pomjeri/kopiraj/rotiraj
 	Type an alias name.	Unesite naziv aliasa.
 	Choose the command the alias starts.	Odaberite naredbu koju alias pokreće.

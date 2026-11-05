@@ -70,7 +70,7 @@
 	Audit	Auditar desenho
 	Auto (system language)	Automático (idioma do sistema)
 	Auto Constrain	Restringir automaticamente
-	AutoConstrain	Restringir automaticamente
+	Apply Constraints	Restringir automaticamente
 	Automatic save every	Salvamento automático a cada
 	Automatic save file location	Local dos arquivos de salvamento automático
 	Axis, End	Eixo, extremidade
@@ -85,7 +85,7 @@
 	Bind...	Integrar...
 	Blend	Curva de transição
 	Block	Bloco
-	Block Attribute Manager...	Gerenciador de atributos de bloco...
+	Attribute Manager...	Gerenciador de atributos de bloco...
 	Block Description...	Descrição do bloco...
 	Block Editor	Editor de blocos
 	Block Reference	Referência de bloco
@@ -144,7 +144,7 @@
 	Closed	Fechada
 	Coincident	Coincidente
 	Collapse Palettes	Recolher paletas
-	Collapse Tool Sets	Recolher conjuntos de ferramentas
+	Collapse Toolbox	Recolher conjuntos de ferramentas
 	Collinear	Colinear
 	Color	Cor
 	Color 8	Cor 8
@@ -197,7 +197,7 @@
 	Cyan	Ciano
 	Cylinder	Cilindro
 	DWG	DWG
-	DWG Reference...	Referência DWG...
+	Attach Drawing...	Referência DWG...
 	DXF	DXF
 	Dark	Escuro
 	Data Extraction...	Extração de dados...
@@ -248,7 +248,7 @@
 	Distance	Distância
 	Divide	Dividir
 	Do not plot (click: plot)	Não plotar (clique para plotar)
-	Donut	Anel
+	Ring	Anel
 	Double-click to edit the description	Clique duas vezes para editar a descrição
 	Down	Para baixo
 	Drafting	Desenho
@@ -259,15 +259,15 @@
 	Drawing (DWG)	Desenho (DWG)
 	Drawing (DXF)	Desenho (DXF)
 	Drawing Limits	Limites do desenho
-	Drawing Recovery Manager...	Gerenciador de recuperação de desenhos...
+	Recover Drawings...	Gerenciador de recuperação de desenhos...
 	Drawing Template (DWT)	Modelo de desenho (DWT)
 	Drawing Utilities	Utilitários de desenho
 	Drawings (DWG, DXF)	Desenhos (DWG, DXF)
 	Drawings with no file yet are saved in the default version. 0 minutes turns automatic save off.	Desenhos ainda sem arquivo são salvos na versão padrão. 0 minutos desativa o salvamento automático.
 	Dynamic	Dinâmico
 	Dynamic Dimensions	Cotas dinâmicas
-	Dynamic Input	Entrada dinâmica
-	Dynamic Input (F12)	Entrada dinâmica (F12)
+	Cursor Input	Entrada dinâmica
+	Cursor Input (F12)	Entrada dinâmica (F12)
 	E	L
 	Edit	Editar
 	Edit Array	Editar matriz
@@ -277,7 +277,7 @@
 	Elevation	Elevação
 	Ellipse	Elipse
 	Elliptical Arc	Arco elíptico
-	Enable Dynamic Input (F12)	Ativar entrada dinâmica (F12)
+	Enable Cursor Input (F12)	Ativar entrada dinâmica (F12)
 	End Object Isolation	Encerrar isolamento de objetos
 	End Width	Largura final
 	End X	X final
@@ -472,7 +472,7 @@
 	Layer Properties Manager	Gerenciador de propriedades de camadas
 	Layer Properties Manager — current viewport	Gerenciador de propriedades de camadas — viewport atual
 	Layer State	Estado de camada
-	Layer States Manager...	Gerenciador de estados de camada...
+	Layer States...	Gerenciador de estados de camada...
 	Layer Tools	Ferramentas de camada
 	Layer contains objects (double-click to make current)	A camada contém objetos (clique duas vezes para torná-la atual)
 	Layer is empty (double-click to make current)	A camada está vazia (clique duas vezes para torná-la atual)
@@ -554,8 +554,8 @@
 	Multileader style	Estilo de linha de chamada múltipla
 	Multiline	Multilinha
 	Multiline Style...	Estilo de multilinha...
-	Multiline Text	Texto multilinha
-	Multiline Text...	Texto multilinha...
+	Paragraph Text	Texto multilinha
+	Paragraph Text...	Texto multilinha...
 	Multiline...	Multilinha...
 	Multiple	Múltiplo
 	Multiple Point	Ponto múltiplo
@@ -600,9 +600,9 @@
 	Object Snap	Snap a objetos
 	Object Snap (F3)	Snap a objetos (F3)
 	Object Snap On (F3)	Snap a objetos ativado (F3)
-	Object Snap Tracking	Rastreamento de snap a objetos
-	Object Snap Tracking (F11)	Rastreamento de snap a objetos (F11)
-	Object Snap Tracking Settings	Configurações de rastreamento de snap a objetos
+	Snap Tracking	Rastreamento de snap a objetos
+	Snap Tracking (F11)	Rastreamento de snap a objetos (F11)
+	Snap Tracking Settings	Configurações de rastreamento de snap a objetos
 	Object snap aperture	Abertura do snap a objetos
 	Object snap marker size	Tamanho do marcador de snap a objetos
 	Object type:	Tipo de objeto:
@@ -617,7 +617,7 @@
 	Open	Abrir
 	Open (⌘O)	Abrir (⌘O)
 	Open Sample Drawing	Abrir desenho de exemplo
-	Open Xref	Abrir referência externa
+	Open Reference	Abrir referência externa
 	Open and Save	Abrir e salvar
 	Open sample drawing	Abrir desenho de exemplo
 	Open...	Abrir...
@@ -639,11 +639,11 @@
 	Percent	Porcentagem
 	Pickbox size	Tamanho do quadrado de seleção
 	Plotter Manager	Gerenciador de plotagem
-	Plotter Manager...	Gerenciador de plotagem...
+	Printer Manager...	Gerenciador de plotagem...
 	Polar (distance < angle)	Polar (distância < ângulo)
 	PRs	PRs
 	Page Setup Manager	Gerenciador de configurações de página
-	Page Setup Manager...	Gerenciador de configurações de página...
+	Page Setups...	Gerenciador de configurações de página...
 	Pan	Pan
 	Pan Down	Pan para baixo
 	Pan Left	Pan para a esquerda
@@ -661,15 +661,15 @@
 	Perpendicular	Perpendicular
 	Plot	Plotar
 	Plot (click: do not plot)	Plotar (clique para não plotar)
-	Plot Preview	Visualizar plotagem
+	Print Preview	Visualizar plotagem
 	Plot Window	Janela de plotagem
 	Plot style	Estilo de plotagem
 	Plot style attached to	Estilo de plotagem anexado a
 	Plot style table	Tabela de estilos de plotagem
-	Plot Style...	Estilo de plotagem...
+	Print Style...	Estilo de plotagem...
 	Plot Style Manager	Gerenciador de estilos de plotagem
-	Plot Style Manager...	Gerenciador de estilos de plotagem...
-	Plot Styles...	Estilos de plotagem...
+	Print Style Manager...	Gerenciador de estilos de plotagem...
+	Print Styles...	Estilos de plotagem...
 	New CTB	Novo CTB
 	New STB	Novo STB
 	New style	Novo estilo
@@ -680,7 +680,7 @@
 	Polyline Edit	Editar polilinha
 	Previous Change	Alteração anterior
 	Profiles	Perfis
-	QuickCalc Pick	Selecionar para a calculadora rápida
+	Calculator Pick	Selecionar para a calculadora rápida
 	Recalculate Table Formulas	Recalcular fórmulas da tabela
 	Recent Commands	Comandos recentes
 	Recent Input	Entradas recentes
@@ -710,13 +710,13 @@
 	Set Table Cell Style	Definir estilo da célula da tabela
 	Settings...	Configurações...
 	Show Annotative Objects	Mostrar objetos anotativos
-	Show Quick Properties for selected objects	Mostrar propriedades rápidas para os objetos selecionados
+	Show Quick Info for selected objects	Mostrar propriedades rápidas para os objetos selecionados
 	Show and hide the tools of this category	Mostrar e ocultar as ferramentas desta categoria
 	Show command prompting near the crosshairs	Mostrar o prompt de comando perto da mira
-	Show in Tool Sets	Mostrar em conjuntos de ferramentas
+	Show in Toolbox	Mostrar em conjuntos de ferramentas
 	Snap Overrides	Substituições de snap a objetos
 	Snap type	Tipo de snap
-	Snap, grid, polar tracking and Dynamic Input:	Snap, grade, rastreamento polar e entrada dinâmica:
+	Snap, grid, angle tracking and Cursor Input:	Snap, grade, rastreamento polar e entrada dinâmica:
 	Solid Editing	Edição de sólidos
 	Spline Edit	Editar spline
 	Stretch Vertex	Esticar vértice
@@ -762,9 +762,9 @@
 	Point Filters	Filtros de ponto
 	Point Style...	Estilo de ponto...
 	Polar Array	Matriz polar
-	Polar Tracking	Rastreamento polar
-	Polar Tracking (F10)	Rastreamento polar (F10)
-	Polar Tracking On (F10)	Rastreamento polar ativado (F10)
+	Angle Tracking	Rastreamento polar
+	Angle Tracking (F10)	Rastreamento polar (F10)
+	Angle Tracking On (F10)	Rastreamento polar ativado (F10)
 	Polar: {distance} < {angle}°	Polar: {distance} < {angle}°
 	Polygon	Polígono
 	Polygonal	Poligonal
@@ -787,11 +787,11 @@
 	Query Entities	Consultar entidades
 	Quick	Rápido
 	Quick Dimension	Cota rápida
-	Quick Properties	Propriedades rápidas
-	Quick Select	Seleção rápida
-	Quick Select Properties	Propriedades da seleção rápida
-	Quick Select...	Seleção rápida...
-	QuickCalc	Calculadora rápida
+	Quick Info	Propriedades rápidas
+	Select by Property	Seleção rápida
+	Select by Property Fields	Propriedades da seleção rápida
+	Select by Property...	Seleção rápida...
+	Calculator	Calculadora rápida
 	Quit AptCAD	Sair do AptCAD
 	Radius	Raio
 	Raster Image	Imagem raster
@@ -809,8 +809,8 @@
 	Redo	Refazer
 	Redo (⇧⌘Z)	Refazer (⇧⌘Z)
 	Redraw	Redesenhar
-	Regen	Regenerar
-	Regen All	Regenerar tudo
+	Refresh	Regenerar
+	Refresh All	Regenerar tudo
 	Region	Região
 	Region/Mass Properties	Propriedades de região/massa
 	Relative	Relativo
@@ -867,7 +867,7 @@
 	Edit Reference In-Place	Editar referência no local
 	Save Reference Edits	Salvar alterações da referência
 	Working Set	Conjunto de trabalho
-	Xref and Block In-place Editing	Edição no local de referências externas e blocos
+	Edit in Place	Edição no local de referências externas e blocos
 	Select a line, arc, circle, polyline, ellipse or spline as the path.	Selecione uma linha, arco, círculo, polilinha, elipse ou spline como trajetória.
 	Select a line, circle, arc or polyline segment.	Selecione uma linha, círculo, arco ou segmento de polilinha.
 	Select a line.	Selecione uma linha.
@@ -1121,7 +1121,7 @@
 	Time	Hora
 	To get started, create or open a drawing.	Para começar, crie ou abra um desenho.
 	Tool Bar	Barra de ferramentas
-	Tool Sets	Conjuntos de ferramentas
+	Toolbox	Conjuntos de ferramentas
 	Tools	Ferramentas
 	Torus	Toro
 	Trace	Traço
@@ -1130,7 +1130,7 @@
 	True Color	Cor verdadeira
 	Turn All Layers On	Ligar todas as camadas
 	Turn Off Layer	Desligar camada
-	Turn Quick Properties off (QPMODE)	Desativar propriedades rápidas (QPMODE)
+	Turn Quick Info off (QPMODE)	Desativar propriedades rápidas (QPMODE)
 	Type	Tipo
 	Type a command	Digite um comando
 	Type text; Enter starts a new paragraph	Digite o texto; Enter inicia um novo parágrafo
@@ -1301,7 +1301,7 @@
 	Color 2	Cor 2
 	Command	Comando
 	contains authoring elements. Open in Block Editor?	contém elementos de autoria. Abrir no editor de blocos?
-	Convert Text to Mtext	Converter texto em Mtexto
+	Convert to Paragraph Text	Converter em texto de parágrafo
 	Create backup copy with each save	Criar cópia de backup a cada salvamento
 	Create separate hatches	Criar hachuras separadas
 	Crossing selection color:	Cor da seleção por cruzamento:
@@ -1333,7 +1333,7 @@
 	Evaluate LISP	Avaliar LISP
 	Exclude:	Excluir:
 	Explode Attributes to Text	Explodir atributos em texto
-	Express Tools	Ferramentas Express
+	More Tools	Mais ferramentas
 	Feet	Pés
 	First corner	Primeiro canto
 	Fit to paper	Ajustar ao papel
@@ -1448,7 +1448,7 @@
 	Window <	Janela <
 	Window selection color:	Cor da seleção por janela:
 	X offset (mm)	Deslocamento X (mm)
-	Xrefs	Referências externas
+	References	Referências externas
 	Y offset (mm)	Deslocamento Y (mm)
 	Yards	Jardas
 	Your changes will be lost if you don't save them.	Suas alterações serão perdidas se você não salvá-las.

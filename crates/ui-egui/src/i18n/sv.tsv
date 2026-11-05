@@ -74,7 +74,7 @@
 	Audit	Kontrollera
 	Auto (system language)	Auto (systemspråk)
 	Auto Constrain	Automatiska villkor
-	AutoConstrain	Automatiska villkor
+	Apply Constraints	Automatiska villkor
 	Automatic save every	Spara automatiskt var
 	Automatic save file location	Plats för automatiskt sparade filer
 	Axis, End	Axel, slutpunkt
@@ -89,7 +89,7 @@
 	Bind...	Bädda in...
 	Blend	Mjuk övergång
 	Block	Block
-	Block Attribute Manager...	Hantera blockattribut...
+	Attribute Manager...	Hantera blockattribut...
 	Block Description...	Blockbeskrivning...
 	Block Editor	Blockredigerare
 	Block Reference	Blockreferens
@@ -148,7 +148,7 @@
 	Closed	Sluten
 	Coincident	Sammanfallande
 	Collapse Palettes	Fäll ihop paletter
-	Collapse Tool Sets	Fäll ihop verktygsuppsättningar
+	Collapse Toolbox	Fäll ihop verktygsuppsättningar
 	Collinear	Kolinjär
 	Color	Färg
 	Color 8	Färg 8
@@ -201,7 +201,7 @@
 	Cyan	Cyan
 	Cylinder	Cylinder
 	DWG	DWG
-	DWG Reference...	DWG-referens...
+	Attach Drawing...	DWG-referens...
 	DXF	DXF
 	Dark	Mörkt
 	Data Extraction...	Dataextrahering...
@@ -252,7 +252,7 @@
 	Distance	Avstånd
 	Divide	Dela in
 	Do not plot (click: plot)	Plotta inte (klicka: plotta)
-	Donut	Ring
+	Ring	Ring
 	Double-click to edit the description	Dubbelklicka för att redigera beskrivningen
 	Down	Ned
 	Drafting	Ritning
@@ -263,15 +263,15 @@
 	Drawing (DWG)	Ritning (DWG)
 	Drawing (DXF)	Ritning (DXF)
 	Drawing Limits	Ritningsgränser
-	Drawing Recovery Manager...	Återställ ritningar...
+	Recover Drawings...	Återställ ritningar...
 	Drawing Template (DWT)	Ritningsmall (DWT)
 	Drawing Utilities	Ritningsverktyg
 	Drawings (DWG, DXF)	Ritningar (DWG, DXF)
 	Drawings with no file yet are saved in the default version. 0 minutes turns automatic save off.	Ritningar som ännu saknar fil sparas i standardversionen. 0 minuter stänger av automatiskt sparande.
 	Dynamic	Dynamisk
 	Dynamic Dimensions	Dynamiska mått
-	Dynamic Input	Dynamisk inmatning
-	Dynamic Input (F12)	Dynamisk inmatning (F12)
+	Cursor Input	Dynamisk inmatning
+	Cursor Input (F12)	Dynamisk inmatning (F12)
 	E	Ö
 	Edit	Redigera
 	Edit Array	Redigera array
@@ -281,7 +281,7 @@
 	Elevation	Höjdläge
 	Ellipse	Ellips
 	Elliptical Arc	Elliptisk båge
-	Enable Dynamic Input (F12)	Slå på dynamisk inmatning (F12)
+	Enable Cursor Input (F12)	Slå på dynamisk inmatning (F12)
 	End Object Isolation	Avsluta isolering av objekt
 	End Width	Slutbredd
 	End X	Slut X
@@ -476,7 +476,7 @@
 	Layer Properties Manager	Hantera lageregenskaper
 	Layer Properties Manager — current viewport	Hantera lageregenskaper – aktuellt vyfönster
 	Layer State	Lagertillstånd
-	Layer States Manager...	Hantera lagertillstånd...
+	Layer States...	Hantera lagertillstånd...
 	Layer Tools	Lagerverktyg
 	Layer contains objects (double-click to make current)	Lagret innehåller objekt (dubbelklicka för att göra det aktuellt)
 	Layer is empty (double-click to make current)	Lagret är tomt (dubbelklicka för att göra det aktuellt)
@@ -558,8 +558,8 @@
 	Multileader style	Multihänvisningsstil
 	Multiline	Multilinje
 	Multiline Style...	Multilinjestil...
-	Multiline Text	Flerradstext
-	Multiline Text...	Flerradstext...
+	Paragraph Text	Flerradstext
+	Paragraph Text...	Flerradstext...
 	Multiline...	Multilinje...
 	Multiple	Flera
 	Multiple Point	Flera punkter
@@ -603,9 +603,9 @@
 	Object Snap	Objektfäste
 	Object Snap (F3)	Objektfäste (F3)
 	Object Snap On (F3)	Objektfäste på (F3)
-	Object Snap Tracking	Objektfästesspårning
-	Object Snap Tracking (F11)	Objektfästesspårning (F11)
-	Object Snap Tracking Settings	Inställningar för objektfästesspårning
+	Snap Tracking	Objektfästesspårning
+	Snap Tracking (F11)	Objektfästesspårning (F11)
+	Snap Tracking Settings	Inställningar för objektfästesspårning
 	Object snap aperture	Objektfästets sökområde
 	Object snap marker size	Objektfästets markörstorlek
 	Object type:	Objekttyp:
@@ -620,7 +620,7 @@
 	Open	Öppna
 	Open (⌘O)	Öppna (⌘O)
 	Open Sample Drawing	Öppna exempelritning
-	Open Xref	Öppna extern referens
+	Open Reference	Öppna extern referens
 	Open and Save	Öppna och spara
 	Open sample drawing	Öppna exempelritning
 	Open...	Öppna...
@@ -642,11 +642,11 @@
 	Percent	Procent
 	Pickbox size	Markeringsrutans storlek
 	Plotter Manager	Hantera plottrar
-	Plotter Manager...	Hantera plottrar...
+	Printer Manager...	Hantera plottrar...
 	Polar (distance < angle)	Polär (avstånd < vinkel)
 	PRs	PR:er
 	Page Setup Manager	Hantera sidinställningar
-	Page Setup Manager...	Hantera sidinställningar...
+	Page Setups...	Hantera sidinställningar...
 	Pan	Panorera
 	Pan Down	Panorera nedåt
 	Pan Left	Panorera åt vänster
@@ -664,15 +664,15 @@
 	Perpendicular	Vinkelrät
 	Plot	Plotta
 	Plot (click: do not plot)	Plotta (klicka: plotta inte)
-	Plot Preview	Förhandsgranska plott
+	Print Preview	Förhandsgranska plott
 	Plot Window	Plottfönster
 	Plot style	Plottstil
 	Plot style attached to	Plottstil kopplad till
 	Plot style table	Plottstilstabell
-	Plot Style...	Plottstil...
+	Print Style...	Plottstil...
 	Plot Style Manager	Hantera plottstilar
-	Plot Style Manager...	Hantera plottstilar...
-	Plot Styles...	Plottstilar...
+	Print Style Manager...	Hantera plottstilar...
+	Print Styles...	Plottstilar...
 	New CTB	Ny CTB
 	New STB	Ny STB
 	New style	Ny stil
@@ -683,7 +683,7 @@
 	Polyline Edit	Redigera polylinje
 	Previous Change	Föregående ändring
 	Profiles	Profiler
-	QuickCalc Pick	Snabbkalkyl: välj punkt
+	Calculator Pick	Snabbkalkyl: välj punkt
 	Recalculate Table Formulas	Beräkna tabellformler igen
 	Recent Commands	Senaste kommandon
 	Recent Input	Senaste inmatning
@@ -713,13 +713,13 @@
 	Set Table Cell Style	Ange tabellcellstil
 	Settings...	Inställningar...
 	Show Annotative Objects	Visa annotativa objekt
-	Show Quick Properties for selected objects	Visa snabbegenskaper för markerade objekt
+	Show Quick Info for selected objects	Visa snabbegenskaper för markerade objekt
 	Show and hide the tools of this category	Visa och dölj verktygen i den här kategorin
 	Show command prompting near the crosshairs	Visa kommandofrågor nära hårkorset
-	Show in Tool Sets	Visa i verktygsuppsättningar
+	Show in Toolbox	Visa i verktygsuppsättningar
 	Snap Overrides	Tillfälliga fästen
 	Snap type	Fästtyp
-	Snap, grid, polar tracking and Dynamic Input:	Fäst, rutnät, polär spårning och dynamisk inmatning:
+	Snap, grid, angle tracking and Cursor Input:	Fäst, rutnät, polär spårning och dynamisk inmatning:
 	Solid Editing	Solidredigering
 	Spline Edit	Redigera spline
 	Stretch Vertex	Sträck hörnpunkt
@@ -765,9 +765,9 @@
 	Point Filters	Punktfilter
 	Point Style...	Punktstil...
 	Polar Array	Polär array
-	Polar Tracking	Polär spårning
-	Polar Tracking (F10)	Polär spårning (F10)
-	Polar Tracking On (F10)	Polär spårning på (F10)
+	Angle Tracking	Polär spårning
+	Angle Tracking (F10)	Polär spårning (F10)
+	Angle Tracking On (F10)	Polär spårning på (F10)
 	Polar: {distance} < {angle}°	Polär: {distance} < {angle}°
 	Polygon	Polygon
 	Polygonal	Polygonal
@@ -790,11 +790,11 @@
 	Query Entities	Objektinformation
 	Quick	Snabb
 	Quick Dimension	Snabbmått
-	Quick Properties	Snabbegenskaper
-	Quick Select	Snabbmarkering
-	Quick Select Properties	Egenskaper för snabbmarkering
-	Quick Select...	Snabbmarkering...
-	QuickCalc	Snabbkalkyl
+	Quick Info	Snabbegenskaper
+	Select by Property	Snabbmarkering
+	Select by Property Fields	Egenskaper för snabbmarkering
+	Select by Property...	Snabbmarkering...
+	Calculator	Snabbkalkyl
 	Quit AptCAD	Avsluta AptCAD
 	Radius	Radie
 	Raster Image	Rasterbild
@@ -812,8 +812,8 @@
 	Redo	Gör om
 	Redo (⇧⌘Z)	Gör om (⇧⌘Z)
 	Redraw	Rita om
-	Regen	Regenerera
-	Regen All	Regenerera alla
+	Refresh	Regenerera
+	Refresh All	Regenerera alla
 	Region	Region
 	Region/Mass Properties	Region- och massegenskaper
 	Relative	Relativ
@@ -1119,7 +1119,7 @@
 	Time	Tid
 	To get started, create or open a drawing.	Kom igång genom att skapa eller öppna en ritning.
 	Tool Bar	Verktygsfält
-	Tool Sets	Verktygsuppsättningar
+	Toolbox	Verktygsuppsättningar
 	Tools	Verktyg
 	Torus	Torus
 	Trace	Bred linje
@@ -1128,7 +1128,7 @@
 	True Color	RGB-färg
 	Turn All Layers On	Slå på alla lager
 	Turn Off Layer	Stäng av lager
-	Turn Quick Properties off (QPMODE)	Stäng av snabbegenskaper (QPMODE)
+	Turn Quick Info off (QPMODE)	Stäng av snabbegenskaper (QPMODE)
 	Type	Typ
 	Type a command	Skriv ett kommando
 	Type text; Enter starts a new paragraph	Skriv text; Enter börjar ett nytt stycke
@@ -1310,7 +1310,7 @@ menu	Modify	Ändra
 	Working Set	Arbetsuppsättning
 	Add to Working Set	Lägg till i arbetsuppsättningen
 	Save Reference Edits	Spara referensändringar
-	Xref and Block In-place Editing	Redigering av externa referenser och block på plats
+	Edit in Place	Redigering av externa referenser och block på plats
 	Load Application...	Läs in program...
 	Evaluate LISP	Utvärdera LISP
 	Open Recent	Öppna senaste
@@ -1336,15 +1336,15 @@ menu	Modify	Ändra
 	Selection Preview Filter	Filter för förhandsvisning av markering
 	Exclude:	Uteslut:
 	Objects on locked layers	Objekt på låsta lager
-	Xrefs	Externa referenser
+	References	Externa referenser
 	Tables	Tabeller
 	Groups	Grupper
 	Multiline text	Flerradstext
 	Hatches	Skrafferingar
 	Break-line Symbol	Brytlinjesymbol
-	Convert Text to Mtext	Konvertera text till MText
+	Convert to Paragraph Text	Konvertera till stycketext
 	Explode Attributes to Text	Lös upp attribut till text
-	Express Tools	Express Tools
+	More Tools	Fler verktyg
 	Move/Copy/Rotate	Flytta/kopiera/rotera
 	Interface scale	Gränssnittsskala
 	Analyze Shapes	Analysera former

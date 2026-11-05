@@ -36,8 +36,8 @@ impl Panel {
     fn label(self) -> &'static str {
         match self {
             Self::Canvas => "Drawing",
-            Self::ToolSets => "Tool Sets",
-            Self::QuickCalc => "QuickCalc",
+            Self::ToolSets => "Toolbox",
+            Self::QuickCalc => "Calculator",
             Self::Layers => "Layers",
             Self::Properties => "Properties",
             Self::ExternalRefs => "External References",

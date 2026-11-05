@@ -86,7 +86,7 @@ menu	Modify	Edita
 	Audit	Controlla
 	Auto (system language)	Automatica (lingua di sistema)
 	Auto Constrain	Vincola automaticamente
-	AutoConstrain	Vincolo automatico
+	Apply Constraints	Vincolo automatico
 	Axis, End	Asse, fine
 	Base	Base
 	Baseline	Linea di base
@@ -96,7 +96,7 @@ menu	Modify	Edita
 	Bind...	Unisci...
 	Blend	Fondi
 	Block	Blocco
-	Block Attribute Manager...	Gestore attributi blocco...
+	Attribute Manager...	Gestore attributi blocco...
 	Block Description...	Descrizione blocco...
 	Block Editor	Editor blocchi
 	Block Reference	Riferimento di blocco
@@ -151,7 +151,7 @@ menu	Modify	Edita
 	Export Comparison	Esporta confronto
 	Coincident	Coincidente
 	Collapse Palettes	Comprimi tavolozze
-	Collapse Tool Sets	Comprimi set di strumenti
+	Collapse Toolbox	Comprimi set di strumenti
 	Collinear	Collineare
 	Color	Colore
 	Color 8	Colore 8
@@ -178,7 +178,7 @@ menu	Modify	Edita
 	Contributors	Collaboratori
 	Control Vertices	Vertici di controllo
 	Convert	Converti
-	Convert Text to Mtext	Converti testo in testo multilinea
+	Convert to Paragraph Text	Converti testo in testo multilinea
 	Copy	Copia
 	Copy Full File Path	Copia percorso completo del file
 	Copy History	Copia cronologia
@@ -200,7 +200,7 @@ menu	Modify	Edita
 	Cyan	Ciano
 	Cylinder	Cilindro
 	DWG	DWG
-	DWG Reference...	Riferimento DWG...
+	Attach Drawing...	Riferimento DWG...
 	DXF	DXF
 	Dark	Scuro
 	Data Extraction...	Estrazione dati...
@@ -247,7 +247,7 @@ menu	Modify	Edita
 	Distance	Distanza
 	Divide	Dividi
 	Do not plot (click: plot)	Non stampare (clic: stampa)
-	Donut	Anello
+	Ring	Anello
 	Double-click to edit the description	Doppio clic per modificare la descrizione
 	Down	Giù
 	Drafting	Disegno
@@ -264,8 +264,8 @@ menu	Modify	Edita
 	SVG drawings (SVG, SVGZ)	Disegni SVG (SVG, SVGZ)
 	Dynamic	Dinamico
 	Dynamic Dimensions	Quote dinamiche
-	Dynamic Input	Input dinamico
-	Dynamic Input (F12)	Input dinamico (F12)
+	Cursor Input	Input dinamico
+	Cursor Input (F12)	Input dinamico (F12)
 	E	E
 	Edit	Modifica
 	Edit Attributes...	Modifica attributi...
@@ -274,7 +274,7 @@ menu	Modify	Edita
 	Elevation	Elevazione
 	Ellipse	Ellisse
 	Elliptical Arc	Arco ellittico
-	Enable Dynamic Input (F12)	Abilita input dinamico (F12)
+	Enable Cursor Input (F12)	Abilita input dinamico (F12)
 	End Object Isolation	Termina isolamento oggetti
 	End Width	Larghezza finale
 	End X	X finale
@@ -335,7 +335,7 @@ menu	Modify	Edita
 	Export	Esporta
 	Export Table	Esporta tabella
 	Export to PDF...	Esporta in PDF...
-	Express Tools	Strumenti Express
+	More Tools	Altri strumenti
 	Expression	Espressione
 	Extend	Estendi
 	Extension	Estensione
@@ -462,7 +462,7 @@ menu	Modify	Edita
 	Layer Properties Manager	Gestore proprietà layer
 	Layer Properties Manager — current viewport	Gestore proprietà layer — finestra corrente
 	Layer State	Stato layer
-	Layer States Manager...	Gestore stati layer...
+	Layer States...	Gestore stati layer...
 	Layer Tools	Strumenti layer
 	Layer contains objects (double-click to make current)	Il layer contiene oggetti (doppio clic per renderlo corrente)
 	Layer is empty (double-click to make current)	Il layer è vuoto (doppio clic per renderlo corrente)
@@ -539,8 +539,8 @@ menu	Modify	Edita
 	Multileader Style...	Stile multidirettrice...
 	Multileader style	Stile multidirettrice
 	Multiline	Multilinea
-	Multiline Text	Testo multilinea
-	Multiline Text...	Testo multilinea...
+	Paragraph Text	Testo multilinea
+	Paragraph Text...	Testo multilinea...
 	Multiple	Multiplo
 	Multiple Point	Punti multipli
 	My	Mie
@@ -580,9 +580,9 @@ menu	Modify	Edita
 	Object Snap	Snap ad oggetto
 	Object Snap (F3)	Snap ad oggetto (F3)
 	Object Snap On (F3)	Snap ad oggetto attivo (F3)
-	Object Snap Tracking	Puntamento snap ad oggetto
-	Object Snap Tracking (F11)	Puntamento snap ad oggetto (F11)
-	Object Snap Tracking Settings	Impostazioni puntamento snap ad oggetto
+	Snap Tracking	Puntamento snap ad oggetto
+	Snap Tracking (F11)	Puntamento snap ad oggetto (F11)
+	Snap Tracking Settings	Impostazioni puntamento snap ad oggetto
 	Object type:	Tipo di oggetto:
 	Oblique	Obliquo
 	Off	Disattivato
@@ -595,7 +595,7 @@ menu	Modify	Edita
 	Open (⌘O)	Apri (⌘O)
 	Open Sample Drawing	Apri disegno di esempio
 	Open sample drawing	Apri disegno di esempio
-	Open Xref	Apri xrif
+	Open Reference	Apri xrif
 	Open...	Apri...
 	Operator:	Operatore:
 	Orbit	Orbita
@@ -612,7 +612,7 @@ menu	Modify	Edita
 	Polar (distance < angle)	Polari (distanza < angolo)
 	PRs	PR
 	Page Setup Manager	Gestore impostazioni pagina
-	Page Setup Manager...	Gestore impostazioni pagina...
+	Page Setups...	Gestore impostazioni pagina...
 	Pan	Pan
 	Pan Down	Pan in basso
 	Pan Left	Pan a sinistra
@@ -631,17 +631,17 @@ menu	Modify	Edita
 	Perpendicular	Perpendicolare
 	Plot	Stampa
 	Plot (click: do not plot)	Stampa (clic: non stampare)
-	Plot Preview	Anteprima di stampa
+	Print Preview	Anteprima di stampa
 	Plot Window	Finestra di stampa
 	Plot style	Stile di stampa
 	Plot style attached to	Stile di stampa associato a
 	Plot style table	Tabella stili di stampa
-	Plot Style...	Stile di stampa...
+	Print Style...	Stile di stampa...
 	Plot Style Manager	Gestore stili di stampa
-	Plot Style Manager...	Gestore stili di stampa...
-	Plot Styles...	Stili di stampa...
+	Print Style Manager...	Gestore stili di stampa...
+	Print Styles...	Stili di stampa...
 	Plotter Manager	Gestore plotter
-	Plotter Manager...	Gestore plotter...
+	Printer Manager...	Gestore plotter...
 	New CTB	Nuovo CTB
 	New STB	Nuovo STB
 	New style	Nuovo stile
@@ -670,9 +670,9 @@ menu	Modify	Edita
 	Point Filters	Filtri punto
 	Point Style...	Stile punto...
 	Polar Array	Serie polare
-	Polar Tracking	Puntamento polare
-	Polar Tracking (F10)	Puntamento polare (F10)
-	Polar Tracking On (F10)	Puntamento polare attivo (F10)
+	Angle Tracking	Puntamento polare
+	Angle Tracking (F10)	Puntamento polare (F10)
+	Angle Tracking On (F10)	Puntamento polare attivo (F10)
 	Polar angle measurement	Misurazione angolo polare
 	Polar distance	Distanza polare
 	Polar: {distance} < {angle}°	Polare: {distance} < {angle}°
@@ -701,12 +701,12 @@ menu	Modify	Edita
 	Query Entities	Interroga entità
 	Quick	Rapida
 	Quick Dimension	Quota rapida
-	Quick Properties	Proprietà rapide
-	Quick Select	Selezione rapida
-	Quick Select Properties	Proprietà selezione rapida
-	Quick Select...	Selezione rapida...
-	QuickCalc	CalcRapida
-	QuickCalc Pick	Punto CalcRapida
+	Quick Info	Proprietà rapide
+	Select by Property	Selezione rapida
+	Select by Property Fields	Proprietà selezione rapida
+	Select by Property...	Selezione rapida...
+	Calculator	CalcRapida
+	Calculator Pick	Punto CalcRapida
 	Quit AptCAD	Esci da AptCAD
 	Radius	Raggio
 	Raster Image	Immagine raster
@@ -728,8 +728,8 @@ menu	Modify	Edita
 	Redo	Ripeti
 	Redo (⇧⌘Z)	Ripeti (⇧⌘Z)
 	Redraw	Ridisegna
-	Regen	Rigenera
-	Regen All	Rigenera tutto
+	Refresh	Rigenera
+	Refresh All	Rigenera tutto
 	Region	Regione
 	Region/Mass Properties	Proprietà regione/massa
 	Reinitialize	Reinizializza
@@ -852,7 +852,7 @@ menu	Modify	Edita
 	Show All Constraint Bars	Mostra tutte le barre dei vincoli
 	Show All Dynamic Dimensions	Mostra tutte le quote dinamiche
 	Show and hide the tools of this category	Mostra e nascondi gli strumenti di questa categoria
-	Show in Tool Sets	Mostra nei set di strumenti
+	Show in Toolbox	Mostra nei set di strumenti
 	Show command prompting near the crosshairs	Mostra i messaggi dei comandi vicino al cursore
 	Show Layer List	Mostra elenco layer
 	Show/Hide Lineweight	Mostra/Nascondi spessore di linea
@@ -962,8 +962,8 @@ menu	Modify	Edita
 	Select objects first, then choose a command	Selezionare prima gli oggetti, poi scegliere un comando
 	Selection	Selezione
 	Settings...	Impostazioni...
-	Show Quick Properties for selected objects	Mostra le proprietà rapide degli oggetti selezionati
-	Snap, grid, polar tracking and Dynamic Input:	Snap, griglia, puntamento polare e input dinamico:
+	Show Quick Info for selected objects	Mostra le proprietà rapide degli oggetti selezionati
+	Snap, grid, angle tracking and Cursor Input:	Snap, griglia, puntamento polare e input dinamico:
 	The aperture is how near the cursor must come to a point for an object snap to find it.	L'apertura è la distanza entro cui il cursore deve avvicinarsi a un punto perché lo snap ad oggetto lo trovi.
 	User Preferences	Preferenze utente
 	objects	oggetti
@@ -1085,7 +1085,7 @@ menu	Modify	Edita
 	Time	Tempo
 	To get started, create or open a drawing.	Per iniziare, crea o apri un disegno.
 	Tool Bar	Barra degli strumenti
-	Tool Sets	Set di strumenti
+	Toolbox	Set di strumenti
 	Tools	Strumenti
 	Torus	Toro
 	Trace	Traccia
@@ -1097,7 +1097,7 @@ menu	Modify	Edita
 	Turn All Layers On	Attiva tutti i layer
 	Turn Off Layer	Disattiva layer
 	Turn On Layer	Attiva layer
-	Turn Quick Properties off (QPMODE)	Disattiva le proprietà rapide (QPMODE)
+	Turn Quick Info off (QPMODE)	Disattiva le proprietà rapide (QPMODE)
 	Type	Tipo
 	Type a command	Digitare un comando
 	Type text; Enter starts a new paragraph	Digitare il testo; Invio inizia un nuovo paragrafo
@@ -1199,7 +1199,7 @@ menu	Modify	Edita
 	Show Annotative Objects	Mostra oggetti annotativi
 	Current Scale Only	Solo scala corrente
 	All Scales	Tutte le scale
-	Drawing Recovery Manager...	Gestore ripristino disegni...
+	Recover Drawings...	Gestore ripristino disegni...
 	Tolerance...	Tolleranza...
 	Add Vertex	Aggiungi vertice
 	Remove Vertex	Rimuovi vertice
@@ -1271,7 +1271,7 @@ menu	Modify	Edita
 	Edit Reference In-Place	Modifica riferimento sul posto
 	Save Reference Edits	Salva modifiche al riferimento
 	Working Set	Set di lavoro
-	Xref and Block In-place Editing	Modifica sul posto di xrif e blocchi
+	Edit in Place	Modifica sul posto di xrif e blocchi
 	Crossing selection color:	Colore selezione interseca:
 	Exclude:	Escludi:
 	Grips	Grip
@@ -1296,7 +1296,7 @@ menu	Modify	Edita
 	When a command is active	Quando un comando è attivo
 	When no command is active	Quando nessun comando è attivo
 	Window selection color:	Colore selezione finestra:
-	Xrefs	Xrif
+	References	Xrif
 	Interface scale	Scala dell'interfaccia
 	Query Texts	Interroga testi
 	Analyze Shapes	Analizza forme

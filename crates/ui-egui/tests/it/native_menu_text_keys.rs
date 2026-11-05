@@ -35,7 +35,7 @@ fn menu(h: &mut Harness<'_, CadApp>, id: &str) {
 }
 
 fn expression<'a>(h: &'a Harness<'_, CadApp>) -> egui_kittest::Node<'a> {
-    h.get_by_role_and_label(Role::Tab, "QuickCalc").parent().unwrap().get_all_by_role(Role::TextInput).next().unwrap()
+    h.get_by_role_and_label(Role::Tab, "Calculator").parent().unwrap().get_all_by_role(Role::TextInput).next().unwrap()
 }
 
 #[test]

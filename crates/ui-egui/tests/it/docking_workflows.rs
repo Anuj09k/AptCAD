@@ -151,7 +151,7 @@ fn palette_icons_are_painted_in_code_and_shown_in_an_iconic_column() {
 fn real_panel_drag_float_close_reopen_and_full_workspace_reload() {
     let mut harness = harness(None, 1280.0, 1.0);
     let source = harness.get_by_role_and_label(egui::accesskit::Role::Tab, "Layers").rect().center();
-    let target = harness.get_by_role_and_label(egui::accesskit::Role::Tab, "Tool Sets").rect().center();
+    let target = harness.get_by_role_and_label(egui::accesskit::Role::Tab, "Toolbox").rect().center();
     drag(&mut harness, source, target);
     let location = harness.state().ui.docking.layout.location(&Panel::Layers).unwrap();
     assert_eq!(location.anchor, Some(Panel::ToolSets));
@@ -176,7 +176,7 @@ fn real_panel_drag_float_close_reopen_and_full_workspace_reload() {
     assert_eq!(serde_json::to_value(&reloaded.state().ui.docking).unwrap(), expected);
     reloaded.state_mut().run("ui.dock", json!({"operation":"move", "panel":"layers", "target":"toolSets", "zone":"center"})).unwrap();
     reloaded.run_steps(4);
-    reloaded.get_by_role_and_label(egui::accesskit::Role::Tab, "Tool Sets").click();
+    reloaded.get_by_role_and_label(egui::accesskit::Role::Tab, "Toolbox").click();
     reloaded.run_steps(3);
     reloaded.get_by_label("Line").click();
     reloaded.run_steps(3);
@@ -508,22 +508,22 @@ fn canvas_reset_during_column_drag_discards_old_resize_and_ends_gesture() {
 #[test]
 fn collapsed_tool_sets_leave_a_visible_control_that_expands_them() {
     let mut h = harness(None, 1280.0, 1.0);
-    h.get_by_label("Collapse Tool Sets").click();
+    h.get_by_label("Collapse Toolbox").click();
     h.run_steps(4);
     assert!(!h.state().ui.show_toolsets);
-    assert!(h.query_by_role_and_label(egui::accesskit::Role::Tab, "Tool Sets").is_none());
-    h.get_by_label("Expand Tool Sets").click();
+    assert!(h.query_by_role_and_label(egui::accesskit::Role::Tab, "Toolbox").is_none());
+    h.get_by_label("Expand Toolbox").click();
     h.run_steps(4);
     assert!(h.state().ui.show_toolsets);
-    assert!(h.query_by_label("Expand Tool Sets").is_none());
-    h.get_by_role_and_label(egui::accesskit::Role::Tab, "Tool Sets").click();
+    assert!(h.query_by_label("Expand Toolbox").is_none());
+    h.get_by_role_and_label(egui::accesskit::Role::Tab, "Toolbox").click();
     h.run_steps(3);
     h.get_by_label("Line").click();
     h.run_steps(3);
     assert_eq!(h.state().session.running.as_ref().map(|command| command.id.as_str()), Some("line"));
     h.state_mut().session.cancel();
     // Window > Tool Sets (Cmd+3) stays the keyboard route back.
-    h.get_by_label("Collapse Tool Sets").click();
+    h.get_by_label("Collapse Toolbox").click();
     h.run_steps(4);
     h.key_press_modifiers(Modifiers::COMMAND, egui::Key::Num3);
     h.run_steps(4);
@@ -578,7 +578,7 @@ fn group_drag_bar_moves_the_whole_group_into_the_other_dock() {
         .into_iter()
         .find(|(hit, _)| matches!(hit, Hit::DragBar(panel) if *panel == Panel::ToolSets || *panel == Panel::Layers))
         .map(|(_, rect)| rect)
-        .expect("the Tool Sets group draws a drag bar");
+        .expect("the Toolbox group draws a drag bar");
     // Into the middle of the Properties group, as tabs.
     let properties = hit(&h, Hit::Tab(Panel::Properties));
     let column = hit(&h, Hit::ColumnBar(Panel::Properties));

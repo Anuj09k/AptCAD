@@ -77,8 +77,8 @@ pub fn qselect_dialog(app: &mut CadApp, ctx: &egui::Context, open: &mut bool) {
     let has_sel = !app.session.selection().is_empty();
     let mut run: Option<Value> = None;
     let mut close = false;
-    egui::Window::new(crate::tl!("Quick Select"))
-        .id(egui::Id::unique("Quick Select"))
+    egui::Window::new(crate::tl!("Select by Property"))
+        .id(egui::Id::unique("Select by Property"))
         .open(open)
         .collapsible(false)
         .resizable(false)
@@ -405,7 +405,7 @@ pub fn quick_properties(app: &mut CadApp, ctx: &egui::Context) {
             });
             ui.horizontal(|ui| {
                 ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
-                    if ui.small_button(crate::tl!("Close")).on_hover_text(crate::tl!("Turn Quick Properties off (QPMODE)")).clicked() {
+                    if ui.small_button(crate::tl!("Close")).on_hover_text(crate::tl!("Turn Quick Info off (QPMODE)")).clicked() {
                         close = true;
                     }
                 });

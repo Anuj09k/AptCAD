@@ -22,8 +22,8 @@ pub fn specs() -> Vec<CommandSpec> {
             .enabled(always)
             .noundo()
             .interactive(|_| Ok(Box::new(Recover))),
-        CommandSpec::new("drawingrecovery", "Drawing Recovery Manager...", run_drawingrecovery)
-            .menu(&["File", "Drawing Utilities", "Drawing Recovery Manager..."])
+        CommandSpec::new("drawingrecovery", "Recover Drawings...", run_drawingrecovery)
+            .menu(&["File", "Drawing Utilities", "Recover Drawings..."])
             .params("{action?: list|open|discard (default list), path? (one of the listed files)} → {files: [{path, drawing, modified, bytes}]} | (open: as RECOVER)")
             .enabled(always)
             .noundo(),

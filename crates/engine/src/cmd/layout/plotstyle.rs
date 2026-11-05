@@ -13,13 +13,13 @@ use super::{CommandSpec, Result, Session, bad, str_param};
 
 pub fn specs() -> Vec<CommandSpec> {
     vec![
-        CommandSpec::new("plotstyle", "Plot Style...", run_plotstyle)
-            .menu(&["Format", "Plot Style..."])
+        CommandSpec::new("plotstyle", "Print Style...", run_plotstyle)
+            .menu(&["Format", "Print Style..."])
             .params(
                 "{name?: \"ByLayer\"|\"ByBlock\"|style name, handles?|handle? (default: the selection; nothing selected sets the current plot style for new objects, CPLOTSTYLE)} (no name: reports the current style and the named styles)",
             ),
-        CommandSpec::new("stylesmanager", "Plot Style Manager...", run_stylesmanager)
-            .menu(&["File", "Plot Styles..."])
+        CommandSpec::new("stylesmanager", "Print Style Manager...", run_stylesmanager)
+            .menu(&["File", "Print Styles..."])
             .params(
                 "{action?: list (default)|get|new|set|delete|load|save, name?: table (\"x.ctb\"/\"x.stb\"), kind?: colorDependent|named (new), from?: table to copy (new), description?, style?: {name, color?: \"#rrggbb\"|null, grayscale?, screening?: 0-100, linetype?: name|null, lineweight?: mm|null, end?, join?, fill?, description?} (set), removeStyle?: name (set, named tables), path? (load/save; save without one returns `text`), text? (load)}",
             ),

@@ -84,7 +84,7 @@
 	Audit	Έλεγχος σχεδίου (Audit)
 	Auto (system language)	Αυτόματα (γλώσσα συστήματος)
 	Auto Constrain	Αυτόματοι γεωμετρικοί περιορισμοί (Auto Constrain)
-	AutoConstrain	Αυτόματοι γεωμετρικοί περιορισμοί (AutoConstrain)
+	Apply Constraints	Αυτόματοι γεωμετρικοί περιορισμοί
 	Automatic save every	Αυτόματη αποθήκευση κάθε
 	Automatic save file location	Θέση αρχείων αυτόματης αποθήκευσης
 	Axis, End	Άξονας, τέλος
@@ -99,7 +99,7 @@
 	Bind...	Σύνδεση (Bind)...
 	Blend	Ομαλή σύνδεση (Blend)
 	Block	Μπλοκ (Block)
-	Block Attribute Manager...	Διαχείριση ιδιοτήτων μπλοκ (Block Attributes)...
+	Attribute Manager...	Διαχείριση ιδιοτήτων μπλοκ (Block Attributes)...
 	Block Description...	Περιγραφή μπλοκ...
 	Block Editor	Επεξεργαστής μπλοκ (Block Editor)
 	Block Reference	Αναφορά μπλοκ (Block Reference)
@@ -170,7 +170,7 @@
 	Closed	Κλειστό
 	Coincident	Σύμπτωση (Coincident)
 	Collapse Palettes	Σύμπτυξη παλετών
-	Collapse Tool Sets	Σύμπτυξη συνόλων εργαλείων
+	Collapse Toolbox	Σύμπτυξη συνόλων εργαλείων
 	Collect	Συλλογή
 	Collect Multileaders	Συλλογή πολλαπλών γραμμών υπόδειξης
 	Collinear	Συγγραμμικό (Collinear)
@@ -283,7 +283,7 @@
 	Distance	Απόσταση
 	Divide	Διαίρεση (Divide)
 	Do not plot (click: plot)	Να μην εκτυπωθεί (κλικ: εκτύπωση)
-	Donut	Δακτύλιος (Donut)
+	Ring	Δακτύλιος (Donut)
 	Double-click to edit the description	Διπλό κλικ για επεξεργασία της περιγραφής
 	Down	Κάτω
 	Drafting	Σχεδίαση
@@ -296,21 +296,21 @@
 	Drawing (DXF)	Σχέδιο (DXF)
 	Drawing as bytes	Σχέδιο ως δυαδικά δεδομένα
 	Drawing Limits	Όρια σχεδίου
-	Drawing Recovery Manager...	Διαχείριση ανάκτησης σχεδίων...
+	Recover Drawings...	Διαχείριση ανάκτησης σχεδίων...
 	Drawing Template (DWT)	Πρότυπο σχεδίου (DWT)
 	Drawing Utilities	Βοηθητικά εργαλεία σχεδίου
 	Drawings (DWG, DXF)	Σχέδια (DWG, DXF)
 	Drawings with no file yet are saved in the default version. 0 minutes turns automatic save off.	Τα σχέδια που δεν έχουν ακόμη αρχείο αποθηκεύονται στην προεπιλεγμένη έκδοση. Η τιμή 0 λεπτά απενεργοποιεί την αυτόματη αποθήκευση.
 	DWG	DWG
-	DWG Reference...	Αναφορά DWG...
+	Attach Drawing...	Αναφορά DWG...
 	DXF	DXF
 	Dynamic	Δυναμικό
 	Dynamic Block Data	Δεδομένα δυναμικού μπλοκ
 	Dynamic Block Grips	Λαβές δυναμικού μπλοκ
 	Dynamic Block Reference	Αναφορά δυναμικού μπλοκ
 	Dynamic Dimensions	Δυναμικές διαστάσεις
-	Dynamic Input	Δυναμική εισαγωγή (Dynamic Input)
-	Dynamic Input (F12)	Δυναμική εισαγωγή (F12)
+	Cursor Input	Δυναμική εισαγωγή (Dynamic Input)
+	Cursor Input (F12)	Δυναμική εισαγωγή (F12)
 	E	E
 	Edit	Επεξεργασία
 	Edit Array	Επεξεργασία διάταξης (Array)
@@ -324,7 +324,7 @@
 	Ellipse	Έλλειψη
 	Elliptical Arc	Ελλειπτικό τόξο
 	Enable 3D mouse navigation	Ενεργοποίηση πλοήγησης με ποντίκι 3Δ
-	Enable Dynamic Input (F12)	Ενεργοποίηση δυναμικής εισαγωγής (F12)
+	Enable Cursor Input (F12)	Ενεργοποίηση δυναμικής εισαγωγής (F12)
 	End angle	Τελική γωνία
 	End Object Isolation	Τερματισμός απομόνωσης αντικειμένων
 	End Width	Τελικό πλάτος
@@ -490,7 +490,7 @@
 	Index Color	Χρώμα δείκτη
 	Index color: {index}	Χρώμα δείκτη: {index}
 	Indicate selection area	Εμφάνιση περιοχής επιλογής
-	Infer Constraints	Αυτόματη αναγνώριση περιορισμών
+	Infer Constraints	Αυτόματοι γεωμετρικοί περιορισμοί
 	Inquiry	Ερωτήματα σχεδίου (Inquiry)
 	Insert	Εισαγωγή
 	Insert Block	Εισαγωγή μπλοκ (Block)
@@ -542,7 +542,7 @@
 	Layer Properties Manager	Διαχείριση ιδιοτήτων επιπέδων
 	Layer Properties Manager — current viewport	Διαχείριση ιδιοτήτων επιπέδων — τρέχον παράθυρο προβολής
 	Layer State	Κατάσταση επιπέδων (Layer State)
-	Layer States Manager...	Διαχείριση καταστάσεων επιπέδων...
+	Layer States...	Διαχείριση καταστάσεων επιπέδων...
 	Layer Tools	Εργαλεία επιπέδων
 	Layers	Επίπεδα (Layers)
 	Layers displayed: {shown} of {total}.   Current layer: {layer}	Εμφανιζόμενα επίπεδα: {shown} από {total}.   Τρέχον επίπεδο: {layer}
@@ -627,9 +627,9 @@
 	Multileader Style...	Στυλ πολλαπλής γραμμής υπόδειξης...
 	Multiline	Πολλαπλή γραμμή (Multiline)
 	Multiline Style...	Στυλ πολλαπλών γραμμών...
-	Multiline Text	Κείμενο πολλαπλών γραμμών (MText)
+	Paragraph Text	Κείμενο παραγράφου
 	Multiline text	Κείμενο πολλαπλών γραμμών
-	Multiline Text...	Κείμενο πολλαπλών γραμμών...
+	Paragraph Text...	Κείμενο πολλαπλών γραμμών...
 	Multiline...	Πολλαπλή γραμμή (Multiline)...
 	Multiple	Πολλαπλό
 	Multiple Point	Πολλαπλά σημεία
@@ -685,9 +685,9 @@
 	Object snap aperture	Ακτίνα αναζήτησης έλξης αντικειμένων
 	Object snap marker size	Μέγεθος δείκτη έλξης αντικειμένων
 	Object Snap On (F3)	Έλξη αντικειμένων ενεργή (F3)
-	Object Snap Tracking	Παρακολούθηση έλξης αντικειμένων (Object Snap Tracking)
-	Object Snap Tracking (F11)	Παρακολούθηση έλξης αντικειμένων (F11)
-	Object Snap Tracking Settings	Ρυθμίσεις παρακολούθησης έλξης αντικειμένων
+	Snap Tracking	Παρακολούθηση έλξης αντικειμένων (Object Snap Tracking)
+	Snap Tracking (F11)	Παρακολούθηση έλξης αντικειμένων (F11)
+	Snap Tracking Settings	Ρυθμίσεις παρακολούθησης έλξης αντικειμένων
 	Object type:	Τύπος αντικειμένου:
 	objects	αντικείμενα
 	Objects on locked layers	Αντικείμενα σε κλειδωμένα επίπεδα
@@ -708,7 +708,7 @@
 	Open Recent	Πρόσφατα αρχεία
 	Open Sample Drawing	Άνοιγμα δείγματος σχεδίου
 	Open sample drawing	Άνοιγμα δείγματος σχεδίου
-	Open Xref	Άνοιγμα εξωτερικής αναφοράς (Xref)
+	Open Reference	Άνοιγμα αναφοράς
 	Open...	Άνοιγμα...
 	Operator:	Τελεστής:
 	Options	Επιλογές
@@ -727,7 +727,7 @@
 	Overline	Γραμμή πάνω από το κείμενο
 	Override	Παράκαμψη
 	Page Setup Manager	Διαχείριση διαμόρφωσης σελίδας
-	Page Setup Manager...	Διαχείριση διαμόρφωσης σελίδας...
+	Page Setups...	Διαχείριση διαμόρφωσης σελίδας...
 	Pan	Μετατόπιση όψης (Pan)
 	Pan Down	Μετατόπιση όψης κάτω
 	Pan Left	Μετατόπιση όψης αριστερά
@@ -750,18 +750,18 @@
 	Pickbox size	Μέγεθος πλαισίου επιλογής
 	Plot	Εκτύπωση (Plot)
 	Plot (click: do not plot)	Εκτύπωση (κλικ: χωρίς εκτύπωση)
-	Plot Preview	Προεπισκόπηση εκτύπωσης
+	Print Preview	Προεπισκόπηση εκτύπωσης
 	Plot style	Στυλ εκτύπωσης
 	Plot style attached to	Στυλ εκτύπωσης συνδεδεμένο με
 	Plot Style Manager	Διαχείριση στυλ εκτύπωσης
-	Plot Style Manager...	Διαχείριση στυλ εκτύπωσης...
+	Print Style Manager...	Διαχείριση στυλ εκτύπωσης...
 	Plot style table	Πίνακας στυλ εκτύπωσης
-	Plot Style...	Στυλ εκτύπωσης...
-	Plot Styles...	Στυλ εκτύπωσης...
+	Print Style...	Στυλ εκτύπωσης...
+	Print Styles...	Στυλ εκτύπωσης...
 	Plot table type	Τύπος πίνακα εκτύπωσης
 	Plot Window	Παράθυρο εκτύπωσης
 	Plotter Manager	Διαχείριση σχεδιογράφων
-	Plotter Manager...	Διαχείριση σχεδιογράφων...
+	Printer Manager...	Διαχείριση σχεδιογράφων...
 	Plus/minus	Συν/πλην
 	Point	Σημείο (Point)
 	Point Filters	Φίλτρα σημείων
@@ -770,9 +770,9 @@
 	Polar angle measurement	Μέτρηση πολικής γωνίας
 	Polar Array	Πολική διάταξη (Polar Array)
 	Polar distance	Πολική απόσταση
-	Polar Tracking	Πολική παρακολούθηση (Polar Tracking)
-	Polar Tracking (F10)	Πολική παρακολούθηση (F10)
-	Polar Tracking On (F10)	Πολική παρακολούθηση ενεργή (F10)
+	Angle Tracking	Πολική παρακολούθηση (Polar Tracking)
+	Angle Tracking (F10)	Πολική παρακολούθηση (F10)
+	Angle Tracking On (F10)	Πολική παρακολούθηση ενεργή (F10)
 	Polar: {distance} < {angle}°	Πολικές: {distance} < {angle}°
 	PolarSnap	Πολική έλξη (PolarSnap)
 	Polygon	Πολύγωνο
@@ -803,12 +803,12 @@
 	Query Texts	Ερώτημα κειμένων
 	Quick	Γρήγορο
 	Quick Dimension	Γρήγορη διαστασιολόγηση
-	Quick Properties	Γρήγορες ιδιότητες
-	Quick Select	Γρήγορη επιλογή (Quick Select)
-	Quick Select Properties	Ιδιότητες γρήγορης επιλογής
-	Quick Select...	Γρήγορη επιλογή...
-	QuickCalc	Γρήγορη αριθμομηχανή (QuickCalc)
-	QuickCalc Pick	Επιλογή στη γρήγορη αριθμομηχανή
+	Quick Info	Γρήγορες ιδιότητες
+	Select by Property	Γρήγορη επιλογή (Quick Select)
+	Select by Property Fields	Ιδιότητες γρήγορης επιλογής
+	Select by Property...	Γρήγορη επιλογή...
+	Calculator	Αριθμομηχανή
+	Calculator Pick	Επιλογή στη γρήγορη αριθμομηχανή
 	Quit AptCAD	Έξοδος από το AptCAD
 	Radius	Ακτίνα
 	Raster Image	Εικόνα ψηφίδων (Raster Image)
@@ -833,8 +833,8 @@
 	Reference Manager	Διαχείριση αναφορών
 	Reference Name	Όνομα αναφοράς
 	References: {n}	Αναφορές: {n}
-	Regen	Αναγέννηση σχεδίου (Regen)
-	Regen All	Αναγέννηση όλων (Regen All)
+	Refresh	Αναγέννηση σχεδίου (Regen)
+	Refresh All	Αναγέννηση όλων (Regen All)
 	Region	Περιοχή (Region)
 	Region/Mass Properties	Ιδιότητες περιοχής/μάζας
 	Reinitialize	Επανεκκίνηση αρχικοποίησης
@@ -995,9 +995,9 @@
 	Show Annotative Objects	Εμφάνιση αντικειμένων σχολιασμού
 	Show command prompting near the crosshairs	Εμφάνιση προτροπών εντολών δίπλα στο σταυρόνημα
 	Show grips	Εμφάνιση λαβών
-	Show in Tool Sets	Εμφάνιση στα σύνολα εργαλείων
+	Show in Toolbox	Εμφάνιση στα σύνολα εργαλείων
 	Show Layer List	Εμφάνιση λίστας επιπέδων
-	Show Quick Properties for selected objects	Εμφάνιση γρήγορων ιδιοτήτων για τα επιλεγμένα αντικείμενα
+	Show Quick Info for selected objects	Εμφάνιση γρήγορων ιδιοτήτων για τα επιλεγμένα αντικείμενα
 	Show System Cursor	Εμφάνιση δείκτη συστήματος
 	Show/Hide Lineweight	Εμφάνιση/απόκρυψη πάχους γραμμής
 	Show/Hide Transparency	Εμφάνιση/απόκρυψη διαφάνειας
@@ -1013,7 +1013,7 @@
 	Snap Overrides	Παρακάμψεις έλξης
 	Snap type	Τύπος έλξης
 	Snap X spacing	Βήμα έλξης X
-	Snap, grid, polar tracking and Dynamic Input:	Έλξη, πλέγμα, πολική παρακολούθηση και δυναμική εισαγωγή:
+	Snap, grid, angle tracking and Cursor Input:	Έλξη, πλέγμα, πολική παρακολούθηση και δυναμική εισαγωγή:
 	Solid	Στερεό (Solid)
 	Solid Editing	Επεξεργασία στερεών
 	Sort	Ταξινόμηση
@@ -1207,7 +1207,7 @@
 	Toggle PICKADD (on: picks add to the selection)	Εναλλαγή PICKADD (ενεργό: οι νέες επιλογές προστίθενται)
 	Tolerance...	Ανοχές (Tolerance)...
 	Tool Bar	Γραμμή εργαλείων
-	Tool Sets	Σύνολα εργαλείων
+	Toolbox	Σύνολα εργαλείων
 	Tools	Εργαλεία
 	TOP	ΚΑΤΟΨΗ
 	Top left	Πάνω αριστερά
@@ -1222,7 +1222,7 @@
 	Turn All Layers On	Ενεργοποίηση όλων των επιπέδων
 	Turn Off Layer	Απενεργοποίηση επιπέδου
 	Turn On Layer	Ενεργοποίηση επιπέδου
-	Turn Quick Properties off (QPMODE)	Απενεργοποίηση γρήγορων ιδιοτήτων (QPMODE)
+	Turn Quick Info off (QPMODE)	Απενεργοποίηση γρήγορων ιδιοτήτων (QPMODE)
 	Turned off, a right-click while a command runs always opens the shortcut menu.	Όταν είναι απενεργοποιημένο, το δεξί κλικ κατά την εκτέλεση εντολής ανοίγει πάντα το μενού συντομεύσεων.
 	Type	Τύπος
 	Type a command	Πληκτρολογήστε μια εντολή
@@ -1298,8 +1298,8 @@
 	Write Block	Εγγραφή μπλοκ (Write Block)
 	X	X
 	Xline	Βοηθητική ευθεία (Xline)
-	Xref and Block In-place Editing	Επιτόπια επεξεργασία εξωτερικών αναφορών και μπλοκ
-	Xrefs	Εξωτερικές αναφορές (Xrefs)
+	Edit in Place	Επιτόπια επεξεργασία εξωτερικών αναφορών και μπλοκ
+	References	Εξωτερικές αναφορές (Xrefs)
 	Y	Y
 	Yellow	Κίτρινο
 	Yes	Ναι

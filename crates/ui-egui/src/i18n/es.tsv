@@ -71,7 +71,7 @@
 	Audit	Verificar dibujo
 	Auto (system language)	Automático (idioma del sistema)
 	Auto Constrain	Restricciones automáticas
-	AutoConstrain	Restricciones automáticas
+	Apply Constraints	Restricciones automáticas
 	Automatic save every	Guardado automático cada
 	Automatic save file location	Ubicación de los archivos de guardado automático
 	Backup copy	Copia de seguridad
@@ -88,7 +88,7 @@
 	Bind...	Unir...
 	Blend	Fusión de curvas
 	Block	Bloque
-	Block Attribute Manager...	Administrador de atributos de bloque...
+	Attribute Manager...	Administrador de atributos de bloque...
 	Block Description...	Descripción de bloque...
 	Block Editor	Editor de bloques
 	Block Reference	Referencia de bloque
@@ -147,7 +147,7 @@
 	Closed	Cerrada
 	Coincident	Coincidente
 	Collapse Palettes	Contraer paletas
-	Collapse Tool Sets	Contraer conjuntos de herramientas
+	Collapse Toolbox	Contraer conjuntos de herramientas
 	Collinear	Colineal
 	Color	Color
 	Color 8	Color 8
@@ -200,7 +200,7 @@
 	Cyan	Cian
 	Cylinder	Cilindro
 	DWG	DWG
-	DWG Reference...	Referencia DWG...
+	Attach Drawing...	Referencia DWG...
 	DXF	DXF
 	Dark	Oscuro
 	Data Extraction...	Extracción de datos...
@@ -252,7 +252,7 @@
 	Distance	Distancia
 	Divide	Dividir
 	Do not plot (click: plot)	No se trazará (clic: trazar)
-	Donut	Arandela
+	Ring	Arandela
 	Double-click to edit the description	Doble clic para editar la descripción
 	Down	Abajo
 	Drafting	Dibujo
@@ -263,15 +263,15 @@
 	Drawing (DWG)	Dibujo (DWG)
 	Drawing (DXF)	Dibujo (DXF)
 	Drawing Limits	Límites del dibujo
-	Drawing Recovery Manager...	Administrador de recuperación de dibujos...
+	Recover Drawings...	Administrador de recuperación de dibujos...
 	Drawing Template (DWT)	Plantilla de dibujo (DWT)
 	Drawing Utilities	Utilidades de dibujo
 	Drawings (DWG, DXF)	Dibujos (DWG, DXF)
 	Drawings with no file yet are saved in the default version. 0 minutes turns automatic save off.	Los dibujos que aún no tienen archivo se guardan en la versión predeterminada. 0 minutos desactiva el guardado automático.
 	Dynamic	Dinámico
 	Dynamic Dimensions	Cotas dinámicas
-	Dynamic Input	Entrada dinámica
-	Dynamic Input (F12)	Entrada dinámica (F12)
+	Cursor Input	Entrada dinámica
+	Cursor Input (F12)	Entrada dinámica (F12)
 	E	E
 	Edit	Edición
 	Edit Array	Editar matriz
@@ -281,7 +281,7 @@
 	Elevation	Elevación
 	Ellipse	Elipse
 	Elliptical Arc	Arco elíptico
-	Enable Dynamic Input (F12)	Activar entrada dinámica (F12)
+	Enable Cursor Input (F12)	Activar entrada dinámica (F12)
 	End Object Isolation	Terminar aislamiento de objetos
 	End Width	Anchura final
 	End X	X final
@@ -476,7 +476,7 @@
 	Layer Properties Manager	Administrador de propiedades de capas
 	Layer Properties Manager — current viewport	Administrador de propiedades de capas — ventana gráfica actual
 	Layer State	Estado de capas
-	Layer States Manager...	Administrador de estados de capas...
+	Layer States...	Administrador de estados de capas...
 	Layer Tools	Herramientas de capas
 	Layer contains objects (double-click to make current)	La capa contiene objetos (doble clic para establecer como actual)
 	Layer is empty (double-click to make current)	La capa está vacía (doble clic para establecer como actual)
@@ -558,8 +558,8 @@
 	Multileader style	Estilo de directriz múltiple
 	Multiline	Línea múltiple
 	Multiline Style...	Estilo de línea múltiple...
-	Multiline Text	Texto multilínea
-	Multiline Text...	Texto multilínea...
+	Paragraph Text	Texto multilínea
+	Paragraph Text...	Texto multilínea...
 	Multiline...	Línea múltiple...
 	Multiple	Varios
 	Multiple Point	Puntos múltiples
@@ -604,9 +604,9 @@
 	Object Snap	Referencia a objetos
 	Object Snap (F3)	Referencia a objetos (F3)
 	Object Snap On (F3)	Activar referencia a objetos (F3)
-	Object Snap Tracking	Rastreo de referencia a objetos
-	Object Snap Tracking (F11)	Rastreo de referencia a objetos (F11)
-	Object Snap Tracking Settings	Configuración del rastreo de referencia a objetos
+	Snap Tracking	Rastreo de referencia a objetos
+	Snap Tracking (F11)	Rastreo de referencia a objetos (F11)
+	Snap Tracking Settings	Configuración del rastreo de referencia a objetos
 	Object snap aperture	Apertura de referencia a objetos
 	Object snap marker size	Tamaño del marcador de referencia a objetos
 	Object type:	Tipo de objeto:
@@ -621,7 +621,7 @@
 	Open	Abrir
 	Open (⌘O)	Abrir (⌘O)
 	Open Sample Drawing	Abrir dibujo de ejemplo
-	Open Xref	Abrir referencia externa
+	Open Reference	Abrir referencia externa
 	Open and Save	Abrir y guardar
 	Open sample drawing	Abrir dibujo de ejemplo
 	Open...	Abrir...
@@ -643,11 +643,11 @@
 	Percent	Porcentaje
 	Pickbox size	Tamaño de la caja de selección
 	Plotter Manager	Administrador de trazadores
-	Plotter Manager...	Administrador de trazadores...
+	Printer Manager...	Administrador de trazadores...
 	Polar (distance < angle)	Polares (distancia < ángulo)
 	PRs	PRs
 	Page Setup Manager	Administrador de configuración de página
-	Page Setup Manager...	Administrador de configuración de página...
+	Page Setups...	Administrador de configuración de página...
 	Pan	Encuadre
 	Pan Down	Encuadrar hacia abajo
 	Pan Left	Encuadrar a la izquierda
@@ -665,15 +665,15 @@
 	Perpendicular	Perpendicular
 	Plot	Trazar
 	Plot (click: do not plot)	Se trazará (clic: no trazar)
-	Plot Preview	Vista previa de trazado
+	Print Preview	Vista previa de trazado
 	Plot Window	Ventana de trazado
 	Plot style	Estilo de trazado
 	Plot style attached to	Estilo de trazado asociado a
 	Plot style table	Tabla de estilos de trazado
-	Plot Style...	Estilo de trazado...
+	Print Style...	Estilo de trazado...
 	Plot Style Manager	Administrador de estilos de trazado
-	Plot Style Manager...	Administrador de estilos de trazado...
-	Plot Styles...	Estilos de trazado...
+	Print Style Manager...	Administrador de estilos de trazado...
+	Print Styles...	Estilos de trazado...
 	New CTB	Nueva CTB
 	New STB	Nueva STB
 	New style	Nuevo estilo
@@ -684,7 +684,7 @@
 	Polyline Edit	Editar polilínea
 	Previous Change	Cambio anterior
 	Profiles	Perfiles
-	QuickCalc Pick	Designar para la calculadora rápida
+	Calculator Pick	Designar para la calculadora rápida
 	Recalculate Table Formulas	Recalcular fórmulas de tabla
 	Recent Commands	Comandos recientes
 	Recent Input	Entradas recientes
@@ -714,13 +714,13 @@
 	Set Table Cell Style	Establecer estilo de celda de tabla
 	Settings...	Configuración...
 	Show Annotative Objects	Mostrar objetos anotativos
-	Show Quick Properties for selected objects	Mostrar las propiedades rápidas de los objetos seleccionados
+	Show Quick Info for selected objects	Mostrar las propiedades rápidas de los objetos seleccionados
 	Show and hide the tools of this category	Mostrar y ocultar las herramientas de esta categoría
 	Show command prompting near the crosshairs	Mostrar las solicitudes de comandos junto al cursor en cruz
-	Show in Tool Sets	Mostrar en los conjuntos de herramientas
+	Show in Toolbox	Mostrar en los conjuntos de herramientas
 	Snap Overrides	Anulaciones de referencia a objetos
 	Snap type	Tipo de forzado de cursor
-	Snap, grid, polar tracking and Dynamic Input:	Forzar cursor, rejilla, rastreo polar y entrada dinámica:
+	Snap, grid, angle tracking and Cursor Input:	Forzar cursor, rejilla, rastreo polar y entrada dinámica:
 	Solid Editing	Edición de sólidos
 	Spline Edit	Editar spline
 	Stretch Vertex	Estirar vértice
@@ -766,9 +766,9 @@
 	Point Filters	Filtros de puntos
 	Point Style...	Estilo de punto...
 	Polar Array	Matriz polar
-	Polar Tracking	Rastreo polar
-	Polar Tracking (F10)	Rastreo polar (F10)
-	Polar Tracking On (F10)	Activar rastreo polar (F10)
+	Angle Tracking	Rastreo polar
+	Angle Tracking (F10)	Rastreo polar (F10)
+	Angle Tracking On (F10)	Activar rastreo polar (F10)
 	Polar: {distance} < {angle}°	Polar: {distance} < {angle}°
 	Polygon	Polígono
 	Polygonal	Poligonal
@@ -792,11 +792,11 @@
 	Query Entities	Consultar entidades
 	Quick	Rápido
 	Quick Dimension	Acotación rápida
-	Quick Properties	Propiedades rápidas
-	Quick Select	Selección rápida
-	Quick Select Properties	Propiedades de selección rápida
-	Quick Select...	Selección rápida...
-	QuickCalc	Calculadora rápida
+	Quick Info	Propiedades rápidas
+	Select by Property	Selección rápida
+	Select by Property Fields	Propiedades de selección rápida
+	Select by Property...	Selección rápida...
+	Calculator	Calculadora rápida
 	Quit AptCAD	Salir de AptCAD
 	Radius	Radio
 	Raster Image	Imagen ráster
@@ -814,8 +814,8 @@
 	Redo	Rehacer
 	Redo (⇧⌘Z)	Rehacer (⇧⌘Z)
 	Redraw	Redibujar
-	Regen	Regenerar
-	Regen All	Regenerar todo
+	Refresh	Regenerar
+	Refresh All	Regenerar todo
 	Region	Región
 	Region/Mass Properties	Propiedades físicas/de región
 	Relative	Relativas
@@ -825,7 +825,7 @@
 	Edit Reference In-Place	Editar referencia in situ
 	Save Reference Edits	Guardar cambios de la referencia
 	Working Set	Conjunto de trabajo
-	Xref and Block In-place Editing	Edición in situ de xrefs y bloques
+	Edit in Place	Edición in situ de xrefs y bloques
 	Rename Dimension Style	Renombrar estilo de cota
 	Rename Layer	Renombrar capa
 	Rename Layer State	Renombrar estado de capas
@@ -1126,7 +1126,7 @@
 	Time	Tiempo
 	To get started, create or open a drawing.	Para empezar, crea o abre un dibujo.
 	Tool Bar	Barra de herramientas
-	Tool Sets	Conjuntos de herramientas
+	Toolbox	Conjuntos de herramientas
 	Tools	Herramientas
 	Torus	Toroide
 	Trace	Trazo
@@ -1135,7 +1135,7 @@
 	True Color	Color verdadero
 	Turn All Layers On	Activar todas las capas
 	Turn Off Layer	Desactivar capa
-	Turn Quick Properties off (QPMODE)	Desactivar propiedades rápidas (QPMODE)
+	Turn Quick Info off (QPMODE)	Desactivar propiedades rápidas (QPMODE)
 	Type	Tipo
 	Type a command	Escribe un comando
 	Type text; Enter starts a new paragraph	Escribe el texto; Intro inicia un párrafo nuevo

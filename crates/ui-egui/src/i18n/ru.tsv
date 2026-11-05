@@ -57,7 +57,7 @@
 	Audit	Проверка чертежа
 	Auto (system language)	Авто (язык системы)
 	Auto Constrain	Автоограничение
-	AutoConstrain	Автоограничение
+	Apply Constraints	Автоограничение
 	Axis, End	Ось, конец
 	Base	База
 	Baseline	Базовый
@@ -66,7 +66,7 @@
 	Binary assets removed	Удаленные двоичные ресурсы
 	Blend	Сгладить
 	Block	Блок
-	Block Attribute Manager...	Диспетчер атрибутов блоков...
+	Attribute Manager...	Диспетчер атрибутов блоков...
 	Block Description...	Описание блока...
 	Block Editor	Редактор блоков
 	Block Reference	Вхождение блока
@@ -109,7 +109,7 @@
 	Close All	Закрыть все
 	Closed	Замкнутый
 	Coincident	Совпадение
-	Collapse Tool Sets	Свернуть наборы инструментов
+	Collapse Toolbox	Свернуть наборы инструментов
 	Collinear	Коллинеарность
 	Color	Цвет
 	Color 8	Цвет 8
@@ -187,7 +187,7 @@
 	Distance	Расстояние
 	Divide	Поделить
 	Do not plot (click: plot)	Не выводить на печать (щелкните для печати)
-	Donut	Кольцо
+	Ring	Кольцо
 	Double-click to edit the description	Дважды щелкните, чтобы изменить описание
 	Down	Вниз
 	Drafting	Черчение
@@ -201,15 +201,15 @@
 	Drawing Utilities	Утилиты чертежа
 	Drawings (DWG, DXF)	Чертежи (DWG, DXF)
 	Dynamic Dimensions	Динамические размеры
-	Dynamic Input	Динамический ввод
-	Dynamic Input (F12)	Динамический ввод (F12)
+	Cursor Input	Динамический ввод
+	Cursor Input (F12)	Динамический ввод (F12)
 	E	В
 	Edit	Редактирование
 	Edit Text...	Редактировать текст...
 	Elevation	Уровень
 	Ellipse	Эллипс
 	Elliptical Arc	Эллиптическая дуга
-	Enable Dynamic Input (F12)	Включить динамический ввод (F12)
+	Enable Cursor Input (F12)	Включить динамический ввод (F12)
 	End Width	Конечная ширина
 	End X	Конец X
 	End Y	Конец Y
@@ -370,7 +370,7 @@
 	Layer Properties Manager	Диспетчер свойств слоев
 	Layer Properties Manager — current viewport	Диспетчер свойств слоев — текущий видовой экран
 	Layer State	Состояние слоев
-	Layer States Manager...	Диспетчер состояний слоев...
+	Layer States...	Диспетчер состояний слоев...
 	Layer Tools	Инструменты слоев
 	Layer contains objects (double-click to make current)	Слой содержит объекты (дважды щелкните, чтобы сделать текущим)
 	Layer is empty (double-click to make current)	Слой пуст (дважды щелкните, чтобы сделать текущим)
@@ -442,8 +442,8 @@
 	Multileader Style...	Стиль мультивыносок...
 	Multileader style	Стиль мультивыносок
 	Multiline	Мультилиния
-	Multiline Text	Многострочный текст
-	Multiline Text...	Многострочный текст...
+	Paragraph Text	Многострочный текст
+	Paragraph Text...	Многострочный текст...
 	Multiple	Разные типы
 	Multiple Point	Несколько точек
 	My	Мои
@@ -480,8 +480,8 @@
 	Object Snap	Объектная привязка
 	Object Snap (F3)	Объектная привязка (F3)
 	Object Snap On (F3)	Включить объектную привязку (F3)
-	Object Snap Tracking	Отслеживание объектной привязки
-	Object Snap Tracking (F11)	Отслеживание объектной привязки (F11)
+	Snap Tracking	Отслеживание объектной привязки
+	Snap Tracking (F11)	Отслеживание объектной привязки (F11)
 	Object type:	Тип объекта:
 	Off	Выключено
 	Offset	Смещение
@@ -506,7 +506,7 @@
 	Polar (distance < angle)	Полярные (расстояние < угол)
 	PRs	PR
 	Page Setup Manager	Диспетчер параметров листов
-	Page Setup Manager...	Диспетчер параметров листов...
+	Page Setups...	Диспетчер параметров листов...
 	Pan	Панорамирование
 	Pan Down	Панорамировать вниз
 	Pan Left	Панорамировать влево
@@ -524,14 +524,14 @@
 	Perpendicular	Перпендикулярность
 	Plot	Печать чертежа
 	Plot (click: do not plot)	Печатать (щелкните, чтобы отключить печать)
-	Plot Preview	Предварительный просмотр печати
+	Print Preview	Предварительный просмотр печати
 	Plot style	Стиль печати
 	Plot style attached to	Стиль печати применен к
 	Plot style table	Таблица стилей печати
-	Plot Style...	Стиль печати...
+	Print Style...	Стиль печати...
 	Plot Style Manager	Диспетчер стилей печати
-	Plot Style Manager...	Диспетчер стилей печати...
-	Plot Styles...	Стили печати...
+	Print Style Manager...	Диспетчер стилей печати...
+	Print Styles...	Стили печати...
 	New CTB	Новая CTB
 	New STB	Новая STB
 	New style	Новый стиль
@@ -557,9 +557,9 @@
 	Point Filters	Фильтры точек
 	Point Style...	Стиль точек...
 	Polar Array	Полярный массив
-	Polar Tracking	Полярное отслеживание
-	Polar Tracking (F10)	Полярное отслеживание (F10)
-	Polar Tracking On (F10)	Включить полярное отслеживание (F10)
+	Angle Tracking	Полярное отслеживание
+	Angle Tracking (F10)	Полярное отслеживание (F10)
+	Angle Tracking On (F10)	Включить полярное отслеживание (F10)
 	Polar: {distance} < {angle}°	Полярное: {distance} < {angle}°
 	Polygon	Многоугольник
 	Polygonal	Многоугольный
@@ -582,11 +582,11 @@
 	Query Entities	Запрос объектов
 	Quick	Быстрый
 	Quick Dimension	Быстрый размер
-	Quick Properties	Быстрые свойства
-	Quick Select	Быстрый выбор
-	Quick Select Properties	Свойства быстрого выбора
-	Quick Select...	Быстрый выбор...
-	QuickCalc	Быстрокалькулятор
+	Quick Info	Быстрые свойства
+	Select by Property	Быстрый выбор
+	Select by Property Fields	Свойства быстрого выбора
+	Select by Property...	Быстрый выбор...
+	Calculator	Быстрокалькулятор
 	Quit AptCAD	Выйти из AptCAD
 	Radius	Радиус
 	Raster Image	Растровое изображение
@@ -604,8 +604,8 @@
 	Redo	Повторить
 	Redo (⇧⌘Z)	Повторить (⇧⌘Z)
 	Redraw	Перерисовать
-	Regen	Регенерация
-	Regen All	Регенерировать все
+	Refresh	Регенерация
+	Refresh All	Регенерировать все
 	Region	Область
 	Region/Mass Properties	Свойства области/массы
 	Relative	Относительные
@@ -665,7 +665,7 @@
 	Edit Reference In-Place	Редактировать ссылку на месте
 	Save Reference Edits	Сохранить изменения ссылки
 	Working Set	Рабочий набор
-	Xref and Block In-place Editing	Редактирование xref и блоков на месте
+	Edit in Place	Редактирование xref и блоков на месте
 	Select a polyline.	Выберите полилинию.
 	Select a text, mtext, attribute definition or dimension.	Выберите текст, многострочный текст, определение атрибута или размер.
 	Select an annotation object	Выберите аннотационный объект
@@ -916,7 +916,7 @@
 	Time	Время
 	To get started, create or open a drawing.	Чтобы начать, создайте или откройте чертеж.
 	Tool Bar	Панель инструментов
-	Tool Sets	Наборы инструментов
+	Toolbox	Наборы инструментов
 	Tools	Инструменты
 	Torus	Тор
 	Trace	Широкая линия
@@ -925,7 +925,7 @@
 	True Color	Цвет RGB
 	Turn All Layers On	Включить все слои
 	Turn Off Layer	Выключить слой
-	Turn Quick Properties off (QPMODE)	Выключить быстрые свойства (QPMODE)
+	Turn Quick Info off (QPMODE)	Выключить быстрые свойства (QPMODE)
 	Type	Тип
 	Type a command	Введите команду
 	Type text; Enter starts a new paragraph	Введите текст; Enter начинает новый абзац

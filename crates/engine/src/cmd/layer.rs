@@ -55,7 +55,7 @@ pub fn specs() -> Vec<CommandSpec> {
         CommandSpec::new("layon", "Turn All Layers On", |s, _| all_layers(s, |l| l.on = true)),
         CommandSpec::new("laythw", "Thaw All Layers", |s, _| all_layers(s, |l| l.frozen = false)),
         CommandSpec::new("layerp", "Previous Layer", run_layerp).menu(&["Format", "Layer Tools", "Previous Layer"]),
-        CommandSpec::new("layerstate.save", "Save Layer State", run_state_save).menu(&["Format", "Layer States Manager..."]).params("{name}"),
+        CommandSpec::new("layerstate.save", "Save Layer State", run_state_save).menu(&["Format", "Layer States..."]).params("{name}"),
         CommandSpec::new("layerstate.restore", "Restore Layer State", run_state_restore).params("{name}"),
         CommandSpec::new("layerstate.list", "List Layer States", run_state_list).params("{} → states").noundo(),
         CommandSpec::new("layerstate.delete", "Delete Layer State", run_state_delete).params("{name}"),

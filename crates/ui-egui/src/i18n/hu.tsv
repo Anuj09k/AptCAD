@@ -99,7 +99,7 @@
 	Audit	Ellenőrzés
 	Auto (system language)	Automatikus (rendszernyelv)
 	Auto Constrain	Automatikus kényszerezés
-	AutoConstrain	Automatikus kényszerezés
+	Apply Constraints	Automatikus kényszerezés
 	Automatic save every	Automatikus mentés gyakorisága
 	Automatic save file location	Automatikus mentés helye
 	Axis, End	Tengely, végpont
@@ -113,7 +113,7 @@
 	Bind...	Beépítés...
 	Blend	Átmenetgörbe
 	Block	Blokk
-	Block Attribute Manager...	Blokkattribútum-kezelő...
+	Attribute Manager...	Blokkattribútum-kezelő...
 	Block Description...	Blokkleírás...
 	Block Editor	Blokkszerkesztő
 	Block Reference	Blokkhivatkozás
@@ -183,7 +183,7 @@
 	Closed	Zárt
 	Coincident	Egybeeső
 	Collapse Palettes	Paletták összecsukása
-	Collapse Tool Sets	Eszközkészletek összecsukása
+	Collapse Toolbox	Eszközkészletek összecsukása
 	Collect	Összegyűjtés
 	Collect Multileaders	Többes mutatóvonalak összegyűjtése
 	Collinear	Egy egyenesbe eső
@@ -245,7 +245,7 @@
 	Cyan	Cián
 	Cylinder	Henger
 	DWG	DWG
-	DWG Reference...	DWG-hivatkozás...
+	Attach Drawing...	DWG-hivatkozás...
 	DXF	DXF
 	Dark	Sötét
 	Data Extraction...	Adatkinyerés...
@@ -298,7 +298,7 @@
 	Distance	Távolság
 	Divide	Felosztás
 	Do not plot (click: plot)	Nem nyomtatandó (kattintás: nyomtatandó)
-	Donut	Gyűrű
+	Ring	Gyűrű
 	Double-click to edit the description	Dupla kattintással szerkesztheted a leírást
 	Down	Lefelé
 	Drafting	Rajzolás
@@ -310,7 +310,7 @@
 	Drawing (DWG)	Rajz (DWG)
 	Drawing (DXF)	Rajz (DXF)
 	Drawing Limits	Rajzhatárok
-	Drawing Recovery Manager...	Rajzhelyreállítás kezelője...
+	Recover Drawings...	Rajzhelyreállítás kezelője...
 	Drawing Template (DWT)	Rajzsablon (DWT)
 	Drawing Utilities	Rajzsegédprogramok
 	Drawing as bytes	Rajz bájtokként
@@ -321,8 +321,8 @@
 	Dynamic Block Grips	Dinamikus blokk fogópontjai
 	Dynamic Block Reference	Dinamikus blokkhivatkozás
 	Dynamic Dimensions	Dinamikus méretek
-	Dynamic Input	Dinamikus bevitel
-	Dynamic Input (F12)	Dinamikus bevitel (F12)
+	Cursor Input	Dinamikus bevitel
+	Cursor Input (F12)	Dinamikus bevitel (F12)
 	E	K
 	Edit	Szerkesztés
 	Edit Array	Kiosztás szerkesztése
@@ -336,7 +336,7 @@
 	Ellipse	Ellipszis
 	Elliptical Arc	Ellipszisív
 	Enable 3D mouse navigation	3D egeres navigáció engedélyezése
-	Enable Dynamic Input (F12)	Dinamikus bevitel engedélyezése (F12)
+	Enable Cursor Input (F12)	Dinamikus bevitel engedélyezése (F12)
 	End Object Isolation	Objektumelkülönítés vége
 	End Width	Záró szélesség
 	End X	Végpont X
@@ -551,7 +551,7 @@
 	Layer Properties Manager	Rétegtulajdonság-kezelő
 	Layer Properties Manager — current viewport	Rétegtulajdonság-kezelő – aktuális nézetablak
 	Layer State	Rétegállapot
-	Layer States Manager...	Rétegállapot-kezelő...
+	Layer States...	Rétegállapot-kezelő...
 	Layer Tools	Rétegeszközök
 	Layer contains objects (double-click to make current)	A réteg objektumokat tartalmaz (dupla kattintással aktuálissá teheted)
 	Layer is empty (double-click to make current)	A réteg üres (dupla kattintással aktuálissá teheted)
@@ -637,8 +637,8 @@
 	Multileader style	Többes mutatóvonal stílusa
 	Multiline	Multivonal
 	Multiline Style...	Multivonalstílus...
-	Multiline Text	Többsoros szöveg
-	Multiline Text...	Többsoros szöveg...
+	Paragraph Text	Többsoros szöveg
+	Paragraph Text...	Többsoros szöveg...
 	Multiline text	Többsoros szöveg
 	Multiline...	Multivonal...
 	Multiple	Többféle
@@ -692,9 +692,9 @@
 	Object Snap	Objektumillesztés
 	Object Snap (F3)	Objektumillesztés (F3)
 	Object Snap On (F3)	Objektumillesztés be (F3)
-	Object Snap Tracking	Objektumillesztési követés
-	Object Snap Tracking (F11)	Objektumillesztési követés (F11)
-	Object Snap Tracking Settings	Objektumillesztési követés beállításai
+	Snap Tracking	Objektumillesztési követés
+	Snap Tracking (F11)	Objektumillesztési követés (F11)
+	Snap Tracking Settings	Objektumillesztési követés beállításai
 	Object grouping	Objektumcsoportosítás
 	Object selection limit for display of grips	Fogópontok megjelenítése legfeljebb ennyi kijelölt objektumnál
 	Object snap aperture	Objektumillesztés befogási területe
@@ -713,7 +713,7 @@
 	Open (⌘O)	Megnyitás (⌘O)
 	Open Recent	Legutóbbi megnyitása
 	Open Sample Drawing	Mintarajz megnyitása
-	Open Xref	Külső hivatkozás megnyitása
+	Open Reference	Külső hivatkozás megnyitása
 	Open a drawing first.	Előbb nyiss meg egy rajzot.
 	Open and Save	Megnyitás és mentés
 	Open in Block Editor	Megnyitás a blokkszerkesztőben
@@ -738,7 +738,7 @@
 	PAPER	PAPÍR
 	PRs	PR-ek
 	Page Setup Manager	Oldalbeállítás-kezelő
-	Page Setup Manager...	Oldalbeállítás-kezelő...
+	Page Setups...	Oldalbeállítás-kezelő...
 	Pan	Nézet mozgatása
 	Pan Down	Nézet mozgatása lefelé
 	Pan Left	Nézet mozgatása balra
@@ -760,27 +760,27 @@
 	Pickbox size	Kijelölőnégyzet mérete
 	Plot	Nyomtatás
 	Plot (click: do not plot)	Nyomtatandó (kattintás: nem nyomtatandó)
-	Plot Preview	Nyomtatási előnézet
+	Print Preview	Nyomtatási előnézet
 	Plot Style Manager	Nyomtatásistílus-kezelő
-	Plot Style Manager...	Nyomtatásistílus-kezelő...
-	Plot Style...	Nyomtatási stílus...
-	Plot Styles...	Nyomtatási stílusok...
+	Print Style Manager...	Nyomtatásistílus-kezelő...
+	Print Style...	Nyomtatási stílus...
+	Print Styles...	Nyomtatási stílusok...
 	Plot Window	Nyomtatási ablak
 	Plot style	Nyomtatási stílus
 	Plot style attached to	Nyomtatási stílus forrása
 	Plot style table	Nyomtatásistílus-táblázat
 	Plot table type	Stílustáblázat típusa
 	Plotter Manager	Plotterkezelő
-	Plotter Manager...	Plotterkezelő...
+	Printer Manager...	Plotterkezelő...
 	Plus/minus	Plusz-mínusz
 	Point	Pont
 	Point Filters	Pontszűrők
 	Point Style...	Pontstílus...
 	Polar (distance < angle)	Poláris (távolság < szög)
 	Polar Array	Poláris kiosztás
-	Polar Tracking	Poláris követés
-	Polar Tracking (F10)	Poláris követés (F10)
-	Polar Tracking On (F10)	Poláris követés be (F10)
+	Angle Tracking	Poláris követés
+	Angle Tracking (F10)	Poláris követés (F10)
+	Angle Tracking On (F10)	Poláris követés be (F10)
 	Polar angle measurement	Poláris szögmérés
 	Polar distance	Poláris távolság
 	Polar: {distance} < {angle}°	Poláris: {distance} < {angle}°
@@ -812,12 +812,12 @@
 	Query Texts	Szövegek lekérdezése
 	Quick	Gyorsszámológép
 	Quick Dimension	Gyorsméretezés
-	Quick Properties	Gyors tulajdonságok
-	Quick Select	Gyorskijelölés
-	Quick Select Properties	Gyorskijelölés tulajdonságai
-	Quick Select...	Gyorskijelölés...
-	QuickCalc	Gyorsszámológép
-	QuickCalc Pick	Érték felvétele a gyorsszámológépbe
+	Quick Info	Gyors tulajdonságok
+	Select by Property	Gyorskijelölés
+	Select by Property Fields	Gyorskijelölés tulajdonságai
+	Select by Property...	Gyorskijelölés...
+	Calculator	Gyorsszámológép
+	Calculator Pick	Érték felvétele a gyorsszámológépbe
 	Quit AptCAD	Kilépés a AptCADból
 	Radius	Sugár
 	Raster Image	Raszterkép
@@ -842,8 +842,8 @@
 	Reference Manager	Hivatkozáskezelő
 	Reference Name	Hivatkozás neve
 	References: {n}	Hivatkozások: {n}
-	Regen	Regenerálás
-	Regen All	Összes regenerálása
+	Refresh	Regenerálás
+	Refresh All	Összes regenerálása
 	Region	Tartomány
 	Region/Mass Properties	Tartomány- és tömegjellemzők
 	Reinitialize	Újrainicializálás
@@ -1003,12 +1003,12 @@
 	Show All Dynamic Dimensions	Összes dinamikus méret megjelenítése
 	Show Annotative Objects	Léptékfüggő objektumok megjelenítése
 	Show Layer List	Réteglista megjelenítése
-	Show Quick Properties for selected objects	Gyors tulajdonságok megjelenítése a kijelölt objektumokhoz
+	Show Quick Info for selected objects	Gyors tulajdonságok megjelenítése a kijelölt objektumokhoz
 	Show System Cursor	Rendszerkurzor megjelenítése
 	Show and hide the tools of this category	A kategória eszközeinek megjelenítése és elrejtése
 	Show command prompting near the crosshairs	Parancsbekérés megjelenítése a szálkereszt mellett
 	Show grips	Fogópontok megjelenítése
-	Show in Tool Sets	Megjelenítés az eszközkészletekben
+	Show in Toolbox	Megjelenítés az eszközkészletekben
 	Show/Hide Lineweight	Vonalvastagság megjelenítése/elrejtése
 	Show/Hide Transparency	Átlátszóság megjelenítése/elrejtése
 	Single Line Text	Egysoros szöveg
@@ -1023,7 +1023,7 @@
 	Snap X spacing	Illesztési távolság X
 	Snap and Grid	Illesztés és rács
 	Snap type	Illesztés típusa
-	Snap, grid, polar tracking and Dynamic Input:	Illesztés, rács, poláris követés és dinamikus bevitel:
+	Snap, grid, angle tracking and Cursor Input:	Illesztés, rács, poláris követés és dinamikus bevitel:
 	Solid	Test
 	Solid Editing	Testszerkesztés
 	Sort	Rendezés
@@ -1217,7 +1217,7 @@
 	Toggle PICKADD (on: picks add to the selection)	PICKADD váltása (be: a kattintások a kijelöléshez adnak)
 	Tolerance...	Tűrés...
 	Tool Bar	Eszköztár
-	Tool Sets	Eszközkészletek
+	Toolbox	Eszközkészletek
 	Tools	Eszközök
 	Top left	Bal felső
 	Top right	Jobb felső
@@ -1231,7 +1231,7 @@
 	Turn All Layers On	Összes réteg bekapcsolása
 	Turn Off Layer	Réteg kikapcsolása
 	Turn On Layer	Réteg bekapcsolása
-	Turn Quick Properties off (QPMODE)	Gyors tulajdonságok kikapcsolása (QPMODE)
+	Turn Quick Info off (QPMODE)	Gyors tulajdonságok kikapcsolása (QPMODE)
 	Turned off, a right-click while a command runs always opens the shortcut menu.	Kikapcsolt állapotban parancs futása közben a jobb kattintás mindig a helyi menüt nyitja meg.
 	Type	Típus
 	Type a command	Írj be egy parancsot
@@ -1306,8 +1306,8 @@
 	Workspace Switching	Munkaterület-váltás
 	Write Block	Blokk kiírása
 	Xline	Szerkesztővonal
-	Xref and Block In-place Editing	Külső hivatkozás és blokk helyben szerkesztése
-	Xrefs	Külső hivatkozások
+	Edit in Place	Külső hivatkozás és blokk helyben szerkesztése
+	References	Külső hivatkozások
 	Yellow	Sárga
 	Yes	Igen
 	Zoom	Nézetnagyítás

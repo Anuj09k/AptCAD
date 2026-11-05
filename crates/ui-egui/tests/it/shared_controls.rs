@@ -147,7 +147,7 @@ fn toolsets_collapse_arrow_hides_menu() {
     assert!(h.state().ui.show_toolsets);
 
     // Collapsing toolsets on the left hides toolsets.
-    h.get_by_label("Collapse Tool Sets").click();
+    h.get_by_label("Collapse Toolbox").click();
     h.run_steps(3);
     assert!(!h.state().ui.show_toolsets);
 }

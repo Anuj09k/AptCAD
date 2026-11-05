@@ -57,7 +57,7 @@
 	Audit	Vérifier
 	Auto (system language)	Auto (langue du système)
 	Auto Constrain	Contraintes automatiques
-	AutoConstrain	ContraintesAuto
+	Apply Constraints	ContraintesAuto
 	Axis, End	Axe, extrémité
 	Base	Base
 	Baseline	Ligne de base
@@ -66,7 +66,7 @@
 	Binary assets removed	Ressources binaires supprimées
 	Blend	Raccord lissé
 	Block	Bloc
-	Block Attribute Manager...	Gestionnaire des attributs de bloc...
+	Attribute Manager...	Gestionnaire des attributs de bloc...
 	Block Description...	Description de bloc...
 	Block Editor	Éditeur de blocs
 	Block Reference	Référence de bloc
@@ -109,7 +109,7 @@
 	Close All	Tout fermer
 	Closed	Fermé
 	Coincident	Coïncidence
-	Collapse Tool Sets	Réduire les jeux d'outils
+	Collapse Toolbox	Réduire les jeux d'outils
 	Collinear	Colinéarité
 	Color	Couleur
 	Color 8	Couleur 8
@@ -187,7 +187,7 @@
 	Distance	Distance
 	Divide	Diviser
 	Do not plot (click: plot)	Ne pas tracer (cliquer pour tracer)
-	Donut	Anneau
+	Ring	Anneau
 	Double-click to edit the description	Double-cliquez pour modifier la description
 	Down	Bas
 	Drafting	Dessin
@@ -201,15 +201,15 @@
 	Drawing Utilities	Utilitaires de dessin
 	Drawings (DWG, DXF)	Dessins (DWG, DXF)
 	Dynamic Dimensions	Cotations dynamiques
-	Dynamic Input	Saisie dynamique
-	Dynamic Input (F12)	Saisie dynamique (F12)
+	Cursor Input	Saisie dynamique
+	Cursor Input (F12)	Saisie dynamique (F12)
 	E	Est
 	Edit	Édition
 	Edit Text...	Modifier le texte...
 	Elevation	Élévation
 	Ellipse	Ellipse
 	Elliptical Arc	Arc elliptique
-	Enable Dynamic Input (F12)	Activer la saisie dynamique (F12)
+	Enable Cursor Input (F12)	Activer la saisie dynamique (F12)
 	End Width	Largeur finale
 	End X	Extrémité X
 	End Y	Extrémité Y
@@ -370,7 +370,7 @@
 	Layer Properties Manager	Gestionnaire des propriétés des calques
 	Layer Properties Manager — current viewport	Gestionnaire des propriétés des calques — fenêtre courante
 	Layer State	État des calques
-	Layer States Manager...	Gestionnaire des états de calques...
+	Layer States...	Gestionnaire des états de calques...
 	Layer Tools	Outils de calque
 	Layer contains objects (double-click to make current)	Le calque contient des objets (double-cliquez pour le rendre courant)
 	Layer is empty (double-click to make current)	Le calque est vide (double-cliquez pour le rendre courant)
@@ -442,8 +442,8 @@
 	Multileader Style...	Style de repère multiple...
 	Multileader style	Style de repère multiple
 	Multiline	Multiligne
-	Multiline Text	Texte multiligne
-	Multiline Text...	Texte multiligne...
+	Paragraph Text	Texte multiligne
+	Paragraph Text...	Texte multiligne...
 	Multiple	Multiple
 	Multiple Point	Points multiples
 	My	Mes
@@ -480,8 +480,8 @@
 	Object Snap	Accrochage aux objets
 	Object Snap (F3)	Accrochage aux objets (F3)
 	Object Snap On (F3)	Activer l'accrochage aux objets (F3)
-	Object Snap Tracking	Suivi de l'accrochage aux objets
-	Object Snap Tracking (F11)	Suivi de l'accrochage aux objets (F11)
+	Snap Tracking	Suivi de l'accrochage aux objets
+	Snap Tracking (F11)	Suivi de l'accrochage aux objets (F11)
 	Object type:	Type d'objet :
 	Off	Désactivé
 	Offset	Décalage
@@ -506,7 +506,7 @@
 	Polar (distance < angle)	Polaire (distance < angle)
 	PRs	PR
 	Page Setup Manager	Gestionnaire des mises en page
-	Page Setup Manager...	Gestionnaire des mises en page...
+	Page Setups...	Gestionnaire des mises en page...
 	Pan	Panoramique
 	Pan Down	Panoramique vers le bas
 	Pan Left	Panoramique vers la gauche
@@ -524,14 +524,14 @@
 	Perpendicular	Perpendiculaire
 	Plot	Tracer
 	Plot (click: do not plot)	Tracer (cliquer : ne pas tracer)
-	Plot Preview	Aperçu du tracé
+	Print Preview	Aperçu du tracé
 	Plot style	Style de tracé
 	Plot style attached to	Style de tracé associé à
 	Plot style table	Table de styles de tracé
-	Plot Style...	Style de tracé...
+	Print Style...	Style de tracé...
 	Plot Style Manager	Gestionnaire des styles de tracé
-	Plot Style Manager...	Gestionnaire des styles de tracé...
-	Plot Styles...	Styles de tracé...
+	Print Style Manager...	Gestionnaire des styles de tracé...
+	Print Styles...	Styles de tracé...
 	New CTB	Nouvelle CTB
 	New STB	Nouvelle STB
 	New style	Nouveau style
@@ -557,9 +557,9 @@
 	Point Filters	Filtres de points
 	Point Style...	Style de point...
 	Polar Array	Réseau polaire
-	Polar Tracking	Recherche polaire
-	Polar Tracking (F10)	Recherche polaire (F10)
-	Polar Tracking On (F10)	Activer la recherche polaire (F10)
+	Angle Tracking	Recherche polaire
+	Angle Tracking (F10)	Recherche polaire (F10)
+	Angle Tracking On (F10)	Activer la recherche polaire (F10)
 	Polar: {distance} < {angle}°	Polaire : {distance} < {angle}°
 	Polygon	Polygone
 	Polygonal	Polygonal
@@ -582,11 +582,11 @@
 	Query Entities	Interroger les entités
 	Quick	Rapide
 	Quick Dimension	Cotation rapide
-	Quick Properties	Propriétés rapides
-	Quick Select	Sélection rapide
-	Quick Select Properties	Propriétés de la sélection rapide
-	Quick Select...	Sélection rapide...
-	QuickCalc	Calculatrice rapide
+	Quick Info	Propriétés rapides
+	Select by Property	Sélection rapide
+	Select by Property Fields	Propriétés de la sélection rapide
+	Select by Property...	Sélection rapide...
+	Calculator	Calculatrice rapide
 	Quit AptCAD	Quitter AptCAD
 	Radius	Rayon
 	Raster Image	Image raster
@@ -604,8 +604,8 @@
 	Redo	Rétablir
 	Redo (⇧⌘Z)	Rétablir (⇧⌘Z)
 	Redraw	Redessiner
-	Regen	Régénérer
-	Regen All	Régénérer tout
+	Refresh	Régénérer
+	Refresh All	Régénérer tout
 	Region	Région
 	Region/Mass Properties	Propriétés de région/masse
 	Relative	Relatif
@@ -665,7 +665,7 @@
 	Edit Reference In-Place	Modifier la référence sur place
 	Save Reference Edits	Enregistrer les modifications de la référence
 	Working Set	Jeu de travail
-	Xref and Block In-place Editing	Édition sur place des xrefs et des blocs
+	Edit in Place	Édition sur place des xrefs et des blocs
 	Select a polyline.	Sélectionner une polyligne.
 	Select a text, mtext, attribute definition or dimension.	Sélectionner un texte, un texte multiligne, une définition d'attribut ou une cote.
 	Select an annotation object	Sélectionner un objet d'annotation
@@ -916,7 +916,7 @@
 	Time	Heure
 	To get started, create or open a drawing.	Pour commencer, créez ou ouvrez un dessin.
 	Tool Bar	Barre d'outils
-	Tool Sets	Ensembles d'outils
+	Toolbox	Ensembles d'outils
 	Tools	Outils
 	Torus	Tore
 	Trace	Trace
@@ -925,7 +925,7 @@
 	True Color	Couleur vraie
 	Turn All Layers On	Activer tous les calques
 	Turn Off Layer	Désactiver le calque
-	Turn Quick Properties off (QPMODE)	Désactiver les propriétés rapides (QPMODE)
+	Turn Quick Info off (QPMODE)	Désactiver les propriétés rapides (QPMODE)
 	Type	Type
 	Type a command	Tapez une commande
 	Type text; Enter starts a new paragraph	Saisissez le texte ; Entrée crée un nouveau paragraphe

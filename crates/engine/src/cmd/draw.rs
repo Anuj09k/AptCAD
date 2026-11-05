@@ -98,8 +98,8 @@ pub fn specs() -> Vec<CommandSpec> {
             .alias(&["spl"])
             .params("{fit: [[x,y],...], closed?, knots?: chord|sqrt|uniform, startTangent?, endTangent? ([dx,dy]), tolerance?} | {control: [...], degree?} | {object: handle|true, handles?} (polyline to spline)")
             .interactive(|_| Ok(Box::new(SplineM::default()))),
-        CommandSpec::new("donut", "Donut", run_donut)
-            .menu(&["Draw", "Donut"])
+        CommandSpec::new("donut", "Ring", run_donut)
+            .menu(&["Draw", "Ring"])
             .alias(&["do", "doughnut"])
             .params("{center, inside, outside}")
             .interactive(|_| Ok(Box::new(DonutM::default()))),
@@ -113,8 +113,8 @@ pub fn specs() -> Vec<CommandSpec> {
             .alias(&["dt", "dtext"])
             .params("{at, text, height?, rotation? (degrees), justify?: L|C|R|M|TL|TC|TR|ML|MC|MR|BL|BC|BR}")
             .interactive(|s| Ok(Box::new(TextM::new(s)))),
-        CommandSpec::new("mtext", "Multiline Text", run_mtext)
-            .menu(&["Draw", "Text", "Multiline Text..."])
+        CommandSpec::new("mtext", "Paragraph Text", run_mtext)
+            .menu(&["Draw", "Text", "Paragraph Text..."])
             .alias(&["t", "mt"])
             .params(
                 "{at, text, height?, width?, attach?: 1..9 | justify?: TL..BR, rotation?, style?, lineSpacing?, lineSpacingExact?, \

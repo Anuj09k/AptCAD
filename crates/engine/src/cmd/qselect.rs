@@ -11,15 +11,15 @@ use crate::{Result, Session};
 
 pub fn specs() -> Vec<CommandSpec> {
     vec![
-        CommandSpec::new("qselect", "Quick Select...", run_qselect)
-            .menu(&["Edit", "Quick Select..."])
+        CommandSpec::new("qselect", "Select by Property...", run_qselect)
+            .menu(&["Edit", "Select by Property..."])
             .alias(&["qs"])
             .params(
                 "{type?: \"Line\"|\"Circle\"|..., property?, operator?: \"=\"|\"!=\"|\">\"|\"<\"|\"*\" (wildcard), value?, mode?: new|append|exclude, \
                  applyTo?: drawing|selection, layer?, color?} → selected handles",
             )
             .noundo(),
-        CommandSpec::new("qselect.info", "Quick Select Properties", run_info)
+        CommandSpec::new("qselect.info", "Select by Property Fields", run_info)
             .params("{applyTo?: drawing|selection, type?} → object types with counts and the properties available for `type`")
             .noundo(),
     ]

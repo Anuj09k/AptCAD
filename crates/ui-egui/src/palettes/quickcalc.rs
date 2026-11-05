@@ -9,7 +9,7 @@ use crate::CadApp;
 use crate::theme::Tokens;
 
 /// What `quickcalc.pick` writes to the command history before the value it read.
-const PICKED: &str = "QuickCalc: ";
+const PICKED: &str = "Calculator: ";
 /// History entries kept.
 const MAX_HISTORY: usize = 100;
 /// Variables kept.

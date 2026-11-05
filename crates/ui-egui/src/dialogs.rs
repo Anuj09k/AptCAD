@@ -79,8 +79,8 @@ fn dsettings(app: &mut CadApp, ctx: &egui::Context, open: &mut bool) {
             ui.add(egui::DragValue::new(&mut s.gridmajor).range(1..=100)).labelled_by(major_label.id);
         });
         ui.separator();
-        ui.heading(crate::tl!("Polar Tracking"));
-        ui.checkbox(&mut s.polarmode, crate::tl!("Polar Tracking On (F10)"));
+        ui.heading(crate::tl!("Angle Tracking"));
+        ui.checkbox(&mut s.polarmode, crate::tl!("Angle Tracking On (F10)"));
         // POLARANG is held in radians and 15 or 30 come back as 14.999999999999998: round like
         // the additional angles, and write back only a newly picked angle.
         let current = (s.polarang.to_degrees() * 1e6).round() / 1e6;
@@ -124,7 +124,7 @@ fn dsettings(app: &mut CadApp, ctx: &egui::Context, open: &mut bool) {
             }
         });
         ui.separator();
-        ui.checkbox(&mut s.dynmode, crate::tl!("Enable Dynamic Input (F12)"));
+        ui.checkbox(&mut s.dynmode, crate::tl!("Enable Cursor Input (F12)"));
         // Pointer input format for second and next points (DYNPIFORMAT, DYNPICOORDS).
         ui.indent("dynpi", |ui| {
             ui.add_enabled_ui(s.dynmode, |ui| {
@@ -184,7 +184,7 @@ fn tracking_options(ui: &mut egui::Ui, s: &mut aptcad_engine::Settings) {
             ui.data_mut(|d| d.remove::<String>(id));
         }
     });
-    ui.label(crate::tl!("Object Snap Tracking Settings"));
+    ui.label(crate::tl!("Snap Tracking Settings"));
     ui.horizontal(|ui| {
         flag(ui, &mut s.polar_flags, polarmode::TRACK_POLAR, false, crate::tl!("Track orthogonally only"));
         flag(ui, &mut s.polar_flags, polarmode::TRACK_POLAR, true, crate::tl!("Track using all polar angle settings"));

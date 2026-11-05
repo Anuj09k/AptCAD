@@ -75,8 +75,8 @@ pub fn specs() -> Vec<CommandSpec> {
         CommandSpec::new("vplayer", "Viewport Layer Freeze", run_viewport_set)
             .params("{handle?, freeze?: [layer], thaw?: [layer], colors?: {layer: color (\"red\" | 1..255 | \"r,g,b\") | null to clear}} (typed: option prompts)")
             .interactive(|_| Ok(Box::new(vplayer::VplayerM::default()))),
-        CommandSpec::new("pagesetup", "Page Setup Manager...", run_pagesetup)
-            .menu(&["File", "Page Setup Manager..."])
+        CommandSpec::new("pagesetup", "Page Setups...", run_pagesetup)
+            .menu(&["File", "Page Setups..."])
             .params(
                 "{layout?: current, device?: plotter name (PLOTTERMANAGER) | \"None\", paper?: the device's paper | \"A4\"|\"A3\"|\"Letter\"|\"ANSI B\"|…, width?, height? (mm), landscape?, margins?: [l,b,r,t] mm, lineweights?, plotArea?, scale?, scaleToFit?, center?, plotStyleTable?: \"monochrome.ctb\"|\"grayscale.ctb\"|\"default.ctb\"|\"None\"|…, displayPlotStyles?: bool, plotTransparency?: bool}",
             ),

@@ -51,7 +51,7 @@ fn command_line_menu() {
     let g = sm::command_line_entries(&app);
     assert_eq!(find(&g, "Recent Commands/CIRCLE").map(|f| f.0).as_deref(), Some("circle"));
     assert!(find(&g, "Recent Commands/LINE").is_some());
-    assert!(find(&g, "Dynamic Input").is_some() && find(&g, "Command History").is_some());
+    assert!(find(&g, "Cursor Input").is_some() && find(&g, "Command History").is_some());
     assert!(find(&g, "Copy History").is_some_and(|(_, e)| e));
     choose(&mut app, &g, "Lines of Command History/5");
     assert_eq!(app.ui.history_lines, 5);
@@ -112,7 +112,7 @@ fn layout_tab_menu() {
 
     // Page Setup acts on the right-clicked tab.
     let g = sm::layout_tab_entries(&app, "Sheet A");
-    assert!(find(&g, "Page Setup Manager...").is_some() && find(&g, "Print...").is_some());
+    assert!(find(&g, "Page Setups...").is_some() && find(&g, "Print...").is_some());
 }
 
 #[test]
@@ -130,7 +130,7 @@ fn layer_and_properties_palette_menus() {
     assert!(sm::layer_entries(&app, "NoSuchLayer").is_empty());
 
     let g = sm::properties_entries(&app);
-    for l in ["Quick Select...", "Select All", "Deselect All", "Hide Palette"] {
+    for l in ["Select by Property...", "Select All", "Deselect All", "Hide Palette"] {
         assert!(find(&g, l).is_some(), "{l} missing from {:?}", flatten(&g));
     }
 }

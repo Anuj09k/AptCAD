@@ -54,8 +54,8 @@ pub fn specs() -> Vec<CommandSpec> {
         gc!("gcsymmetric", "Symmetric", K::Symmetric, "Symmetric"),
         gc!("gcequal", "Equal", K::Equal, "Equal"),
         gc!("gcfix", "Fix", K::Fix, "Fix"),
-        CommandSpec::new("autoconstrain", "AutoConstrain", run_autoconstrain)
-            .menu(&["Tools", "Parametric", "AutoConstrain"])
+        CommandSpec::new("autoconstrain", "Apply Constraints", run_autoconstrain)
+            .menu(&["Tools", "Parametric", "Apply Constraints"])
             .params("{handles?, tolerance?, angleTolerance? (degrees), types?: [names]}")
             .interactive(|_| Ok(Box::new(SelM::new(SelOp::Auto)))),
         CommandSpec::new("constraintbar", "Constraint Bars", run_constraintbar)

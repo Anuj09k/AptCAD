@@ -98,7 +98,7 @@
 	Audit	Denetle
 	Auto (system language)	Otomatik (sistem dili)
 	Auto Constrain	Otomatik Kısıtla
-	AutoConstrain	Otomatik Kısıtla
+	Apply Constraints	Otomatik Kısıtla
 	Automatic save every	Otomatik kaydetme aralığı
 	Automatic save file location	Otomatik kaydetme dosya konumu
 	Axis, End	Eksen, Uç
@@ -113,7 +113,7 @@
 	Bind...	Bağla...
 	Blend	Harmanla
 	Block	Blok
-	Block Attribute Manager...	Blok Öznitelik Yöneticisi...
+	Attribute Manager...	Blok Öznitelik Yöneticisi...
 	Block Description...	Blok Açıklaması...
 	Block Editor	Blok Düzenleyici
 	Block Reference	Blok Referansı
@@ -184,7 +184,7 @@
 	Closed	Kapalı
 	Coincident	Çakışık
 	Collapse Palettes	Paletleri Daralt
-	Collapse Tool Sets	Araç Takımlarını Daralt
+	Collapse Toolbox	Araç Takımlarını Daralt
 	Collect	Topla
 	Collect Multileaders	Çoklu Kılavuzları Topla
 	Collinear	Doğrusal Hizalı
@@ -246,7 +246,7 @@
 	Cyan	Camgöbeği
 	Cylinder	Silindir
 	DWG	DWG
-	DWG Reference...	DWG Referansı...
+	Attach Drawing...	DWG Referansı...
 	DXF	DXF
 	Dark	Koyu
 	Data Extraction...	Veri Çıkarma...
@@ -299,7 +299,7 @@
 	Distance	Uzaklık
 	Divide	Böl
 	Do not plot (click: plot)	Çizdirme (tıklayın: çizdir)
-	Donut	Halka
+	Ring	Halka
 	Double-click to edit the description	Açıklamayı düzenlemek için çift tıklayın
 	Down	Aşağı
 	Drafting	Çizim
@@ -311,7 +311,7 @@
 	Drawing (DWG)	Çizim (DWG)
 	Drawing (DXF)	Çizim (DXF)
 	Drawing Limits	Çizim Sınırları
-	Drawing Recovery Manager...	Çizim Kurtarma Yöneticisi...
+	Recover Drawings...	Çizim Kurtarma Yöneticisi...
 	Drawing Template (DWT)	Çizim Şablonu (DWT)
 	Drawing Utilities	Çizim Yardımcı Programları
 	Drawing as bytes	Bayt olarak çizim
@@ -322,8 +322,8 @@
 	Dynamic Block Grips	Dinamik Blok Tutamaçları
 	Dynamic Block Reference	Dinamik Blok Referansı
 	Dynamic Dimensions	Dinamik Ölçüler
-	Dynamic Input	Dinamik Giriş
-	Dynamic Input (F12)	Dinamik Giriş (F12)
+	Cursor Input	Dinamik Giriş
+	Cursor Input (F12)	Dinamik Giriş (F12)
 	E	D
 	Edit	Düzenle
 	Edit Array	Diziyi Düzenle
@@ -337,7 +337,7 @@
 	Ellipse	Elips
 	Elliptical Arc	Eliptik Yay
 	Enable 3D mouse navigation	3B fare ile gezinmeyi etkinleştir
-	Enable Dynamic Input (F12)	Dinamik Girişi Etkinleştir (F12)
+	Enable Cursor Input (F12)	Dinamik Girişi Etkinleştir (F12)
 	End Object Isolation	Nesne Yalıtımını Sonlandır
 	End Width	Bitiş Genişliği
 	End X	Bitiş X
@@ -552,7 +552,7 @@
 	Layer Properties Manager	Katman Özellikleri Yöneticisi
 	Layer Properties Manager — current viewport	Katman Özellikleri Yöneticisi — geçerli görünüm penceresi
 	Layer State	Katman Durumu
-	Layer States Manager...	Katman Durumları Yöneticisi...
+	Layer States...	Katman Durumları Yöneticisi...
 	Layer Tools	Katman Araçları
 	Layer contains objects (double-click to make current)	Katmanda nesne var (geçerli yapmak için çift tıklayın)
 	Layer is empty (double-click to make current)	Katman boş (geçerli yapmak için çift tıklayın)
@@ -638,8 +638,8 @@
 	Multileader style	Çoklu kılavuz stili
 	Multiline	Çoklu Çizgi Takımı
 	Multiline Style...	Çoklu Çizgi Takımı Stili...
-	Multiline Text	Çok Satırlı Metin
-	Multiline Text...	Çok Satırlı Metin...
+	Paragraph Text	Çok Satırlı Metin
+	Paragraph Text...	Çok Satırlı Metin...
 	Multiline text	Çok satırlı metin
 	Multiline...	Çoklu Çizgi Takımı...
 	Multiple	Çoklu
@@ -693,9 +693,9 @@
 	Object Snap	Nesne Kenetleme
 	Object Snap (F3)	Nesne Kenetleme (F3)
 	Object Snap On (F3)	Nesne Kenetleme Açık (F3)
-	Object Snap Tracking	Nesne Kenetleme İzleme
-	Object Snap Tracking (F11)	Nesne Kenetleme İzleme (F11)
-	Object Snap Tracking Settings	Nesne Kenetleme İzleme Ayarları
+	Snap Tracking	Nesne Kenetleme İzleme
+	Snap Tracking (F11)	Nesne Kenetleme İzleme (F11)
+	Snap Tracking Settings	Nesne Kenetleme İzleme Ayarları
 	Object grouping	Nesne gruplama
 	Object selection limit for display of grips	Tutamaçların gösterilmesi için nesne seçim sınırı
 	Object snap aperture	Nesne kenetleme açıklığı
@@ -714,7 +714,7 @@
 	Open (⌘O)	Aç (⌘O)
 	Open Recent	Son Kullanılanları Aç
 	Open Sample Drawing	Örnek Çizimi Aç
-	Open Xref	Dış Referansı Aç
+	Open Reference	Dış Referansı Aç
 	Open a drawing first.	Önce bir çizim açın.
 	Open and Save	Açma ve Kaydetme
 	Open in Block Editor	Blok Düzenleyicide Aç
@@ -739,7 +739,7 @@
 	PAPER	KAĞIT
 	PRs	PR'lar
 	Page Setup Manager	Sayfa Yapısı Yöneticisi
-	Page Setup Manager...	Sayfa Yapısı Yöneticisi...
+	Page Setups...	Sayfa Yapısı Yöneticisi...
 	Pan	Kaydır
 	Pan Down	Aşağı Kaydır
 	Pan Left	Sola Kaydır
@@ -761,27 +761,27 @@
 	Pickbox size	Seçim kutusu boyutu
 	Plot	Çizdir
 	Plot (click: do not plot)	Çizdir (tıklayın: çizdirme)
-	Plot Preview	Çizdirme Önizlemesi
+	Print Preview	Çizdirme Önizlemesi
 	Plot Style Manager	Çizdirme Stili Yöneticisi
-	Plot Style Manager...	Çizdirme Stili Yöneticisi...
-	Plot Style...	Çizdirme Stili...
-	Plot Styles...	Çizdirme Stilleri...
+	Print Style Manager...	Çizdirme Stili Yöneticisi...
+	Print Style...	Çizdirme Stili...
+	Print Styles...	Çizdirme Stilleri...
 	Plot Window	Çizdirme Penceresi
 	Plot style	Çizdirme stili
 	Plot style attached to	Çizdirme stilinin bağlı olduğu yer
 	Plot style table	Çizdirme stili tablosu
 	Plot table type	Çizdirme tablosu türü
 	Plotter Manager	Çizici Yöneticisi
-	Plotter Manager...	Çizici Yöneticisi...
+	Printer Manager...	Çizici Yöneticisi...
 	Plus/minus	Artı/eksi
 	Point	Nokta
 	Point Filters	Nokta Filtreleri
 	Point Style...	Nokta Stili...
 	Polar (distance < angle)	Kutupsal (uzaklık < açı)
 	Polar Array	Kutupsal Dizi
-	Polar Tracking	Kutupsal İzleme
-	Polar Tracking (F10)	Kutupsal İzleme (F10)
-	Polar Tracking On (F10)	Kutupsal İzleme Açık (F10)
+	Angle Tracking	Kutupsal İzleme
+	Angle Tracking (F10)	Kutupsal İzleme (F10)
+	Angle Tracking On (F10)	Kutupsal İzleme Açık (F10)
 	Polar angle measurement	Kutupsal açı ölçümü
 	Polar distance	Kutupsal uzaklık
 	Polar: {distance} < {angle}°	Kutupsal: {distance} < {angle}°
@@ -813,12 +813,12 @@
 	Query Texts	Metinleri Sorgula
 	Quick	Hızlı
 	Quick Dimension	Hızlı Ölçülendirme
-	Quick Properties	Hızlı Özellikler
-	Quick Select	Hızlı Seçim
-	Quick Select Properties	Hızlı Seçim Özellikleri
-	Quick Select...	Hızlı Seçim...
-	QuickCalc	Hızlı Hesap
-	QuickCalc Pick	Hızlı Hesap Seçimi
+	Quick Info	Hızlı Özellikler
+	Select by Property	Hızlı Seçim
+	Select by Property Fields	Hızlı Seçim Özellikleri
+	Select by Property...	Hızlı Seçim...
+	Calculator	Hızlı Hesap
+	Calculator Pick	Hızlı Hesap Seçimi
 	Quit AptCAD	AptCAD'tan Çık
 	Radius	Yarıçap
 	Raster Image	Raster Görüntü
@@ -843,8 +843,8 @@
 	Reference Manager	Referans Yöneticisi
 	Reference Name	Referans Adı
 	References: {n}	Referanslar: {n}
-	Regen	Yeniden Oluştur
-	Regen All	Tümünü Yeniden Oluştur
+	Refresh	Yeniden Oluştur
+	Refresh All	Tümünü Yeniden Oluştur
 	Region	Bölge
 	Region/Mass Properties	Bölge/Kütle Özellikleri
 	Reinitialize	Yeniden Başlat
@@ -1004,12 +1004,12 @@
 	Show All Dynamic Dimensions	Tüm Dinamik Ölçüleri Göster
 	Show Annotative Objects	Açıklamalı Nesneleri Göster
 	Show Layer List	Katman Listesini Göster
-	Show Quick Properties for selected objects	Seçili nesneler için Hızlı Özellikleri göster
+	Show Quick Info for selected objects	Seçili nesneler için Hızlı Özellikleri göster
 	Show System Cursor	Sistem İmlecini Göster
 	Show and hide the tools of this category	Bu kategorinin araçlarını göster ve gizle
 	Show command prompting near the crosshairs	Komut istemini artı imlecin yanında göster
 	Show grips	Tutamaçları göster
-	Show in Tool Sets	Araç Takımlarında Göster
+	Show in Toolbox	Araç Takımlarında Göster
 	Show/Hide Lineweight	Çizgi Kalınlığını Göster/Gizle
 	Show/Hide Transparency	Saydamlığı Göster/Gizle
 	Single Line Text	Tek Satırlı Metin
@@ -1024,7 +1024,7 @@
 	Snap X spacing	Kenetleme X aralığı
 	Snap and Grid	Kenetleme ve Izgara
 	Snap type	Kenetleme türü
-	Snap, grid, polar tracking and Dynamic Input:	Kenetleme, ızgara, kutupsal izleme ve Dinamik Giriş:
+	Snap, grid, angle tracking and Cursor Input:	Kenetleme, ızgara, kutupsal izleme ve Dinamik Giriş:
 	Solid	Katı
 	Solid Editing	Katı Düzenleme
 	Sort	Sırala
@@ -1218,7 +1218,7 @@
 	Toggle PICKADD (on: picks add to the selection)	PICKADD'i değiştir (açık: seçimler mevcut seçime eklenir)
 	Tolerance...	Tolerans...
 	Tool Bar	Araç Çubuğu
-	Tool Sets	Araç Takımları
+	Toolbox	Araç Takımları
 	Tools	Araçlar
 	Top left	Sol üst
 	Top right	Sağ üst
@@ -1232,7 +1232,7 @@
 	Turn All Layers On	Tüm Katmanları Aç
 	Turn Off Layer	Katmanı Kapat
 	Turn On Layer	Katmanı Aç
-	Turn Quick Properties off (QPMODE)	Hızlı Özellikleri kapat (QPMODE)
+	Turn Quick Info off (QPMODE)	Hızlı Özellikleri kapat (QPMODE)
 	Turned off, a right-click while a command runs always opens the shortcut menu.	Kapalıyken, bir komut çalışırken sağ tıklama her zaman kısayol menüsünü açar.
 	Type	Tür
 	Type a command	Bir komut yazın
@@ -1308,8 +1308,8 @@
 	Write Block	Blok Yaz
 	X	X
 	Xline	Yapı Çizgisi
-	Xref and Block In-place Editing	Dış Referans ve Bloğu Yerinde Düzenleme
-	Xrefs	Dış Referanslar
+	Edit in Place	Dış Referans ve Bloğu Yerinde Düzenleme
+	References	Dış Referanslar
 	Y	Y
 	Yellow	Sarı
 	Yes	Evet

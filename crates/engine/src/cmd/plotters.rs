@@ -395,8 +395,8 @@ pub fn specs() -> Vec<CommandSpec> {
             .enabled(has_doc)
             .noundo()
             .interactive(|_| Ok(Box::new(PlotWindowM::default()))),
-        CommandSpec::new("plottermanager", "Plotter Manager...", run_plottermanager)
-            .menu(&["File", "Plotter Manager..."])
+        CommandSpec::new("plottermanager", "Printer Manager...", run_plottermanager)
+            .menu(&["File", "Printer Manager..."])
             .params(
                 "{action?: list (default)|get|new|set|delete|load|save, name?: device, from?: device to copy (new), output?: pdf|png|svg, description?, resolution?: dpi, orientation?: portrait|landscape, defaultPaper?, paper?: {name, width, height (mm), margins?: [l,b,r,t] mm} (set: add or replace), removePaper?: name (set), text? (load), path? (save: native only; without it returns `text`)} (typed: option prompts)",
             )

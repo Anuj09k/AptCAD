@@ -36,7 +36,7 @@ pub const DRAFTING: &[(&str, &[Tool], &[Tool])] = &[
             (Icon::Ellipse, "ellipse", "Ellipse"),
             (Icon::Polygon, "polygon", "Polygon"),
             (Icon::Point, "point.multiple", "Multiple Point"),
-            (Icon::Donut, "donut", "Donut"),
+            (Icon::Donut, "donut", "Ring"),
             (Icon::RevCloud, "revcloud", "Revision Cloud"),
             (Icon::Region, "region", "Region"),
             (Icon::Wipeout, "wipeout", "Wipeout"),
@@ -79,7 +79,7 @@ pub const DRAFTING: &[(&str, &[Tool], &[Tool])] = &[
     ),
     (
         "Text",
-        &[(Icon::Text, "text", "Single Line Text"), (Icon::MText, "mtext", "Multiline Text")],
+        &[(Icon::Text, "text", "Single Line Text"), (Icon::MText, "mtext", "Paragraph Text")],
         &[(Icon::Table, "table", "Table"), (Icon::Search, "find", "Find and Replace")],
     ),
     (
@@ -171,8 +171,8 @@ pub fn toolsets(app: &mut CadApp, ui: &mut egui::Ui) {
         let cr = Rect::from_center_size(pos2(r.right() - 14.0, r.top() + tab_h / 2.0), vec2(14.0, 14.0));
         let cresp = ui.interact(cr, ui.scope_id().with("ts_collapse"), Sense::click());
         icons::paint(&p, cr, Icon::ChevronLeft, false);
-        icons::describe_control(ui, &cresp, "Collapse Tool Sets", None, false);
-        if cresp.on_hover_text(crate::tl!("Collapse Tool Sets")).clicked() {
+        icons::describe_control(ui, &cresp, "Collapse Toolbox", None, false);
+        if cresp.on_hover_text(crate::tl!("Collapse Toolbox")).clicked() {
             app.ui.show_toolsets = false;
         }
         let body = Rect::from_min_max(pos2(r.left(), r.top() + tab_h), r.max);
@@ -213,7 +213,7 @@ pub fn toolsets(app: &mut CadApp, ui: &mut egui::Ui) {
                     }
                     let hidden = |cmd: &str| app.ui.hidden_tools.iter().any(|h| h == cmd);
                     egui::Popup::from_toggle_button_response(&gresp).close_behavior(egui::PopupCloseBehavior::CloseOnClickOutside).show(|ui| {
-                        ui.label(crate::tl!("Show in Tool Sets"));
+                        ui.label(crate::tl!("Show in Toolbox"));
                         for (_, cmd, tip) in large.iter().chain(small.iter()) {
                             let mut shown = !hidden(cmd);
                             if ui.checkbox(&mut shown, *tip).changed() {
@@ -332,8 +332,8 @@ pub fn toolsets_strip(app: &mut CadApp, ui: &mut egui::Ui) {
         let r = ui.max_rect();
         let resp = ui.interact(r, ui.scope_id().with("ts_expand"), Sense::click());
         icons::paint(ui.painter(), Rect::from_center_size(pos2(r.center().x, r.top() + 14.0), vec2(14.0, 14.0)), Icon::ChevronRight, false);
-        icons::describe_control(ui, &resp, "Expand Tool Sets", None, false);
-        if resp.on_hover_text(crate::tl!("Tool Sets")).clicked() {
+        icons::describe_control(ui, &resp, "Expand Toolbox", None, false);
+        if resp.on_hover_text(crate::tl!("Toolbox")).clicked() {
             let _ = app.run("ui.toggle.toolsets", json!({"on": true}));
         }
     });
@@ -693,7 +693,7 @@ fn properties_header(app: &mut CadApp, ui: &mut egui::Ui) {
         if icons::button(ui, Icon::SelectObjects, 22.0, crate::tl!("Select Objects"), false).clicked() {
             start = Some("select");
         }
-        if icons::button(ui, Icon::QuickSelect, 22.0, crate::tl!("Quick Select"), false).clicked() {
+        if icons::button(ui, Icon::QuickSelect, 22.0, crate::tl!("Select by Property"), false).clicked() {
             start = Some("ui.dialog.qselect");
         }
     });

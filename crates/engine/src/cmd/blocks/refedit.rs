@@ -33,17 +33,17 @@ const GHOST_FADE: u8 = 70;
 pub(super) fn specs() -> Vec<CommandSpec> {
     vec![
         CommandSpec::new("refedit", "Edit Reference In-Place", run_refedit)
-            .menu(&["Tools", "Xref and Block In-place Editing", "Edit Reference In-Place"])
+            .menu(&["Tools", "Edit in Place", "Edit Reference In-Place"])
             .params("{handle? | handles? | name? (a block reference, default the selection), objects?: [block object handles] (default all)} → {block, insert, working: [handles], faded}")
             .enabled(has_doc)
             .interactive(|_| Ok(Box::new(SelectRun::single("refedit", "REFEDIT", "Select reference")))),
         CommandSpec::new("refset", "Working Set", run_refset)
-            .menu(&["Tools", "Xref and Block In-place Editing", "Add to Working Set"])
+            .menu(&["Tools", "Edit in Place", "Add to Working Set"])
             .params("{add?: [handles], remove?: [handles]} (or {handles, mode?: \"add\"|\"remove\"}); with neither: lists the working set → {working: [handles], added, removed}")
             .enabled(editing)
             .interactive(|_| Ok(Box::new(RefsetM::default()))),
         CommandSpec::new("refclose", "Save Reference Edits", run_refclose)
-            .menu(&["Tools", "Xref and Block In-place Editing", "Save Reference Edits"])
+            .menu(&["Tools", "Edit in Place", "Save Reference Edits"])
             .params("{option?: \"save\"|\"discard\" | save?: bool (default true)} → {block, saved, objects}")
             .enabled(editing)
             .interactive(|_| Ok(Box::new(RefcloseM))),

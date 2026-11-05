@@ -81,7 +81,7 @@
 	Audit	Prověřit
 	Auto (system language)	Automaticky (jazyk systému)
 	Auto Constrain	Automaticky vytvořit vazby
-	AutoConstrain	Automatické vazby
+	Apply Constraints	Automatické vazby
 	Axis, End	Osa, konec
 	Base	Základní bod
 	Baseline	Od základny
@@ -91,7 +91,7 @@
 	Bind...	Svázat...
 	Blend	Spojit křivky
 	Block	Blok
-	Block Attribute Manager...	Správce atributů bloků...
+	Attribute Manager...	Správce atributů bloků...
 	Block Description...	Popis bloku...
 	Block Editor	Editor bloků
 	Block Reference	Reference bloku
@@ -144,7 +144,7 @@
 	Close Comparison	Zavřít porovnání
 	Export Comparison	Exportovat porovnání
 	Coincident	Totožnost
-	Collapse Tool Sets	Sbalit sady nástrojů
+	Collapse Toolbox	Sbalit sady nástrojů
 	Collinear	Kolinearita
 	Color	Barva
 	Color 8	Barva 8
@@ -192,7 +192,7 @@
 	Cyan	Azurová
 	Cylinder	Válec
 	DWG	DWG
-	DWG Reference...	Reference DWG...
+	Attach Drawing...	Reference DWG...
 	DXF	DXF
 	Dark	Tmavé
 	Data Extraction...	Extrahovat data...
@@ -239,7 +239,7 @@
 	Distance	Vzdálenost
 	Divide	Dělit
 	Do not plot (click: plot)	Netisknout (kliknutím: tisknout)
-	Donut	Prstenec
+	Ring	Prstenec
 	Double-click to edit the description	Dvojitým kliknutím upravíte popis
 	Down	Dolů
 	Drafting	Kreslení
@@ -255,8 +255,8 @@
 	Drawings (DWG, DXF)	Výkresy (DWG, DXF)
 	Dynamic	Dynamická
 	Dynamic Dimensions	Dynamické kóty
-	Dynamic Input	Dynamické zadávání
-	Dynamic Input (F12)	Dynamické zadávání (F12)
+	Cursor Input	Dynamické zadávání
+	Cursor Input (F12)	Dynamické zadávání (F12)
 	E	V
 	Edit	Úpravy
 	Edit Attributes...	Upravit atributy...
@@ -265,7 +265,7 @@
 	Elevation	Výška zdvihu
 	Ellipse	Elipsa
 	Elliptical Arc	Eliptický oblouk
-	Enable Dynamic Input (F12)	Zapnout dynamické zadávání (F12)
+	Enable Cursor Input (F12)	Zapnout dynamické zadávání (F12)
 	End Object Isolation	Ukončit izolaci objektů
 	End Width	Koncová šířka
 	End X	Konec X
@@ -451,7 +451,7 @@
 	Layer Properties Manager	Správce vlastností hladin
 	Layer Properties Manager — current viewport	Správce vlastností hladin — aktuální výřez
 	Layer State	Stav hladin
-	Layer States Manager...	Správce stavů hladin...
+	Layer States...	Správce stavů hladin...
 	Layer Tools	Nástroje hladin
 	Layer contains objects (double-click to make current)	Hladina obsahuje objekty (dvojitým kliknutím ji nastavíte jako aktuální)
 	Layer is empty (double-click to make current)	Hladina je prázdná (dvojitým kliknutím ji nastavíte jako aktuální)
@@ -527,8 +527,8 @@
 	Multileader Style...	Styl multiodkazu...
 	Multileader style	Styl multiodkazů
 	Multiline	Multičára
-	Multiline Text	Víceřádkový textový objekt
-	Multiline Text...	Víceřádkový text...
+	Paragraph Text	Víceřádkový textový objekt
+	Paragraph Text...	Víceřádkový text...
 	Multiple	Více
 	Multiple Point	Více bodů
 	My	Moje
@@ -569,9 +569,9 @@
 	Object Snap	Uchopení objektu
 	Object Snap (F3)	Uchopení objektu (F3)
 	Object Snap On (F3)	Zapnout uchopení objektu (F3)
-	Object Snap Tracking	Trasování uchopení objektu
-	Object Snap Tracking (F11)	Trasování uchopení objektu (F11)
-	Object Snap Tracking Settings	Nastavení trasování uchopení objektu
+	Snap Tracking	Trasování uchopení objektu
+	Snap Tracking (F11)	Trasování uchopení objektu (F11)
+	Snap Tracking Settings	Nastavení trasování uchopení objektu
 	Object type:	Typ objektu:
 	Oblique	Šikmá
 	Off	Vypnuto
@@ -584,7 +584,7 @@
 	Open (⌘O)	Otevřít (⌘O)
 	Open Sample Drawing	Otevřít ukázkový výkres
 	Open sample drawing	Otevřít ukázku výkresu
-	Open Xref	Otevřít externí referenci
+	Open Reference	Otevřít externí referenci
 	Open...	Otevřít...
 	Operator:	Operátor:
 	Orbit	Orbit
@@ -601,7 +601,7 @@
 	Polar (distance < angle)	Polární (vzdálenost < úhel)
 	PRs	PR
 	Page Setup Manager	Správce nastavení stránky
-	Page Setup Manager...	Správce nastavení stránky...
+	Page Setups...	Správce nastavení stránky...
 	Pan	Posun pohledu
 	Pan Down	Posunout pohled dolů
 	Pan Left	Posunout pohled vlevo
@@ -620,17 +620,17 @@
 	Perpendicular	Kolmá
 	Plot	Tisk
 	Plot (click: do not plot)	Tisknout (kliknutím: netisknout)
-	Plot Preview	Náhled tisku
+	Print Preview	Náhled tisku
 	Plot Window	Okno tisku
 	Plot style	Tiskový styl
 	Plot style attached to	Tiskový styl přiřazený k
 	Plot style table	Tabulka tiskových stylů
-	Plot Style...	Tiskový styl...
+	Print Style...	Tiskový styl...
 	Plot Style Manager	Správce tiskových stylů
-	Plot Style Manager...	Správce tiskových stylů...
-	Plot Styles...	Tiskové styly...
+	Print Style Manager...	Správce tiskových stylů...
+	Print Styles...	Tiskové styly...
 	Plotter Manager	Správce plotrů
-	Plotter Manager...	Správce plotrů...
+	Printer Manager...	Správce plotrů...
 	New CTB	Nová CTB
 	New STB	Nová STB
 	New style	Nový styl
@@ -659,9 +659,9 @@
 	Point Filters	Filtry souřadnic
 	Point Style...	Styl bodu...
 	Polar Array	Kruhové pole
-	Polar Tracking	Polární trasování
-	Polar Tracking (F10)	Polární trasování (F10)
-	Polar Tracking On (F10)	Zapnout polární trasování (F10)
+	Angle Tracking	Polární trasování
+	Angle Tracking (F10)	Polární trasování (F10)
+	Angle Tracking On (F10)	Zapnout polární trasování (F10)
 	Polar angle measurement	Měření polárního úhlu
 	Polar distance	Polární vzdálenost
 	Polar: {distance} < {angle}°	Polární: {distance} < {angle}°
@@ -690,12 +690,12 @@
 	Query Entities	Dotaz na entity
 	Quick	Rychlé
 	Quick Dimension	Rychlá kóta
-	Quick Properties	Rychlé vlastnosti
-	Quick Select	Rychlý výběr
-	Quick Select Properties	Vlastnosti rychlého výběru
-	Quick Select...	Rychlý výběr...
-	QuickCalc	Rychlá kalkulačka
-	QuickCalc Pick	Výběr pro rychlou kalkulačku
+	Quick Info	Rychlé vlastnosti
+	Select by Property	Rychlý výběr
+	Select by Property Fields	Vlastnosti rychlého výběru
+	Select by Property...	Rychlý výběr...
+	Calculator	Rychlá kalkulačka
+	Calculator Pick	Výběr pro rychlou kalkulačku
 	Quit AptCAD	Ukončit AptCAD
 	Radius	Poloměr
 	Raster Image	Rastrový obrázek
@@ -717,8 +717,8 @@
 	Redo	Znovu
 	Redo (⇧⌘Z)	Znovu (⇧⌘Z)
 	Redraw	Překreslit
-	Regen	Regenerovat
-	Regen All	Regenerovat vše
+	Refresh	Regenerovat
+	Refresh All	Regenerovat vše
 	Region	Oblast
 	Region/Mass Properties	Vlastnosti oblasti/hmoty
 	Reinitialize	Znovu inicializovat
@@ -803,7 +803,7 @@
 	Edit Reference In-Place	Upravit referenci na místě
 	Save Reference Edits	Uložit úpravy reference
 	Working Set	Pracovní sada
-	Xref and Block In-place Editing	Úpravy xref a bloků na místě
+	Edit in Place	Úpravy xref a bloků na místě
 	Select nested objects to copy	Vyberte vnořené objekty ke kopírování
 	Select object	Vyberte objekt
 	Select object to dimension	Vyberte objekt ke kótování
@@ -955,8 +955,8 @@
 	Select objects first, then choose a command	Nejprve vybrat objekty, potom zvolit příkaz
 	Selection	Výběr
 	Settings...	Nastavení...
-	Show Quick Properties for selected objects	Zobrazovat rychlé vlastnosti vybraných objektů
-	Snap, grid, polar tracking and Dynamic Input:	Uchopení, rastr, polární trasování a dynamické zadávání:
+	Show Quick Info for selected objects	Zobrazovat rychlé vlastnosti vybraných objektů
+	Snap, grid, angle tracking and Cursor Input:	Uchopení, rastr, polární trasování a dynamické zadávání:
 	The aperture is how near the cursor must come to a point for an object snap to find it.	Dosah určuje, jak blízko se kurzor musí přiblížit k bodu, aby jej uchopení objektu nalezlo.
 	User Preferences	Uživatelské předvolby
 	objects	objektů
@@ -1078,7 +1078,7 @@
 	Time	Čas
 	To get started, create or open a drawing.	Začněte vytvořením nebo otevřením výkresu.
 	Tool Bar	Panel nástrojů
-	Tool Sets	Sady nástrojů
+	Toolbox	Sady nástrojů
 	Tools	Nástroje
 	Torus	Anuloid
 	Trace	Stopa
@@ -1090,7 +1090,7 @@
 	Turn All Layers On	Zapnout všechny hladiny
 	Turn Off Layer	Vypnout hladinu
 	Turn On Layer	Zapnout hladinu
-	Turn Quick Properties off (QPMODE)	Vypnout rychlé vlastnosti (QPMODE)
+	Turn Quick Info off (QPMODE)	Vypnout rychlé vlastnosti (QPMODE)
 	Type	Typ
 	Type a command	Zadejte příkaz
 	Type text; Enter starts a new paragraph	Pište text; Enter začne nový odstavec
@@ -1192,7 +1192,7 @@
 	Show Annotative Objects	Zobrazit objekty popisů
 	Current Scale Only	Pouze aktuální měřítko
 	All Scales	Všechna měřítka
-	Drawing Recovery Manager...	Správce obnovení výkresů...
+	Recover Drawings...	Správce obnovení výkresů...
 	Tolerance...	Tolerance...
 	Add Vertex	Přidat vrchol
 	Remove Vertex	Odebrat vrchol

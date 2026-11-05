@@ -22,8 +22,8 @@ use crate::{Accept, EngineError, Input, Interactive, Prompt, Result, Session, St
 
 pub(super) fn specs() -> Vec<CommandSpec> {
     vec![
-        CommandSpec::new("xattach", "DWG Reference...", run_xattach)
-            .menu(&["Insert", "DWG Reference..."])
+        CommandSpec::new("xattach", "Attach Drawing...", run_xattach)
+            .menu(&["Insert", "Attach Drawing..."])
             .alias(&["xa"])
             .params("{path: DWG/DXF file (saved as given; a relative path is relative to this drawing's folder), name? (default: the file name), overlay?: bool, at?: [x,y] (default 0,0), scale?: number | [x, y], rotation? (degrees)} → {name, handle, file}")
             .interactive(|_| Ok(Box::new(XrefM::new("XATTACH", XStage::File { overlay: false })))),
@@ -41,8 +41,8 @@ pub(super) fn specs() -> Vec<CommandSpec> {
             .alias(&["-xbind", "xb", "-xb"])
             .params("{type: block|dimstyle|layer|linetype|style, names: \"XREF|NAME,…\" (wildcards) | [names]} → {bound: [names]}")
             .interactive(|_| Ok(Box::new(XbindM::default()))),
-        CommandSpec::new("xopen", "Open Xref", run_xopen)
-            .menu(&["Tools", "Open Xref"])
+        CommandSpec::new("xopen", "Open Reference", run_xopen)
+            .menu(&["Tools", "Open Reference"])
             .params("{name} | {handles: [xref reference]}")
             .noundo()
             .interactive(|_| Ok(Box::new(super::super::machines::SelectRun::single("xopen", "XOPEN", "Select xref")))),

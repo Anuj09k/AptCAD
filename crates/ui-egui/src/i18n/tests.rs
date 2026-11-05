@@ -457,7 +457,7 @@ fn dialogs_render_in_every_language_and_keep_their_source_ids() {
             ("commands", "Command Reference"),
             ("blocks", "Blocks"),
             ("layers", "Layer Properties Manager"),
-            ("qselect", "Quick Select"),
+            ("qselect", "Select by Property"),
             ("parameters", "Parameters Manager"),
             ("language", "Interface Language"),
             ("hatch", "Hatch and Gradient"),

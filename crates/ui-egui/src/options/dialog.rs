@@ -345,7 +345,7 @@ fn drafting(app: &CadApp, ui: &mut egui::Ui, changes: &mut Map<String, Value>, s
     hint(ui, crate::tl!("The aperture is how near the cursor must come to a point for an object snap to find it."));
     ui.add_space(8.0);
     ui.horizontal(|ui| {
-        ui.label(crate::tl!("Snap, grid, polar tracking and Dynamic Input:"));
+        ui.label(crate::tl!("Snap, grid, angle tracking and Cursor Input:"));
         if ui.button(crate::tl!("Drafting Settings...")).clicked() {
             *start = Some("dsettings");
         }
@@ -393,7 +393,7 @@ fn selection(app: &CadApp, ui: &mut egui::Ui, changes: &mut Map<String, Value>) 
             changes.insert("PICKSTYLE".into(), json!((st.pickstyle & !1) | u8::from(grouping)));
         }
         let mut qp = st.qpmode;
-        if left.checkbox(&mut qp, crate::tl!("Show Quick Properties for selected objects")).changed() {
+        if left.checkbox(&mut qp, crate::tl!("Show Quick Info for selected objects")).changed() {
             changes.insert("QPMODE".into(), json!(i32::from(qp)));
         }
         left.add_space(4.0);
@@ -498,7 +498,7 @@ fn visual_effects(ctx: &egui::Context, st: &aptcad_engine::Settings, open: &mut 
                 right.label(crate::tl!("Exclude:"));
                 for (bit, label) in [
                     (1u8, crate::tl!("Objects on locked layers")),
-                    (2, crate::tl!("Xrefs")),
+                    (2, crate::tl!("References")),
                     (4, crate::tl!("Tables")),
                     (32, crate::tl!("Groups")),
                     (8, crate::tl!("Multiline text")),

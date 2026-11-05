@@ -57,7 +57,7 @@
 	Audit	检查
 	Auto (system language)	自动（系统语言）
 	Auto Constrain	自动约束
-	AutoConstrain	自动约束
+	Apply Constraints	自动约束
 	Axis, End	轴端点
 	Base	基准
 	Baseline	基线
@@ -66,7 +66,7 @@
 	Binary assets removed	已移除二进制资产
 	Blend	过渡
 	Block	块
-	Block Attribute Manager...	块属性管理器...
+	Attribute Manager...	块属性管理器...
 	Block Description...	块描述...
 	Block Editor	块编辑器
 	Block Reference	块参照
@@ -110,7 +110,7 @@
 	Closed	已关闭
 	Coincident	重合
 	Collapse Palettes	折叠选项板
-	Collapse Tool Sets	折叠工具集
+	Collapse Toolbox	折叠工具集
 	Collinear	共线
 	Color	颜色
 	Color 8	颜色 8
@@ -188,7 +188,7 @@
 	Distance	距离
 	Divide	定数等分
 	Do not plot (click: plot)	不打印（点击：打印）
-	Donut	圆环
+	Ring	圆环
 	Double-click to edit the description	双击编辑描述
 	Down	向下
 	Drafting	绘图
@@ -202,15 +202,15 @@
 	Drawing Utilities	图形实用工具
 	Drawings (DWG, DXF)	图形 (DWG, DXF)
 	Dynamic Dimensions	动态标注
-	Dynamic Input	动态输入
-	Dynamic Input (F12)	动态输入 (F12)
+	Cursor Input	动态输入
+	Cursor Input (F12)	动态输入 (F12)
 	E	E
 	Edit	编辑
 	Edit Text...	编辑文字...
 	Elevation	标高
 	Ellipse	椭圆
 	Elliptical Arc	椭圆弧
-	Enable Dynamic Input (F12)	启用动态输入 (F12)
+	Enable Cursor Input (F12)	启用动态输入 (F12)
 	End Width	端点宽度
 	End X	终点 X
 	End Y	终点 Y
@@ -371,7 +371,7 @@
 	Layer Properties Manager	图层特性管理器
 	Layer Properties Manager — current viewport	图层特性管理器 — 当前视口
 	Layer State	图层状态
-	Layer States Manager...	图层状态管理器...
+	Layer States...	图层状态管理器...
 	Layer Tools	图层工具
 	Layer contains objects (double-click to make current)	图层包含对象（双击将其置为当前）
 	Layer is empty (double-click to make current)	图层为空（双击将其置为当前）
@@ -443,8 +443,8 @@
 	Multileader Style...	多重引线样式...
 	Multileader style	多重引线样式
 	Multiline	多线
-	Multiline Text	多行文字
-	Multiline Text...	多行文字...
+	Paragraph Text	多行文字
+	Paragraph Text...	多行文字...
 	Multiple	多个
 	Multiple Insert	多重插入
 	Multiple Point	多点
@@ -480,8 +480,8 @@
 	Object Snap	对象捕捉
 	Object Snap (F3)	对象捕捉 (F3)
 	Object Snap On (F3)	开启对象捕捉 (F3)
-	Object Snap Tracking	对象捕捉追踪
-	Object Snap Tracking (F11)	对象捕捉追踪 (F11)
+	Snap Tracking	对象捕捉追踪
+	Snap Tracking (F11)	对象捕捉追踪 (F11)
 	Object type:	对象类型:
 	Off	关闭
 	Offset	偏移
@@ -506,7 +506,7 @@
 	Polar (distance < angle)	极轴 (距离 < 角度)
 	PRs	PR
 	Page Setup Manager	页面设置管理器
-	Page Setup Manager...	页面设置管理器...
+	Page Setups...	页面设置管理器...
 	Pan	平移
 	Pan Down	向下平移
 	Pan Left	向左平移
@@ -524,14 +524,14 @@
 	Perpendicular	垂直
 	Plot	打印
 	Plot (click: do not plot)	打印（点击：不打印）
-	Plot Preview	打印预览
+	Print Preview	打印预览
 	Plot style	打印样式
 	Plot style attached to	附加到...的打印样式
 	Plot style table	打印样式表
-	Plot Style...	打印样式...
+	Print Style...	打印样式...
 	Plot Style Manager	打印样式管理器
-	Plot Style Manager...	打印样式管理器...
-	Plot Styles...	打印样式...
+	Print Style Manager...	打印样式管理器...
+	Print Styles...	打印样式...
 	New CTB	新 CTB
 	New STB	新 STB
 	New style	新样式
@@ -557,9 +557,9 @@
 	Point Filters	点过滤器
 	Point Style...	点样式...
 	Polar Array	环形阵列
-	Polar Tracking	极轴追踪
-	Polar Tracking (F10)	极轴追踪 (F10)
-	Polar Tracking On (F10)	开启极轴追踪 (F10)
+	Angle Tracking	极轴追踪
+	Angle Tracking (F10)	极轴追踪 (F10)
+	Angle Tracking On (F10)	开启极轴追踪 (F10)
 	Polar: {distance} < {angle}°	极轴: {distance} < {angle}°
 	Polygon	多边形
 	Polygonal	多边形
@@ -582,11 +582,11 @@
 	Query Entities	查询实体
 	Quick	快速
 	Quick Dimension	快速标注
-	Quick Properties	快速特性
-	Quick Select	快速选择
-	Quick Select Properties	快速选择特性
-	Quick Select...	快速选择...
-	QuickCalc	快速计算器
+	Quick Info	快速特性
+	Select by Property	快速选择
+	Select by Property Fields	快速选择特性
+	Select by Property...	快速选择...
+	Calculator	快速计算器
 	Quit AptCAD	退出 AptCAD
 	Radius	半径
 	Raster Image	光栅图像
@@ -604,8 +604,8 @@
 	Redo	重做
 	Redo (⇧⌘Z)	重做 (⇧⌘Z)
 	Redraw	重绘
-	Regen	重生成
-	Regen All	全部重生成
+	Refresh	重生成
+	Refresh All	全部重生成
 	Region	面域
 	Region/Mass Properties	面域/质量特性
 	Relative	相对
@@ -673,7 +673,7 @@
 	Edit Reference In-Place	就地编辑参照
 	Save Reference Edits	保存参照编辑
 	Working Set	工作集
-	Xref and Block In-place Editing	外部参照和块的就地编辑
+	Edit in Place	外部参照和块的就地编辑
 	Select an object.	选择一个对象。
 	Select an open curve.	选择一条开曲线。
 	Select an open line, arc, polyline, ellipse arc or spline.	选择开放的直线、圆弧、多段线、椭圆弧或样条曲线。
@@ -916,7 +916,7 @@
 	Time	时间
 	To get started, create or open a drawing.	若要开始，请创建或打开一个图形。
 	Tool Bar	工具栏
-	Tool Sets	工具集
+	Toolbox	工具集
 	Tools	工具
 	Torus	圆环体
 	Trace	追踪
@@ -925,7 +925,7 @@
 	True Color	真彩色
 	Turn All Layers On	打开所有图层
 	Turn Off Layer	关闭图层
-	Turn Quick Properties off (QPMODE)	关闭快速特性 (QPMODE)
+	Turn Quick Info off (QPMODE)	关闭快速特性 (QPMODE)
 	Type	类型
 	Type a command	输入命令
 	Type text; Enter starts a new paragraph	输入文字；回车开始新段落
@@ -1018,7 +1018,7 @@
 	Move sideways to pan; push/pull or twist to zoom.	向侧面移动以平移；推拉或扭转以缩放。
 	Left device button: zoom extents. Right device button: calibrate.	左侧设备按钮：范围缩放。右侧设备按钮：校准。
 	Not a number or distance: {text}	不是数字或距离：{text}
-	Plotter Manager...	绘图仪管理器...
+	Printer Manager...	绘图仪管理器...
 	Import...	导入...
 	Export...	导出...
 	Batch Publish...	批量发布...
@@ -1027,13 +1027,13 @@
 	Current Scale Only	仅当前比例
 	All Scales	所有比例
 	Dynamic	动态
-	DWG Reference...	DWG 参照...
+	Attach Drawing...	DWG 参照...
 	Data Link...	数据链接...
 	Multiline Style...	多线样式...
 	Scale List...	比例列表...
 	Run Script...	运行脚本...
 	Data Extraction...	数据提取...
-	Open Xref	打开外部参照
+	Open Reference	打开外部参照
 	Compare Drawings...	比较图形...
 	Isolate Objects	隔离对象
 	Hide Objects	隐藏对象
@@ -1087,12 +1087,12 @@
 	Object snap marker size	对象捕捉标记大小
 	Object snap aperture	对象捕捉靶框大小
 	The aperture is how near the cursor must come to a point for an object snap to find it.	靶框决定了光标必须离对象捕捉点多近才能被识别。
-	Snap, grid, polar tracking and Dynamic Input:	捕捉、栅格、极轴追踪和动态输入:
+	Snap, grid, angle tracking and Cursor Input:	捕捉、栅格、极轴追踪和动态输入:
 	Pickbox size	拾取框大小
 	Grip size	夹点大小
 	Select objects first, then choose a command	先选择对象，然后选择命令
 	Hold Shift to add to the selection	按住 Shift 键添加到选择
-	Show Quick Properties for selected objects	显示所选对象的快速特性
+	Show Quick Info for selected objects	显示所选对象的快速特性
 	Largest array	最大阵列数
 	An array that would create more objects than this is refused.	将拒绝创建超出此对象数量的阵列。
 	Time-sensitive right-click: a quick click is Enter, holding opens the menu	时间敏感右键：快速点击相当于回车，按住不放打开菜单
@@ -1108,7 +1108,7 @@
 	PolarSnap	极轴捕捉
 	Polar distance	极轴距离
 	Additional angles	附加角
-	Object Snap Tracking Settings	对象捕捉追踪设置
+	Snap Tracking Settings	对象捕捉追踪设置
 	Track orthogonally only	仅正交追踪
 	Track using all polar angle settings	使用所有极轴角设置追踪
 	Polar angle measurement	极轴角测量
@@ -1116,7 +1116,7 @@
 	Show command prompting near the crosshairs	在光标附近显示命令提示
 	Open Recent	打开最近的图形
 	Sheet Books to PDF...	图纸册转 PDF...
-	Drawing Recovery Manager...	图形恢复管理器...
+	Recover Drawings...	图形恢复管理器...
 	Named Viewports...	命名视口...
 	Named Views...	命名视图...
 	Polygonal Viewport	多边形视口
@@ -1192,7 +1192,7 @@
 	Edit Attributes...	编辑属性...
 	Select Similar	选择相似
 	Viewport is locked	视口已锁定
-	Show in Tool Sets	在工具集中显示
+	Show in Toolbox	在工具集中显示
 	Infer Constraints	推断约束
 	Group Selection	编组选择
 	Copy History	复制历史记录
@@ -1228,7 +1228,7 @@
 	Unreferenced	未参照
 	Drawing Template (DWT)	图形样板 (DWT)
 	Turn On Layer	打开图层
-	QuickCalc Pick	快速计算器拾取
+	Calculator Pick	快速计算器拾取
 	Loaded	已加载
 	Add Vertex	添加顶点
 	Make it a block of this drawing; its layers become NAME$0$LAYER	将其制作为此图形的块；其图层将变为 NAME$0$LAYER
@@ -1354,7 +1354,7 @@
 	Close Block Editor	关闭块编辑器
 	Collect	合并
 	Collect Multileaders	合并多重引线
-	Convert Text to Mtext	将文字转换为多行文字
+	Convert to Paragraph Text	将文字转换为多行文字
 	Customize	自定义
 	Drag Dynamic Grip	拖动动态夹点
 	Dynamic Block Data	动态块数据
@@ -1364,7 +1364,7 @@
 	Edit Multileader	编辑多重引线
 	Evaluate LISP	求值 LISP
 	Explode Attributes to Text	将属性分解为文字
-	Express Tools	扩展工具
+	More Tools	扩展工具
 	Groups	编组
 	Hatch Pick	拾取图案填充
 	Implied Loops	隐含环
@@ -1452,7 +1452,7 @@
 	When no command is active	无活动命令时
 	Window selection color:	窗口选择颜色：
 	X	X
-	Xrefs	外部参照
+	References	外部参照
 	Y	Y
 	built-in	内置
 	contains authoring elements. Open in Block Editor?	包含编写元素。在块编辑器中打开吗？

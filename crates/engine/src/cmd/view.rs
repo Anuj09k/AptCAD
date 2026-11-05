@@ -71,20 +71,20 @@ pub fn specs() -> Vec<CommandSpec> {
         CommandSpec::new("pan.right", "Pan Right", |s, _| pan_frac(s, Vec2::new(0.25, 0.0))).menu(&["View", "Pan", "Right"]).noundo().transparent(),
         CommandSpec::new("pan.up", "Pan Up", |s, _| pan_frac(s, Vec2::new(0.0, 0.25))).menu(&["View", "Pan", "Up"]).noundo().transparent(),
         CommandSpec::new("pan.down", "Pan Down", |s, _| pan_frac(s, Vec2::new(0.0, -0.25))).menu(&["View", "Pan", "Down"]).noundo().transparent(),
-        CommandSpec::new("regen", "Regen", |s, _| {
+        CommandSpec::new("regen", "Refresh", |s, _| {
             // Table formulas are recalculated (as on UPDATEFIELD).
             super::table::recalc(s, None)?;
             s.touch();
             Ok(json!({"message": "Regenerating model."}))
         })
-        .menu(&["View", "Regen"])
+        .menu(&["View", "Refresh"])
         .alias(&["re"])
         .noundo(),
-        CommandSpec::new("regenall", "Regen All", |s, _| {
+        CommandSpec::new("regenall", "Refresh All", |s, _| {
             s.touch();
             Ok(json!({"message": "Regenerating all viewports."}))
         })
-        .menu(&["View", "Regen All"])
+        .menu(&["View", "Refresh All"])
         .alias(&["rea"])
         .noundo(),
         CommandSpec::new("redraw", "Redraw", |s, _| {

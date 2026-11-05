@@ -36,19 +36,19 @@ pub fn specs() -> Vec<CommandSpec> {
             .enabled(always)
             .noundo()
             .transparent(),
-        CommandSpec::new("polar", "Polar Tracking", |s, p| toggle(s, p, |st| &mut st.polarmode, "Polar"))
+        CommandSpec::new("polar", "Angle Tracking", |s, p| toggle(s, p, |st| &mut st.polarmode, "Polar"))
             .key("F10")
             .params("{on?: bool}")
             .enabled(always)
             .noundo()
             .transparent(),
-        CommandSpec::new("otrack", "Object Snap Tracking", |s, p| toggle(s, p, |st| &mut st.otrack, "Object Snap Tracking"))
+        CommandSpec::new("otrack", "Snap Tracking", |s, p| toggle(s, p, |st| &mut st.otrack, "Snap Tracking"))
             .key("F11")
             .params("{on?: bool}")
             .enabled(always)
             .noundo()
             .transparent(),
-        CommandSpec::new("dynmode", "Dynamic Input", |s, p| toggle(s, p, |st| &mut st.dynmode, "Dynamic Input"))
+        CommandSpec::new("dynmode", "Cursor Input", |s, p| toggle(s, p, |st| &mut st.dynmode, "Cursor Input"))
             .key("F12")
             .params("{on?: bool}")
             .enabled(always)
@@ -76,7 +76,7 @@ pub fn specs() -> Vec<CommandSpec> {
             .params("{on?: bool}")
             .enabled(always)
             .noundo(),
-        CommandSpec::new("qpmode", "Quick Properties", |s, p| toggle(s, p, |st| &mut st.qpmode, "Quick Properties"))
+        CommandSpec::new("qpmode", "Quick Info", |s, p| toggle(s, p, |st| &mut st.qpmode, "Quick Info"))
             .params("{on?: bool}")
             .enabled(always)
             .noundo()

@@ -66,16 +66,16 @@ fn cal_and_picks_at_the_command_line() {
     s.cmdline("d").unwrap();
     s.cmdline("0,0").unwrap();
     s.cmdline("3,4").unwrap();
-    assert_eq!(s.log.last().map(String::as_str), Some("QuickCalc: 5"));
+    assert_eq!(s.log.last().map(String::as_str), Some("Calculator: 5"));
     // A point at the first prompt picks coordinates.
     s.start("quickcalc.pick").unwrap();
     s.cmdline("2,7").unwrap();
-    assert_eq!(s.log.last().map(String::as_str), Some("QuickCalc: 2,7"));
+    assert_eq!(s.log.last().map(String::as_str), Some("Calculator: 2,7"));
     s.start("quickcalc.pick").unwrap();
     for t in ["i", "0,0", "4,4", "0,4", "4,0"] {
         s.cmdline(t).unwrap();
     }
-    assert_eq!(s.log.last().map(String::as_str), Some("QuickCalc: 2,2"));
+    assert_eq!(s.log.last().map(String::as_str), Some("Calculator: 2,2"));
     assert!(s.running.is_none());
 }
 

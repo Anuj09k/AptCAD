@@ -71,7 +71,7 @@ fn restarting_restores_calculator_data_and_ui_edits_are_saved_when_hidden() {
 /// In these tests QuickCalc floats alone; scope to its body to avoid the Properties text fields.
 /// Its first text input is the expression, before conversion values and variable definitions.
 fn expression<'a>(h: &'a Harness<'_, CadApp>) -> egui_kittest::Node<'a> {
-    h.get_by_role_and_label(Role::Tab, "QuickCalc").parent().unwrap().get_all_by_role(Role::TextInput).next().unwrap()
+    h.get_by_role_and_label(Role::Tab, "Calculator").parent().unwrap().get_all_by_role(Role::TextInput).next().unwrap()
 }
 
 #[test]
@@ -110,7 +110,7 @@ fn platform_shortcut_toggles_with_expression_focus_and_preserves_drafting() {
 #[test]
 fn window_menu_toggle_preserves_calculator_history_and_command_line_input() {
     let mut h = harness();
-    let (id, _, _, shortcut) = menus::UI_COMMANDS.iter().find(|(_, label, path, _)| *label == "QuickCalc" && !path.is_empty()).unwrap();
+    let (id, _, _, shortcut) = menus::UI_COMMANDS.iter().find(|(_, label, path, _)| *label == "Calculator" && !path.is_empty()).unwrap();
     assert_eq!(*id, "ui.toggle.quickcalc");
     assert_eq!(*shortcut, Some("Cmd+8"));
     // Both the native menu and egui menu dispatch through activate().

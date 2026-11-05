@@ -65,7 +65,7 @@ fn an_open_menu_keeps_the_os_cursor_visible_over_the_drawing() {
     harness.run_steps(3);
 
     // A menu item of the open popup lies over the drawing area.
-    harness.get_by_label("Regen All").hover();
+    harness.get_by_label("Refresh All").hover();
     harness.run_steps(3);
     assert_ne!(cursor(&harness), egui::CursorIcon::None, "a menu item over the canvas shows the pointer");
 
@@ -196,7 +196,7 @@ fn a_dynamic_input_options_row_keeps_the_os_cursor_visible() {
 
     harness.hover_at(row.center());
     harness.run_steps(3);
-    assert_ne!(cursor(&harness), egui::CursorIcon::None, "a Dynamic Input options row is a menu and keeps a visible OS cursor");
+    assert_ne!(cursor(&harness), egui::CursorIcon::None, "a Cursor Input options row is a menu and keeps a visible OS cursor");
     assert!(harness.state().cmd.options.is_some(), "the menu stays open under the pointer");
     assert!(harness.state().cmd.option_rows.iter().any(|(r, _)| r.contains(row.center())), "the row is still drawn for clicks");
     assert!(harness.state().canvas.cursor.is_some(), "the canvas keeps tracking the pointer under the menu, so the value boxes stay put");

@@ -17,8 +17,8 @@ use crate::{Accept, EngineError, Input, Interactive, Prompt, Result, Session, St
 
 pub fn specs() -> Vec<CommandSpec> {
     vec![
-        CommandSpec::new("txt2mtxt", "Convert Text to Mtext", run_txt2mtxt)
-            .menu(&["Tools", "Express Tools", "Convert Text to Mtext"])
+        CommandSpec::new("txt2mtxt", "Convert to Paragraph Text", run_txt2mtxt)
+            .menu(&["Tools", "More Tools", "Convert to Paragraph Text"])
             .params(
                 "{handles? (default the selection; TEXT, and MTEXT when combining), combine? (default true: one MTEXT; false: one per TEXT), \
                  sort?: \"topdown\" (default) | \"selection\", wrap? (default false: one line per text)} → {handles}",

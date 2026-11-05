@@ -1119,7 +1119,7 @@ fn constraint_settings(app: &mut CadApp, ctx: &egui::Context, open: &mut bool) -
             action = set("dimsVisible", json!(dims));
         }
         ui.separator();
-        ui.heading("AutoConstrain");
+        ui.heading("Apply Constraints");
         ui.label(RichText::new("Constraint types AUTOCONSTRAIN applies").color(t.text_dim));
         egui::Grid::new("csettings_types").num_columns(3).show(ui, |ui| {
             for (i, ty) in types.iter().enumerate() {

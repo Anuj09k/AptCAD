@@ -41,8 +41,8 @@ pub fn specs() -> Vec<CommandSpec> {
             .alias(&["exp"])
             .params("{path? (else returns base64 `data`), format?: dxf|dwg|svg|png|pdf (default: the path's extension)} → {format, bytes, path? | data}")
             .noundo(),
-        CommandSpec::new("preview", "Plot Preview", run_preview)
-            .menu(&["File", "Plot Preview"])
+        CommandSpec::new("preview", "Print Preview", run_preview)
+            .menu(&["File", "Print Preview"])
             .alias(&["pre"])
             .params("{layout?: current|\"Model\", paper?, landscape?, fit?, scale?, lineweights?, plotTransparency?, width?: pixels (default 1200)} → {data: base64 PNG, width, height, layout, paper}")
             .noundo(),
