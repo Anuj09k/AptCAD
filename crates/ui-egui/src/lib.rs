@@ -388,6 +388,18 @@ impl CadApp {
 
     /// The interface language shown: the chosen one, or English when this computer has no font
     /// for it (Chinese or Korean without a suitable font would be boxes).
+    /// Apply the fonts, theme, animation and interface scale again on the next frame, even when they
+    /// have not changed. A host that shares the egui context with another app (Aptimizer Studio's
+    /// AptBIM mode) calls this when it hands the window back to AptCAD, since the other app sets
+    /// the context's fonts and style to its own.
+    pub fn restyle(&mut self) {
+        self.fonts_language = None;
+        self.shown_language = None;
+        self.shown_theme = None;
+        self.shown_animations = None;
+        self.shown_interface_scale = None;
+    }
+
     pub fn language(&self) -> &'static str {
         let l = self.ui.interface_language.resolve(&self.system_languages);
         if theme::can_show(l) { l } else { "en" }

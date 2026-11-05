@@ -317,6 +317,24 @@ mod tests {
         assert!(app.session.pending_window.is_none());
     }
 
+    /// Another app sharing the context (Aptimizer Studio's AptBIM mode) replaces its fonts and style;
+    /// `restyle` puts AptCAD's back on the next frame, where without it nothing changed would.
+    #[test]
+    fn restyle_puts_aptcad_look_back_after_another_app_changed_the_context() {
+        let (mut app, ctx) = app_and_ctx();
+        let ours = ctx.style_of(egui::Theme::Dark).visuals.panel_fill;
+        let fonts = ctx.fonts(|f| f.definitions().font_data.len());
+        ctx.set_visuals_of(egui::Theme::Dark, egui::Visuals::light());
+        ctx.set_fonts(egui::FontDefinitions::default());
+        frame(&mut app, &ctx, Vec::new());
+        assert_ne!(ctx.style_of(egui::Theme::Dark).visuals.panel_fill, ours, "unchanged settings are not applied again on their own");
+        app.restyle();
+        frame(&mut app, &ctx, Vec::new());
+        frame(&mut app, &ctx, Vec::new());
+        assert_eq!(ctx.style_of(egui::Theme::Dark).visuals.panel_fill, ours);
+        assert_eq!(ctx.fonts(|f| f.definitions().font_data.len()), fonts);
+    }
+
     /// Renamed from ViewCube: settings saved before the rename (`showViewcube`) and scripts that
     /// still send `ui.toggle.viewcube` keep working.
     #[test]
