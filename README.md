@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="AptCad.png" width="360" alt="AptCAD integrated CAD and design solution logo">
+  <img src="assets/brand/aptcad-logo.png" width="360" alt="AptCAD — Integrated CAD & Design Solution, by Aptimizer">
 </p>
 
 <h1 align="center">AptCAD</h1>
@@ -352,6 +352,9 @@ with its author, source and license in [ATTRIBUTION.md](ATTRIBUTION.md).
 
 AptCAD's icons, its single-stroke drafting font, its hatch patterns and its linetypes are all
 original work, drawn or defined in code. The sample drawings are generated in code too.
+
+AptCAD's logo (`assets/brand/`, and the app icons made from it in `assets/app-icon`) is Aptimizer's. The AptCAD name and
+logo are not licensed under MIT or Apache-2.0: forks and modified versions must use their own.
 
 AptCAD is not affiliated with Autodesk, Inc. AutoCAD is a trademark of Autodesk, Inc.
 

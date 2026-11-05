@@ -342,7 +342,12 @@ fn about(ctx: &egui::Context, open: &mut bool) {
                 1 => crate::credits::contributors_ui(ui),
                 2 => crate::credits::models_ui(ui),
                 _ => {
-                    ui.heading(crate::tl!("AptCAD"));
+                    ui.horizontal(|ui| {
+                        if let Some(logo) = logo_texture(ui.ctx()) {
+                            ui.add(egui::Image::from_texture(egui::load::SizedTexture::new(logo.id(), vec2(56.0, 56.0))));
+                        }
+                        ui.heading(crate::tl!("AptCAD"));
+                    });
                     ui.label(crate::tf!("Version {version}", version = env!("CARGO_PKG_VERSION")));
                     ui.label(crate::tl!("Computer-aided design and drafting: an open-source, clean-room CAD application written in pure Rust."));
                     ui.add_space(6.0);
@@ -353,6 +358,20 @@ fn about(ctx: &egui::Context, open: &mut bool) {
                 }
             }
         });
+}
+
+/// AptCAD's app icon (`assets/app-icon/aptcad-256.png`, the logo's emblem), decoded once and kept as a texture.
+fn logo_texture(ctx: &egui::Context) -> Option<egui::TextureHandle> {
+    const PNG: &[u8] = include_bytes!("../../../assets/app-icon/aptcad-256.png");
+    let id = egui::Id::unique("aptcad-logo");
+    if let Some(texture) = ctx.data_mut(|d| d.get_temp::<egui::TextureHandle>(id)) {
+        return Some(texture);
+    }
+    let img = image::load_from_memory_with_format(PNG, image::ImageFormat::Png).ok()?.to_rgba8();
+    let size = [img.width() as usize, img.height() as usize];
+    let texture = ctx.load_texture("aptcad-logo", egui::ColorImage::from_rgba_unmultiplied(size, img.as_raw()), egui::TextureOptions::LINEAR);
+    ctx.data_mut(|d| d.insert_temp(id, texture.clone()));
+    Some(texture)
 }
 
 /// Command Reference window; filters commands by id or label (English or translated) and starts the clicked command after closing the dialog.
