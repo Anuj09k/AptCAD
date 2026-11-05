@@ -585,7 +585,12 @@ fn preferences(app: &CadApp, ui: &mut egui::Ui, changes: &mut Map<String, Value>
         }
         ui.end_row();
     });
-    hint(ui, crate::tl!("Aptimizer's command keys add MV Move, OF Offset, DE Erase, XP Explode and JO Join, as in the building mode; Classic keeps the aliases alone."));
+    hint(
+        ui,
+        crate::tl!(
+            "Aptimizer's command keys add MV Move, OF Offset, DE Erase, XP Explode and JO Join, as in the building mode; Classic keeps the aliases alone."
+        ),
+    );
     hint(ui, crate::tl!("An array that would create more objects than this is refused."));
     ui.add_space(6.0);
     let mut timed = app.options.time_sensitive_right_click;

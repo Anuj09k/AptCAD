@@ -53,12 +53,12 @@ fn the_engine_reads_the_aliases_as_they_are_whatever_the_keymap() {
 #[test]
 fn options_sets_the_keymap_and_the_prefs_keep_it() {
     let mut app = app();
-    app.run("options", json!({"keymap": "classic"}));
+    assert!(app.run("options", json!({"keymap": "classic"})).is_ok());
     assert_eq!(app.ui.keymap, Keymap::Classic);
     assert!(app.run("options", json!({"keymap": "qwerty"})).is_err());
     let mut again = CadApp::new(Session::new(), Services::default());
     again.load_prefs(&app.prefs_json());
     assert_eq!(again.ui.keymap, Keymap::Classic);
-    app.run("options", json!({"reset": true}));
+    assert!(app.run("options", json!({"reset": true})).is_ok());
     assert_eq!(app.ui.keymap, Keymap::Aptimizer);
 }
