@@ -1463,6 +1463,8 @@ fn chamfer_rejects_negative_distances() {
 fn array_counts_reject_invalid_values() {
     let mut s = Session::new();
     s.execute("line", &json!({"points": [[0, 0], [1, 0]]})).unwrap();
+    // Selected, so what's refused below is the count, not an empty selection.
+    s.execute("selectall", &json!({})).unwrap();
     for bad in [json!(-3), json!(0), json!(2.5)] {
         for key in ["count", "rows", "levels"] {
             let mut p = json!({"center": [0, 0], "associative": false});
@@ -1489,4 +1491,38 @@ fn setvar_rejects_non_finite_text_for_real_variables() {
             assert_eq!(s.execute("getvar", &json!({"name": name})).unwrap(), before);
         }
     }
+}
+
+/// A command that works on objects, given none and with nothing selected, says so rather than doing nothing and
+/// reporting success: an agent (or a script) that forgot to select learns it, and can put it right.
+#[test]
+fn object_commands_with_nothing_to_work_on_say_so() {
+    let mut s = Session::new();
+    s.execute("circle", &json!({"center": [0, 0], "radius": 1})).unwrap();
+    let made = s.execute("line", &json!({"points": [[0, 5], [10, 5]]})).unwrap();
+    assert!(s.state().unwrap().selection.is_empty(), "a new object isn't selected");
+    let line = made.get("handle").or_else(|| made.get("handles").and_then(|h| h.get(0))).cloned().unwrap();
+    for (id, p) in [
+        ("arrayrect", json!({"rows": 1, "cols": 5, "colSpacing": 10, "rowSpacing": 0, "associative": false})),
+        ("arrayrect", json!({"rows": 1, "cols": 5, "colSpacing": 10, "rowSpacing": 0, "associative": true})),
+        ("arraypolar", json!({"center": [0, 0], "count": 4, "associative": false})),
+        ("arraypath", json!({"path": line, "count": 4})),
+        ("erase", json!({})),
+        ("move", json!({"delta": [5, 0]})),
+        ("copy", json!({"delta": [5, 0]})),
+        ("rotate", json!({"base": [0, 0], "angle": 90})),
+        ("scale", json!({"base": [0, 0], "factor": 2})),
+        ("mirror", json!({"p1": [0, 0], "p2": [0, 10]})),
+        ("move", json!({"handles": [], "delta": [5, 0]})),
+    ] {
+        let before = s.doc().unwrap().entity_count();
+        let r = s.execute(id, &p);
+        let e = r.as_ref().err().map(ToString::to_string).unwrap_or_default();
+        assert!(e.contains("no objects"), "{id} {p}: {r:?}");
+        assert_eq!(s.doc().unwrap().entity_count(), before, "{id} changed nothing");
+    }
+    // With objects selected, they work as before.
+    s.execute("qselect", &json!({"type": "Circle"})).unwrap();
+    let r = s.execute("arrayrect", &json!({"rows": 1, "cols": 5, "colSpacing": 10, "rowSpacing": 0, "associative": false})).unwrap();
+    assert_eq!(r["created"], 4);
 }

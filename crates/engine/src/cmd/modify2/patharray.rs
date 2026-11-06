@@ -1,6 +1,6 @@
 use super::{
     Accept, Chain, Handle, Input, Interactive, Mat3, Prompt, Result, SelOutcome, SelectPhase, Session, Step, Value, bad, bool_or, curves, json,
-    number, other, targets,
+    number, other,
 };
 
 // =====================================================================================
@@ -48,7 +48,7 @@ pub(crate) fn arraypath(
 }
 
 pub(super) fn run_arraypath(s: &mut Session, p: &Value) -> Result<Value> {
-    let hs = targets(s, p)?;
+    let hs = super::super::objects(s, p, "arraypath")?;
     let path = curves::handle_param(p, "path").ok_or_else(|| bad("arraypath", "`path` (handle) is required"))?;
     let count = p.get("count").and_then(Value::as_u64).map(|n| usize::try_from(n).unwrap_or(usize::MAX));
     let spacing = p.get("spacing").and_then(Value::as_f64);

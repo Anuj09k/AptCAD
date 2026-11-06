@@ -316,6 +316,19 @@ pub(crate) fn targets(s: &Session, p: &Value) -> Result<Vec<Handle>> {
         Some(v) => Ok(vec![handle(v).ok_or_else(|| not_handle("handle", v))?]),
     }
 }
+/// The objects a command that works on objects takes ([`targets`]), refused when there are none: given no handles
+/// and with nothing selected, it would do nothing and report success, and a script or an agent that forgot to
+/// select would never learn it (objects just drawn aren't selected).
+pub(crate) fn objects(s: &Session, p: &Value, cmd: &str) -> Result<Vec<Handle>> {
+    let hs = targets(s, p)?;
+    if hs.is_empty() {
+        return Err(EngineError::Other(format!(
+            "{cmd}: no objects to work on: give `handles`, or select objects first (select, qselect); objects just drawn aren't selected"
+        )));
+    }
+    Ok(hs)
+}
+
 pub(crate) fn ok() -> Result<Value> {
     Ok(Value::Null)
 }
